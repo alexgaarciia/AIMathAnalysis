@@ -23,4 +23,23 @@ The main goal of this repository is to provide information about how to use [Cha
    <p align="center">
      <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/step5.png" alt="Step 5" width = 300/>
    </p>
-   
+
+## Interacting with Wolfram Mathematica
+Combining ChatGPT and Wolfram Mathematica can be a powerful way to leverage the strengths of both platforms. ChatGPT is proficient in natural language processing and can handle a wide range of queries and tasks, while Wolfram Mathematica excels in computational mathematics, data analysis, and visualization. Here are a few ways to integrate them:
+1. Automating Mathematica Scripts: ChatGPT can be used to create a user-friendly interface to create Mathematica scripts. Users can **describe in natural language** what they want to compute or analyze, and then ChatGPT will **translate** into a Mathematica script and execute it.
+2. Data Anaylsis and Visualization: It can also be used to interpret and structure data analysis queries. After passing these structured queries, Mathematica can then perform complex data analysis and generate visualizations.
+3. Algorithm Design: Combining them for algorithm development can be achieved by using ChatGPT for initial brainstorming and pseudocode generation, and then translating these ideas into Mathematica's powerful computational language for detailed analysis and visualization.
+
+## Networking graphs
+One of our main goals is to check if, given a specific network, we can get the best path from one router to another using Wolfram Mathematica. Later on, we might want to try to ask ChatGPT to transform the generated code into R code.
+
+### Step 1: Generate the network.
+To begin with, we will try to generate a 5-router network by providing the following adjacency matrix (1 means there is connection, otherwise 0):
+|         | State 1 | State 2 | State 3 | State 4 | State 5 |
+|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|
+| State 1 |    0    |    1    |    1    |    0    |    0    |
+| State 2 |    1    |    0    |    1    |    1    |    0    |
+| State 3 |    1    |    1    |    0    |    0    |    1    |
+| State 4 |    0    |    1    |    0    |    0    |    1    |
+| State 5 |    0    |    0    |    1    |    1    |    0    |
+
