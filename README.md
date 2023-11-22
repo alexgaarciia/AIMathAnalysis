@@ -31,7 +31,7 @@ Combining ChatGPT and Wolfram Mathematica can be a powerful way to leverage the 
 3. Algorithm Design: Combining them for algorithm development can be achieved by using ChatGPT for initial brainstorming and pseudocode generation, and then translating these ideas into Mathematica's powerful computational language for detailed analysis and visualization.
 
 ## Networking graphs
-One of our main goals is to check if, given a specific network, we can get the best path from one router to another using Wolfram Mathematica. Later on, we might want to try to ask ChatGPT to transform the generated code into R code.
+One of our main goals is to check if, given a specific network, we can **find the shortest paht** from one router to another using Wolfram Mathematica. Later on, we might want to try to ask ChatGPT to transform the generated code into R code.
 
 ### Step 1: Generate the network.
 To begin with, we will try to generate a 5-router network by providing the following adjacency matrix (1 means there is connection, otherwise 0):
@@ -43,3 +43,15 @@ To begin with, we will try to generate a 5-router network by providing the follo
 | State 4 |    0    |    1    |    0    |    0    |    1    |
 | State 5 |    0    |    0    |    1    |    1    |    0    |
 
+In the following picture we can observe answer of ChatGPT after having give the specifications:
+<p align = "center">
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/answer1.png" width = 650>
+</p>
+
+Moreover, the output was tested on [Wolfram Cloud](https://www.wolframcloud.com/) and we can check that the output was correctly generated:
+<p align = "center">
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/answer1.1.png" width = 650>
+</p>
+
+### Step 2: Assigning distance, load and BeR values.
+### Step 3: Choosing the best path.
