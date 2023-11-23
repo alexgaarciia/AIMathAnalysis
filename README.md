@@ -49,7 +49,9 @@ In the following picture we can observe answer of ChatGPT after having give the 
 </p>
 
 Moreover, we asked ChatGPT to run the generated output on Wolfram Mathematica, and we can check that the output was correctly generated:
-
+<p align = "center">
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/answer1.1.png" width = 650>
+</p>
 
 ### Step 2: Assigning distance, load and BeR values.
 ### Step 3: Choosing the best path.
