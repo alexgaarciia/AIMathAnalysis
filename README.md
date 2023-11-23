@@ -49,6 +49,40 @@ In the following picture we can observe answer of ChatGPT after having give the 
 </p>
 
 Moreover, we asked ChatGPT to run the generated output on Wolfram Mathematica, and we can check that the output was correctly generated:
+<p align = "center">
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/answer1.1.png" width = 650>
+</p>
 
 ### Step 2: Assigning distance, load and BeR values.
+Moving on, we need to assign certain metrics to each of the links, such as distance, load and Bit Error Rate values. The values will be the following ones:
+1. Distance values:
+
+|         | State 1  | State 2  | State 3  | State 4   | State 5   |
+|---------|----------|----------|----------|-----------|-----------|
+| State 1 | NA       | 18.79648 | 6.26380  | NA        | NA        |
+| State 2 | 18.79648 | NA       | 3.61530  | 2.988675  | NA        |
+| State 3 | 6.26380  | 3.61530  | NA       | NA        | 11.64145  |
+| State 4 | NA       | 2.988675 | NA       | NA        | 14.27574  |
+| State 5 | NA       | NA       | 11.64145 | 14.27574  | NA        |
+
+2. Load values:
+
+|         | State 1   | State 2   | State 3   | State 4   | State 5   |
+|---------|-----------|-----------|-----------|-----------|-----------|
+| State 1 | NA        | 0.1386221 | 0.5984568 | NA        | NA        |
+| State 2 | 0.1386221 | NA        | 0.5240758 | 0.8631663 | NA        |
+| State 3 | 0.5984568 | 0.5240758 | NA        | NA        | 0.3763395 |
+| State 4 | NA        | 0.8631663 | NA        | NA        | 0.3248558 |
+| State 5 | NA        | NA        | 0.3763395 | 0.3248558 | NA        |
+
+3. BeR values:
+
+|         | State 1 | State 2 | State 3 | State 4 | State 5 |
+|---------|---------|---------|---------|---------|---------|
+| State 1 | NA      | 1e-08   | 1e-04   | NA      | NA      |
+| State 2 | 1e-08   | NA      | 1e-06   | 0.001   | NA      |
+| State 3 | 1e-04   | 1e-06   | NA      | NA      | 0.001   |
+| State 4 | NA      | 0.001   | NA      | NA      | 0.001   |
+| State 5 | NA      | NA      | 1e-03   | 0.001   | NA      |
+
 ### Step 3: Choosing the best path.
