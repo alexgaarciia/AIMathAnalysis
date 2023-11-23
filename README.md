@@ -48,7 +48,7 @@ In the following picture we can observe answer of ChatGPT after having give the 
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/answer1.png" width = 650>
 </p>
 
-Moreover, the output was tested on [Wolfram Cloud](https://www.wolframcloud.com/) and we can check that the output was correctly generated:
+Moreover, we asked ChatGPT to run the generated output on Wolfram Mathematica, and we can check that the output was correctly generated:
 <p align = "center">
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/answer1.1.png" width = 650>
 </p>
