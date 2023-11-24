@@ -43,7 +43,7 @@ To begin with, we will try to generate a 5-router network by providing the follo
 | State 4 |    0    |    1    |    0    |    0    |    1    |
 | State 5 |    0    |    0    |    1    |    1    |    0    |
 
-In the following picture we can observe answer of ChatGPT after having give the specifications:
+In the following picture we can observe the answer of ChatGPT after having give the specifications:
 <p align = "center">
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/answer1.png" width = 650>
 </p>
@@ -85,15 +85,104 @@ Moving on, we need to assign certain variables to each of the links, such as dis
 | State 4 | Infinity | 0.001    | Infinity | Infinity | 0.001    |
 | State 5 | Infinity | Infinity | 1e-03    | 0.001    | Infinity |
 
+This is the way in which these tables would be expressed in Wolfram Mathematica:
+```ruby
+(* Define the matrices for distance, load, and BeR *)
+distanceMatrix = {
+    {NaN, 18.796483, 6.26380, NaN, NaN},
+    {18.79648, NaN, 3.61530, 2.988675, NaN},
+    {6.26380, 3.615300, NaN, NaN, 11.64145},
+    {NaN, 2.988675, NaN, NaN, 14.27574},
+    {NaN, NaN, 11.64145, 14.275740, NaN}
+};
+
+loadMatrix = {
+    {NaN, 0.1386221, 0.5984568, NaN, NaN},
+    {0.1386221, NaN, 0.5240758, 0.8631663, NaN},
+    {0.5984568, 0.5240758, NaN, NaN, 0.3763395},
+    {NaN, 0.8631663, NaN, NaN, 0.3248558},
+    {NaN, NaN, 0.3763395, 0.3248558, NaN}
+};
+
+berMatrix = {
+    {NaN, 1*10^-8, 1*10^-4, NaN, NaN},
+    {1*10^-8, NaN, 1*10^-6, 0.001, NaN},
+    {1*10^-4, 1*10^-6, NaN, NaN, 0.001},
+    {NaN, 0.001, NaN, NaN, 0.001},
+    {NaN, NaN, 0.001, 0.001, NaN}
+};
+```
 
 ### Step 3: Choosing the best path.
-In this last part of the experiment, we will try to get the best path from one router to another. To do this, there is a key aspect that must be provided, which is the metric by which we are going to know if a path is preferrable to another. This metric will take into account things along the lines of:
+In this last part of the experiment, we will try to get the best path from one router to another. To do this, there is a key aspect that must be provided, which is the metric by which we are going to know if a path is preferrable to another. This metric will take into account aspects along the lines of:
 
 - Propagation delay: We will penalize 5us for each kilometer in the fiber.
 - Transmission queue delay: We will penalize 1us for each 1/(1-load).
 - BeR penalty: If BeR >= 10^-4 and Ber <= 1, we will assign a penalty of 1000us; If BeR > 10^-5 and BeR < 10^-4, the penalty will be of 50us; Otherwise, there is no penalty (0us).
 
-Once this was specified, we 
+Finally, once this was specified, we asked ChatGPT the code that he would use to compute the best path from router 2 to rotuer 4:
+```ruby
+(* Define the adjacency matrix *)
+adjMatrix = {
+    {0, 1, 1, 0, 0},
+    {1, 0, 1, 1, 0},
+    {1, 1, 0, 0, 1},
+    {0, 1, 0, 0, 1},
+    {0, 0, 1, 1, 0}
+};
 
-### Extra step: Getting a R equivalent of the code.
+(* Define the matrices for distance, load, and BeR *)
+distanceMatrix = {
+    {Infinity, 18.796483, 6.26380, Infinity, Infinity},
+    {18.79648, Infinity, 3.61530, 2.988675, Infinity},
+    {6.26380, 3.615300, Infinity, Infinity, 11.64145},
+    {Infinity, 2.988675, Infinity, Infinity, 14.27574},
+    {Infinity, Infinity, 11.64145, 14.275740, Infinity}
+};
+
+loadMatrix = {
+    {Infinity, 0.1386221, 0.5984568, Infinity, Infinity},
+    {0.1386221, Infinity, 0.5240758, 0.8631663, Infinity},
+    {0.5984568, 0.5240758, Infinity, Infinity, 0.3763395},
+    {Infinity, 0.8631663, Infinity, Infinity, 0.3248558},
+    {Infinity, Infinity, 0.3763395, 0.3248558, Infinity}
+};
+
+berMatrix = {
+    {Infinity, 1*10^-8, 1*10^-4, Infinity, Infinity},
+    {1*10^-8, Infinity, 1*10^-6, 0.001, Infinity},
+    {1*10^-4, 1*10^-6, Infinity, Infinity, 0.001},
+    {Infinity, 0.001, Infinity, Infinity, 0.001},
+    {Infinity, Infinity, 0.001, 0.001, Infinity}
+};
+
+(* Define the cost function *)
+calculateTotalCost[distance_, load_, ber_] := Module[{propagationDelay, transmissionQueueDelay, berPenalty},
+    propagationDelay = 5 * distance;
+    transmissionQueueDelay = 1 / (1 - load);
+    berPenalty = Which[
+        ber >= 10^-4 && ber <= 1, 1000,
+        ber > 10^-5 && ber < 10^-4, 50,
+        True, 0
+    ];
+    propagationDelay + transmissionQueueDelay + berPenalty
+];
+
+(* Apply the cost function to each valid link *)
+costMatrix = MapThread[
+    If[#1 != Infinity && #2 != Infinity && #3 != Infinity, calculateTotalCost[#1, #2, #3], Infinity] &,
+    {distanceMatrix, loadMatrix, berMatrix}, 2
+];
+
+(* Create the weighted graph *)
+graph = WeightedAdjacencyGraph[costMatrix, VertexLabels -> "Name", EdgeLabels -> "EdgeWeight"];
+
+(* Find the shortest path from router 2 to router 4 *)
+shortestPath = FindShortestPath[graph, 2, 4];
+
+shortestPath
+```
+
+### Extra step: Getting an R equivalent of the code.
+
 
