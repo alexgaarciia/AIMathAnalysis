@@ -250,3 +250,10 @@ E(g)$weight <- costMatrix[upper.tri(costMatrix, diag = TRUE)]
 shortestPath <- shortest_paths(g, from = 2, to = 4, output = "vpath")$vpath[[1]]
 ```
 
+### Important functions
+Before ending this section, it would be worth mentioning key functions that made the code simpler and efficient:
+1. WeightedAdjacencyGraph: creates a graph from the given matrix, where non-zero elements represent the weights of edges between nodes. The position of a non-zero element in the matrix corresponds to the nodes it connects. For example, a non-zero element at the (i, j) position of the matrix would represent an edge with a certain weight between nodes i and j.
+2. FindShortestPath: The basic usage is FindShortestPath[graph, start, end], where graph is a graph object, and start and end are the nodes between which you want to find the shortest path.
+
+
+
