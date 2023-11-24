@@ -59,31 +59,32 @@ Moving on, we need to assign certain variables to each of the links, such as dis
 
 |         | State 1  | State 2  | State 3  | State 4   | State 5   |
 |:-------:|:--------:|:--------:|:--------:|:---------:|:---------:|
-| State 1 | NA       | 18.79648 | 6.26380  | NA        | NA        |
-| State 2 | 18.79648 | NA       | 3.61530  | 2.988675  | NA        |
-| State 3 | 6.26380  | 3.61530  | NA       | NA        | 11.64145  |
-| State 4 | NA       | 2.988675 | NA       | NA        | 14.27574  |
-| State 5 | NA       | NA       | 11.64145 | 14.27574  | NA        |
+| State 1 | Infinity | 18.79648 | 6.26380  | Infinity  | Infinity  |
+| State 2 | 18.79648 | Infinity | 3.61530  | 2.988675  | Infinity  |
+| State 3 | 6.26380  | 3.61530  | Infinity | Infinity  | 11.64145  |
+| State 4 | Infinity | 2.988675 | Infinity | Infinity  | 14.27574  |
+| State 5 | Infinity | Infinity | 11.64145 | 14.27574  | Infinity  |
 
 2. Load values:
 
 |         | State 1   | State 2   | State 3   | State 4   | State 5   |
 |:-------:|:---------:|:---------:|:---------:|:---------:|:---------:|
-| State 1 | NA        | 0.1386221 | 0.5984568 | NA        | NA        |
-| State 2 | 0.1386221 | NA        | 0.5240758 | 0.8631663 | NA        |
-| State 3 | 0.5984568 | 0.5240758 | NA        | NA        | 0.3763395 |
-| State 4 | NA        | 0.8631663 | NA        | NA        | 0.3248558 |
-| State 5 | NA        | NA        | 0.3763395 | 0.3248558 | NA        |
+| State 1 | Infinity  | 0.1386221 | 0.5984568 | Infinity  | Infinity  |
+| State 2 | 0.1386221 | Infinity  | 0.5240758 | 0.8631663 | Infinity  |
+| State 3 | 0.5984568 | 0.5240758 | Infinity  | Infinity  | 0.3763395 |
+| State 4 | Infinity  | 0.8631663 | Infinity  | Infinity  | 0.3248558 |
+| State 5 | Infinity  | Infinity  | 0.3763395 | 0.3248558 | Infinity  |
 
 3. BeR values:
 
-|         | State 1 | State 2 | State 3 | State 4 | State 5 |
-|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|
-| State 1 | NA      | 1e-08   | 1e-04   | NA      | NA      |
-| State 2 | 1e-08   | NA      | 1e-06   | 0.001   | NA      |
-| State 3 | 1e-04   | 1e-06   | NA      | NA      | 0.001   |
-| State 4 | NA      | 0.001   | NA      | NA      | 0.001   |
-| State 5 | NA      | NA      | 1e-03   | 0.001   | NA      |
+|         | State 1  | State 2  | State 3  | State 4  | State 5  |
+|:-------:|:--------:|:--------:|:--------:|:--------:|:--------:|
+| State 1 | Infinity | 1e-08    | 1e-04    | Infinity | Infinity |
+| State 2 | 1e-08    | Infinity | 1e-06    | 0.001    | Infinity |
+| State 3 | 1e-04    | 1e-06    | Infinity | Infinity | 0.001    |
+| State 4 | Infinity | 0.001    | Infinity | Infinity | 0.001    |
+| State 5 | Infinity | Infinity | 1e-03    | 0.001    | Infinity |
+
 
 ### Step 3: Choosing the best path.
 In this last part of the experiment, we will try to get the best path from one router to another. To do this, there is a key aspect that must be provided, which is the metric by which we are going to know if a path is preferrable to another. This metric will take into account things along the lines of:
@@ -92,7 +93,7 @@ In this last part of the experiment, we will try to get the best path from one r
 - Transmission queue delay: We will penalize 1us for each 1/(1-load).
 - BeR penalty: If BeR >= 10^-4 and Ber <= 1, we will assign a penalty of 1000us; If BeR > 10^-5 and BeR < 10^-4, the penalty will be of 50us; Otherwise, there is no penalty (0us).
 
-Once this was specified, we simply asked ChatGPT to get the best path from router 1 to router 5 (for example).
+Once this was specified, we 
 
 ### Extra step: Getting a R equivalent of the code.
 
