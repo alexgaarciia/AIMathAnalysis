@@ -120,7 +120,7 @@ In this last part of the experiment, we will try to get the best path from one r
 - Transmission queue delay: We will penalize 1us for each 1/(1-load).
 - BeR penalty: If BeR >= 10^-4 and Ber <= 1, we will assign a penalty of 1000us; If BeR > 10^-5 and BeR < 10^-4, the penalty will be of 50us; Otherwise, there is no penalty (0us).
 
-Finally, once this was specified, we asked ChatGPT the code that he would use to compute the best path from router 2 to rotuer 4:
+Finally, once this was specified, we asked ChatGPT the code that he would use to compute the best path from router 2 to router 4:
 ```ruby
 (* Define the adjacency matrix *)
 adjMatrix = {
