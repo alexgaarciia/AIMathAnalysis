@@ -31,7 +31,7 @@ Combining ChatGPT and Wolfram Mathematica can be a powerful way to leverage the 
 3. Algorithm Design: Combining them for algorithm development can be achieved by using ChatGPT for initial brainstorming and pseudocode generation, and then translating these ideas into Mathematica's powerful computational language for detailed analysis and visualization.
 
 ## Networking graphs
-One of our main goals is to check if, given a specific network, we can **find the shortest paht** from one router to another using Wolfram Mathematica. Later on, we might want to try to ask ChatGPT to transform the generated code into R code.
+One of our main goals is to check if, given a specific network, we can **find the shortest path** from one router to another using Wolfram Mathematica. Later on, we might want to try to ask ChatGPT to transform the generated code into R code.
 
 ### Step 1: Generate the network.
 To begin with, we will try to generate a 5-router network by providing the following adjacency matrix (1 means there is connection, otherwise 0):
@@ -89,27 +89,27 @@ This is the way in which these tables would be expressed in Wolfram Mathematica:
 ```ruby
 (* Define the matrices for distance, load, and BeR *)
 distanceMatrix = {
-    {NaN, 18.796483, 6.26380, NaN, NaN},
-    {18.79648, NaN, 3.61530, 2.988675, NaN},
-    {6.26380, 3.615300, NaN, NaN, 11.64145},
-    {NaN, 2.988675, NaN, NaN, 14.27574},
-    {NaN, NaN, 11.64145, 14.275740, NaN}
+    {Infinity, 18.796483, 6.26380, Infinity, Infinity},
+    {18.79648, Infinity, 3.61530, 2.988675, Infinity},
+    {6.26380, 3.615300, Infinity, Infinity, 11.64145},
+    {Infinity, 2.988675, Infinity, Infinity, 14.27574},
+    {Infinity, Infinity, 11.64145, 14.275740, Infinity}
 };
 
 loadMatrix = {
-    {NaN, 0.1386221, 0.5984568, NaN, NaN},
-    {0.1386221, NaN, 0.5240758, 0.8631663, NaN},
-    {0.5984568, 0.5240758, NaN, NaN, 0.3763395},
-    {NaN, 0.8631663, NaN, NaN, 0.3248558},
-    {NaN, NaN, 0.3763395, 0.3248558, NaN}
+    {Infinity, 0.1386221, 0.5984568, Infinity, Infinity},
+    {0.1386221, Infinity, 0.5240758, 0.8631663, Infinity},
+    {0.5984568, 0.5240758, Infinity, Infinity, 0.3763395},
+    {Infinity, 0.8631663, Infinity, Infinity, 0.3248558},
+    {Infinity, Infinity, 0.3763395, 0.3248558, Infinity}
 };
 
 berMatrix = {
-    {NaN, 1*10^-8, 1*10^-4, NaN, NaN},
-    {1*10^-8, NaN, 1*10^-6, 0.001, NaN},
-    {1*10^-4, 1*10^-6, NaN, NaN, 0.001},
-    {NaN, 0.001, NaN, NaN, 0.001},
-    {NaN, NaN, 0.001, 0.001, NaN}
+    {Infinity, 1*10^-8, 1*10^-4, Infinity, Infinity},
+    {1*10^-8, Infinity, 1*10^-6, 0.001, Infinity},
+    {1*10^-4, 1*10^-6, Infinity, Infinity, 0.001},
+    {Infinity, 0.001, Infinity, Infinity, 0.001},
+    {Infinity, Infinity, 0.001, 0.001, Infinity}
 };
 ```
 
