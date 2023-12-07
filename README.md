@@ -332,7 +332,27 @@ Answer:
 ```ruby
 ### I will provide you some mathematical problems to solve with Wolfram Mathematica and I want you to (1) return the code that you would use in Wolfram Mathematica and the output after passing that code to Wolfram Mathematica, and (2) an equivalent of that code into R ###
 
-Problem: Find the minimum of the function f(x) = (x^2-x-2)/(x^2-6x+9)
+Problem: Find the minimum of the function f(x)=(x^2-x-2)/(x^2-6x+9)
+
+Answer:
+```
+
+- Wolfram Mathematica Output:
+<p align = "center">
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/experiments4.png" width = 650>
+</p>
+
+- Equivalent R Code:
+<p align = "center">
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/experiments4.2.png" width = 650>
+</p>
+
+#### Level 5: Intersecting two functions.
+- Prompt:
+```ruby
+### I will provide you some mathematical problems to solve with Wolfram Mathematica and I want you to (1) return the code that you would use in Wolfram Mathematica and the output after passing that code to Wolfram Mathematica, and (2) an equivalent of that code into R ###
+
+Problem: Find the intersection points of the functions f(x)=|x-5| and g(x)=logx
 
 Answer:
 ```
