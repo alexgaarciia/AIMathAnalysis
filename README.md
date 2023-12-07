@@ -312,7 +312,7 @@ Answer:
 ```ruby
 ### I will provide you some mathematical problems to solve with Wolfram Mathematica and I want you to (1) return the code that you would use in Wolfram Mathematica and the output after passing that code to Wolfram Mathematica, and (2) an equivalent of that code into R ###
 
-Problem: Plot -3*(x-2)^2-5
+Problem: Plot -3*(x-2)^2-5.
 
 Answer:
 ```
@@ -332,7 +332,7 @@ Answer:
 ```ruby
 ### I will provide you some mathematical problems to solve with Wolfram Mathematica and I want you to (1) return the code that you would use in Wolfram Mathematica and the output after passing that code to Wolfram Mathematica, and (2) an equivalent of that code into R ###
 
-Problem: Find the minimum of the function f(x)=(x^2-x-2)/(x^2-6x+9)
+Problem: Find the minimum of the function f(x)=(x^2-x-2)/(x^2-6x+9).
 
 Answer:
 ```
@@ -352,7 +352,7 @@ Answer:
 ```ruby
 ### I will provide you some mathematical problems to solve with Wolfram Mathematica and I want you to (1) return the code that you would use in Wolfram Mathematica and the output after passing that code to Wolfram Mathematica, and (2) an equivalent of that code into R ###
 
-Problem: Find the intersection points of the functions f(x)=|x-5| and g(x)=logx
+Problem: Find the intersection points of the functions f(x)=|x-5| and g(x)=logx.
 
 Answer:
 ```
@@ -366,3 +366,80 @@ Answer:
 <p align = "center">
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/experiments5.2.png" width = 650>
 </p>
+
+#### Level 6: Deriving a function.
+- Prompt:
+```ruby
+### I will provide you some mathematical problems to solve with Wolfram Mathematica and I want you to (1) return the code that you would use in Wolfram Mathematica and the output after passing that code to Wolfram Mathematica, and (2) an equivalent of that code into R ###
+
+Problem: What is the derivative of f(x)=5/(sqrt(3x-1))?
+
+Answer:
+```
+
+- Wolfram Mathematica Output:
+
+- Equivalent R Code:
+
+#### Level 7: Integrating a function.
+- Prompt:
+```ruby
+### I will provide you some mathematical problems to solve with Wolfram Mathematica and I want you to (1) return the code that you would use in Wolfram Mathematica and the output after passing that code to Wolfram Mathematica, and (2) an equivalent of that code into R ###
+
+Problem: What is the integral of sin2xcos2x?
+
+Answer:
+```
+
+- Wolfram Mathematica Output:
+
+- Equivalent R Code:
+
+#### Level 8: Mathematical Series.
+- Prompt:
+```ruby
+### I will provide you some mathematical problems to solve with Wolfram Mathematica and I want you to (1) return the code that you would use in Wolfram Mathematica and the output after passing that code to Wolfram Mathematica, and (2) an equivalent of that code into R ###
+
+Problem: Study the convergence of the infinite series starting from n equals 1 to infinity of the sum of the reciprocal of the product of n and n plus 1.
+
+Answer:
+```
+
+- Wolfram Mathematica Output:
+
+- Equivalent R Code:
+
+#### Level 9: Fourier transform.
+- Prompt:
+```ruby
+### I will provide you some mathematical problems to solve with Wolfram Mathematica and I want you to (1) return the code that you would use in Wolfram Mathematica and the output after passing that code to Wolfram Mathematica, and (2) an equivalent of that code into R ###
+
+Problem: Compute the Fourier transform of f(t)=cosω0t.
+
+Answer:
+```
+
+- Wolfram Mathematica Output:
+
+- Equivalent R Code:
+
+#### Level 10: Doing regression in some data.
+- Prompt:
+```ruby
+### I will provide you some mathematical problems to solve with Wolfram Mathematica and I want you to (1) return the code that you would use in Wolfram Mathematica and the output after passing that code to Wolfram Mathematica, and (2) an equivalent of that code into R ###
+
+Problem: The following table shows information regarding the sales of daily press in the year 1998, as the number of daily copies sold per thousand inhabitants in 8 autonomous Spanish regions. The sales are assumed to be related to economic activity levels as measured by the Gross Domestic Product (GDP) per inhabitant in thousands of euros (Source: INE. Anuario Estadistico).
+
+GDP 8.3 9.7 10.7 11.7 12.4 15.4 16.3 17.2
+Copies sold 57.4 106.8 104.4 131.9 144.6 146.4 177.4 186.9
+
+Use least squares to estimate a simple regression model that explains the number of copies
+sold as a function of GDP per capita
+
+Answer:
+```
+
+- Wolfram Mathematica Output:
+
+- Equivalent R Code:
+
