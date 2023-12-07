@@ -298,8 +298,27 @@ Answer:
 ```
 
 - Wolfram Mathematica Output:
+<p align = "center">
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/experiments2.png" width = 650>
+</p>
+
+- Equivalent R Code:
+<p align = "center">
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/experiments2.2.png" width = 650>
+</p>
+
+#### Level 3: Plotting a function.
+- Prompt:
+```ruby
+### I will provide you some mathematical problems to solve with Wolfram Mathematica and I want you to (1) return the code that you would use in Wolfram Mathematica and the output after passing that code to Wolfram Mathematica, and (2) an equivalent of that code into R ###
+
+Problem: Plot -3*(x-2)^2-5
+
+Answer:
+```
+
+- Wolfram Mathematica Output:
 
 
 - Equivalent R Code:
-
 
