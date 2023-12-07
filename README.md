@@ -287,5 +287,19 @@ Answer:
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/experiments1.2.png" width = 650>
 </p>
 
+#### Level 2: Generating normally distributed variables with a specific mean and variance.
+- Prompt:
+```ruby
+### I will provide you some mathematical problems to solve with Wolfram Mathematica and I want you to (1) return the code that you would use in Wolfram Mathematica and the output after passing that code to Wolfram Mathematica, and (2) an equivalent of that code into R ###
+
+Problem: Generate several normally distributed variables with mean=45.6 and variance=13.84.
+
+Answer:
+```
+
+- Wolfram Mathematica Output:
+
+
+- Equivalent R Code:
 
 
