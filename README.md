@@ -358,6 +358,11 @@ Answer:
 ```
 
 - Wolfram Mathematica Output:
+<p align = "center">
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/experiments5.png" width = 650>
+</p>
 
 - Equivalent R Code:
-
+<p align = "center">
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/experiments5.2.png" width = 650>
+</p>
