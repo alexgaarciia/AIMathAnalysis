@@ -279,12 +279,12 @@ Answer:
 
 - Wolfram Mathematica Output:
 <p align = "center">
-   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/experiments1.png" width = 650>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/experiments1.png" width = 600>
 </p>
 
 - Equivalent R Code:
 <p align = "center">
-   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/experiments1.2.png" width = 650>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/experiments1.2.png" width = 600>
 </p>
 
 #### Level 2: Generating normally distributed variables with a specific mean and variance.
@@ -299,12 +299,12 @@ Answer:
 
 - Wolfram Mathematica Output:
 <p align = "center">
-   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/experiments2.png" width = 650>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/experiments2.png" width = 600>
 </p>
 
 - Equivalent R Code:
 <p align = "center">
-   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/experiments2.2.png" width = 650>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/experiments2.2.png" width = 600>
 </p>
 
 #### Level 3: Plotting a function.
@@ -319,12 +319,12 @@ Answer:
 
 - Wolfram Mathematica Output:
 <p align = "center">
-   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/experiments3.png" width = 650>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/experiments3.png" width = 600>
 </p>
 
 - Equivalent R Code:
 <p align = "center">
-   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/experiments3.2.png" width = 650>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/experiments3.2.png" width = 600>
 </p>
 
 #### Level 4: Finding a minimum.
@@ -339,12 +339,12 @@ Answer:
 
 - Wolfram Mathematica Output:
 <p align = "center">
-   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/experiments4.png" width = 650>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/experiments4.png" width = 600>
 </p>
 
 - Equivalent R Code:
 <p align = "center">
-   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/experiments4.2.png" width = 650>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/experiments4.2.png" width = 600>
 </p>
 
 #### Level 5: Intersecting two functions.
@@ -359,12 +359,12 @@ Answer:
 
 - Wolfram Mathematica Output:
 <p align = "center">
-   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/experiments5.png" width = 650>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/experiments5.png" width = 600>
 </p>
 
 - Equivalent R Code:
 <p align = "center">
-   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/experiments5.2.png" width = 650>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/experiments5.2.png" width = 600>
 </p>
 
 #### Level 6: Deriving a function.
@@ -378,8 +378,14 @@ Answer:
 ```
 
 - Wolfram Mathematica Output:
+<p align = "center">
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/experiments6.png" width = 600>
+</p>
 
 - Equivalent R Code:
+<p align = "center">
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/experiments6.2.png" width = 600>
+</p>
 
 #### Level 7: Integrating a function.
 - Prompt:
@@ -392,8 +398,14 @@ Answer:
 ```
 
 - Wolfram Mathematica Output:
+<p align = "center">
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/experiments7.png" width = 600>
+</p>
 
 - Equivalent R Code:
+<p align = "center">
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/experiments7.2.png" width = 600>
+</p>
 
 #### Level 8: Mathematical Series.
 - Prompt:
@@ -406,8 +418,14 @@ Answer:
 ```
 
 - Wolfram Mathematica Output:
+<p align = "center">
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/experiments8.png" width = 600>
+</p>
 
 - Equivalent R Code:
+<p align = "center">
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/experiments8.2.png" width = 600>
+</p>
 
 #### Level 9: Fourier transform.
 - Prompt:
@@ -420,8 +438,14 @@ Answer:
 ```
 
 - Wolfram Mathematica Output:
+<p align = "center">
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/experiments9.png" width = 600>
+</p>
 
 - Equivalent R Code:
+<p align = "center">
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/experiments9.2.png" width = 600>
+</p>
 
 #### Level 10: Doing regression in some data.
 - Prompt:
@@ -440,6 +464,11 @@ Answer:
 ```
 
 - Wolfram Mathematica Output:
+<p align = "center">
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/experiments10.png" width = 600>
+</p>
 
 - Equivalent R Code:
-
+<p align = "center">
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/experiments10.2.png" width = 600>
+</p>
