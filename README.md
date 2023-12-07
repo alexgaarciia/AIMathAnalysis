@@ -318,7 +318,12 @@ Answer:
 ```
 
 - Wolfram Mathematica Output:
-
+<p align = "center">
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/experiments3.png" width = 650>
+</p>
 
 - Equivalent R Code:
+<p align = "center">
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/experiments3.2.png" width = 650>
+</p>
 
