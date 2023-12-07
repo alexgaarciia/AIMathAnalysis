@@ -256,10 +256,26 @@ Before ending this section, it would be worth mentioning key functions that made
 2. FindShortestPath: The basic usage is FindShortestPath[graph, start, end], where graph is a graph object, and start and end are the nodes between which you want to find the shortest path.
 
 ## Prompting Wolfram Mathematica with ChatGPT
-One of our main objetives is to find the correct manner of prompting specifically for Wolfram. We have seen before that this plugin is highly powerful, being able to solve an entire network problem itself. However, what if we could do it in fewer steps, just by correctly prompting it?
+One of our main objetives is to find how much we can do with text only. In order to do this, we would like to discover the correct manner of prompting Wolfram. We have seen before that this plugin is highly powerful, being able to solve an entire network problem itself. However, what if we could do it in fewer steps, just by correctly prompting it?
 
 ### Available resources
 First off, we would like to know if there are already some investigations/guides in this regard. We found out that there are no specific texts on the most efficient way of prompting Wolfram Mathematica with ChatGPT. However, there is an interesting introduction to using the plugin in the offical Wolfram webpage: [Plugin de Wolfram para ChatGPT](https://www.wolfram.com/wolfram-plugin-chatgpt/). This link is from the official webpage of Wolfram. It provides an installation guide and some applications of it and, at the end of the page, there is a link about [using the Wolfram Plugin for ChatGPT:](https://www.youtube.com/watch?v=EOQV9VakBgE&ab_channel=Wolfram), where several prompts are carried out.
+
+### Experiments
+In order to test how much we can do by simply giving text as input, we provided some mathematical problems witb varying difficulty, and therefore asked to translate the code to any other programming language such as R or Python.
+
+#### Level 1: Inventing a matrix.
+- Prompt:
+```ruby
+### I will provide you some mathematical problems to solve with Wolfram Mathematica and I want you to (1) return the code that you would use in Wolfram Mathematica and the output after passing that code to Wolfram Mathematica, and (2) an equivalent of that code into R ###
+
+Problem: Invent a 5x6 matrix with random values.
+
+Answer:
+```
+
+- Output:
+
 
 **Note that the only resources that are close to talking about prompting the plugin are YouTube videos.**
 
