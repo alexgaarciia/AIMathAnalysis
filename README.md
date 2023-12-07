@@ -261,6 +261,9 @@ One of our main objetives is to find how much we can do with text only. In order
 ### Available resources
 First off, we would like to know if there are already some investigations/guides in this regard. We found out that there are no specific texts on the most efficient way of prompting Wolfram Mathematica with ChatGPT. However, there is an interesting introduction to using the plugin in the offical Wolfram webpage: [Plugin de Wolfram para ChatGPT](https://www.wolfram.com/wolfram-plugin-chatgpt/). This link is from the official webpage of Wolfram. It provides an installation guide and some applications of it and, at the end of the page, there is a link about [using the Wolfram Plugin for ChatGPT:](https://www.youtube.com/watch?v=EOQV9VakBgE&ab_channel=Wolfram), where several prompts are carried out.
 
+**Note that the only resources that are close to talking about prompting the plugin are YouTube videos.**
+
+
 ### Experiments
 In order to test how much we can do by simply giving text as input, we provided some mathematical problems witb varying difficulty, and therefore asked to translate the code to any other programming language such as R or Python.
 
@@ -274,10 +277,15 @@ Problem: Invent a 5x6 matrix with random values.
 Answer:
 ```
 
-- Output:
+- Wolfram Mathematica Output:
+<p align = "center">
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/experiments1.png" width = 650>
+</p>
 
-
-**Note that the only resources that are close to talking about prompting the plugin are YouTube videos.**
+- Equivalent R Code:
+<p align = "center">
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/experiments1.2.png" width = 650>
+</p>
 
 
 
