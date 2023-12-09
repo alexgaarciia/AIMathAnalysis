@@ -272,20 +272,14 @@ In order to test how much we can do by simply giving text as input, we provided 
 ```ruby
 ### I will provide you some mathematical problems to solve with Wolfram Mathematica and I want you to (1) return the code that you would use in Wolfram Mathematica and the output after passing that code to Wolfram Mathematica, and (2) an equivalent of that code into R ###
 
-Problem: Invent a 5x6 matrix with random values.
+Problem: Invent a matrix with random values and show it. Then, invert it.
 
 Answer:
 ```
 
 - Wolfram Mathematica Output:
-<p align = "center">
-   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/experiments1.png" width = 600>
-</p>
 
 - Equivalent R Code:
-<p align = "center">
-   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/experiments1.2.png" width = 600>
-</p>
 
 #### Level 2: Generating normally distributed variables with a specific mean and variance.
 - Prompt:
