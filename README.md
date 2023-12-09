@@ -267,7 +267,7 @@ First off, we would like to know if there are already some investigations/guides
 ### Experiments
 In order to test how much we can do by simply giving text as input, we provided some mathematical problems witb varying difficulty, and therefore asked to translate the code to any other programming language such as R or Python (the "translated codes" can be found [here](https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/mathexperiments.R)).
 
-#### Level 1: Inventing a matrix.
+#### Level 1: Inventing and inverting a matrix.
 - Prompt:
 ```ruby
 ### I will provide you some mathematical problems to solve with Wolfram Mathematica and I want you to (1) return the code that you would use in Wolfram Mathematica and the output after passing that code to Wolfram Mathematica, and (2) an equivalent of that code into R ###
