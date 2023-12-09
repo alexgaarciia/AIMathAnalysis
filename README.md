@@ -278,8 +278,14 @@ Answer:
 ```
 
 - Wolfram Mathematica Output:
+<p align = "center">
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/experiments1.png" width = 600>
+</p>
 
 - Equivalent R Code:
+<p align = "center">
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/experiments1.2.png" width = 600>
+</p>
 
 #### Level 2: Generating normally distributed variables with a specific mean and variance.
 - Prompt:
