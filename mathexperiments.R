@@ -1,7 +1,18 @@
 ################################################################################
-#                               INVENTING A MATRIX
+#                      INVENTING AND INVERTING A MATRIX
 ################################################################################
-matrix(runif(30, min = 0, max = 1), nrow = 5, ncol = 6)
+# Create a random matrix
+set.seed(123)  # Setting a seed for reproducibility
+matrix <- matrix(runif(9), nrow = 3, ncol = 3)
+
+# Show the matrix
+matrix
+
+# Invert the matrix
+inverse_matrix <- solve(matrix)
+
+# Show the inverse matrix
+inverse_matrix
 
 
 ################################################################################
