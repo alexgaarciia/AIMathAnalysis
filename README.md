@@ -2,6 +2,7 @@
 ## Introduction to the repository
 The main goal of this repository is to provide information about how to use [ChatGPT](https://chat.openai.com/) and [Wolfram Mathematica](https://www.wolfram.com/mathematica/) together. In case any of these names seem unfamiliar, let me provide some basic definitions. **ChatGPT** is an AI language model designed to understand and generate human-like text based on the input it receives. **Wolfram Mathematica**, on the other hand, is a computing environment used for mathematical computation, algorithm development, data visualization, and symbolic manipulation, widely used in scientific, engineering, mathematical, and computing fields.
 
+
 ## How to combine ChatGPT & Wolfram Mathematica
 1. Click on your current version of ChatGPT:
    <p align="center">
@@ -24,11 +25,13 @@ The main goal of this repository is to provide information about how to use [Cha
      <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/step5.png" alt="Step 5" width = 300/>
    </p>
 
+
 ## Interacting with Wolfram Mathematica
 Combining ChatGPT and Wolfram Mathematica can be a powerful way to leverage the strengths of both platforms. ChatGPT is proficient in natural language processing and can handle a wide range of queries and tasks, while Wolfram Mathematica excels in computational mathematics, data analysis, and visualization. Here are a few ways to integrate them:
 1. Automating Mathematica Scripts: ChatGPT can be used to create a user-friendly interface to create Mathematica scripts. Users can **describe in natural language** what they want to compute or analyze, and then ChatGPT will **translate** into a Mathematica script and execute it.
 2. Data Anaylsis and Visualization: It can also be used to interpret and structure data analysis queries. After passing these structured queries, Mathematica can then perform complex data analysis and generate visualizations.
 3. Algorithm Design: Combining them for algorithm development can be achieved by using ChatGPT for initial brainstorming and pseudocode generation, and then translating these ideas into Mathematica's powerful computational language for detailed analysis and visualization.
+
 
 ## Networking graphs
 One of our main goals is to check if, given a specific network, we can **find the shortest path** from one router to another using Wolfram Mathematica. Later on, we might want to try to ask ChatGPT to transform the generated code into R code.
@@ -249,11 +252,11 @@ g <- graph_from_adjacency_matrix(adjMatrix, mode = "undirected", weighted = TRUE
 E(g)$weight <- costMatrix[upper.tri(costMatrix, diag = TRUE)]
 shortestPath <- shortest_paths(g, from = 2, to = 4, output = "vpath")$vpath[[1]]
 ```
-
 ### Important functions
 Before ending this section, it would be worth mentioning key functions that made the code simpler and efficient:
 1. WeightedAdjacencyGraph: creates a graph from the given matrix, where non-zero elements represent the weights of edges between nodes. The position of a non-zero element in the matrix corresponds to the nodes it connects. For example, a non-zero element at the (i, j) position of the matrix would represent an edge with a certain weight between nodes i and j.
 2. FindShortestPath: The basic usage is FindShortestPath[graph, start, end], where graph is a graph object, and start and end are the nodes between which you want to find the shortest path.
+
 
 ## Prompting Wolfram Mathematica with ChatGPT
 One of our main objetives is to find how much we can do with text only. In order to do this, we would like to discover the correct manner of prompting Wolfram. We have seen before that this plugin is highly powerful, being able to solve an entire network problem itself. However, what if we could do it in fewer steps, just by correctly prompting it?
@@ -263,9 +266,8 @@ First off, we would like to know if there are already some investigations/guides
 
 **Note that the only resources that are close to talking about prompting the plugin are YouTube videos.**
 
-
 ### Experiments
-In order to test how much we can do by simply giving text as input, we provided some mathematical problems witb varying difficulty, and therefore asked to translate the code to any other programming language such as R or Python (the "translated codes" can be found [here](https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/mathexperiments.R)).
+In order to _test how much we can do by simply giving text as input_, we provided some mathematical problems with varying difficulty, and therefore asked to translate the code to any other programming language such as R or Python (the "translated codes" can be found [here](https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/mathexperiments.R)).
 
 #### Level 1: Inventing and inverting a matrix.
 - Prompt:
@@ -472,3 +474,7 @@ Answer:
 <p align = "center">
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/experiments10.2.png" width = 600>
 </p>
+
+
+### Conclusions
+We have seen that even though most of the answers were correct, there were two specific ones with which it struggled: **Level 5** (Intersecting two functions) and **Level 7** (Integrating a function). The main reason why this may be happening is due to the "complexity" of the functions provided. The former contained an absolute value and the latter was an integral that required a "u" substitution. Overall, a lot can be done by simply using text as input. 
