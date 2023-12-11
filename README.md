@@ -484,18 +484,18 @@ We have seen that even though most of the answers were correct, there were two s
 
 However, here are some proven results and a table summarizing them:
 - Level 1: In order to check if a matrix was correctly inverted, we just need to multiply the original matrix with the inverse matrix. We should obtain the identity matrix. In both cases we have checked that it is correct, as can be seen in the images below.
-<p float="left">
-  <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/proof_level1.png" width="500" />
-  <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/proof_level1.png" width="500" /> 
-</p>
 
-However, in the case of R, 
+Wolfram Mathematica        |  R
+:-------------------------:|:-------------------------:
+![](https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/proof_level1.png)  |  ![](https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/proof_level1.2.png)
+
+- Level 2: 
 
 
 |         | Level 1 | Level 2 | Level 3 | Level 4 | Level 5 | Level 6 | Level 7 | Level 8 | Level 9 | Level 10 |
 |:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|
 | Wolfram Mathematica |    Pass    |    -    |    -    |    -    |    -    |    -    |    -    |    -    |    -    |    -    |
-| R  |    Fail    |    -    |    -    |    -    |    -    |    -    |    -    |    -    |    -    |    -    |
+| R  |    Pass    |    -    |    -    |    -    |    -    |    -    |    -    |    -    |    -    |    -    |
 
 
 
