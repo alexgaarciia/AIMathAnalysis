@@ -14,6 +14,9 @@ inverse_matrix <- solve(matrix)
 # Show the inverse matrix
 inverse_matrix
 
+# Check the result
+matrix%*%inverse_matrix
+
 
 ################################################################################
 #         GENERATING RANDOM VARIABLES WITH SPECIFIC MEAN AND VARIANCE
