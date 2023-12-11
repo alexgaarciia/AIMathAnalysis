@@ -266,9 +266,13 @@ First off, we would like to know if there are already some investigations/guides
 
 **Note that the only resources that are close to talking about prompting the plugin are YouTube videos.**
 
-### Experiments
+
+## Experiments
 In order to _test how much we can do by simply giving text as input_, we provided some mathematical problems with varying difficulty, and therefore asked to translate the code to any other programming language such as R or Python (the "translated codes" can be found [here](https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/mathexperiments.R)).
 
+There will be two different sections of experiments. The very first one will be very specific about what we want to do, and the second one will try to show how much we can do without being very specific. For example, instead of asking ChatGPT to solve an integral in a range (specific instructions), we could ask to obtain the area and check if it knows that an integral must be computed (general instructions). With this, we are trying to solve two main questions: Does ChatGPT require background thinking? How much we can do without being very specific?
+
+### Specific instructions.
 #### Level 1: Inventing and inverting a matrix.
 - Prompt:
 ```ruby
@@ -475,6 +479,7 @@ Answer:
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/experiments10.2.png" width = 600>
 </p>
 
-
-### Conclusions
+#### Conclusions
 We have seen that even though most of the answers were correct, there were two specific ones with which it struggled: **Level 5** (Intersecting two functions) and **Level 7** (Integrating a function). The main reason why this may be happening is due to the "complexity" of the functions provided. The former contained an absolute value and the latter was an integral that required a "u" substitution. Overall, a lot can be done by simply using text as input. 
+
+### General instructions
