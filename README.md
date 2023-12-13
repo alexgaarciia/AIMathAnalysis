@@ -490,7 +490,7 @@ Wolfram Alpha        |  R
 ![](https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Proofs/proof_level1.png)  |  ![](https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Proofs/proof_level1.2.png)
 
 
-- Level 2: What we can do in this case is generating variables in Wolfram Mathematica and RStudio, and check the results. As may be observed below, even though in both cases the means and variances are not the expected ones, we must note that this is due to the nature of random sampling from a distribution. This randomness can lead to samples that don't perfectly reflect the underlying distribution, especially with smaller sample sizes.
+- Level 2: What we can do in this case is generating variables with the plugin and RStudio, and check the results. As may be observed below, even though in both cases the means and variances are not the expected ones, we must note that this is due to the nature of random sampling from a distribution. This randomness can lead to samples that don't perfectly reflect the underlying distribution, especially with smaller sample sizes.
 
 Wolfram Mathematica        |  R
 :-------------------------:|:-------------------------:
@@ -498,15 +498,15 @@ Wolfram Mathematica        |  R
 
 - Level 3: No need of proof, both platforms represent correctly the function.
 
-Wolfram Alpha        |  R
-:-------------------:|:-------------------------:
+Wolfram Mathematica        |  R
+:-------------------------:|:-------------------------:
 ![](https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Proofs/proof_level3.png)  |  ![](https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Proofs/proof_level3.2.png)
 
 - Level 4: In order to check that the answers are correct, we will obtain the minimum using Wolfram Alpha. Moreover, we will compare it to the result obtained in Wolfram Mathematica and R. As observed, in both cases the minimum is correct (-9/16 = -0'5625).
 
-Wolfram Mathematica        |  R
-:-------------------------:|:-------------------------:
-![](https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Proofs/proof_level4.png)  |  ![](https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Proofs/proof_level4.2.png)
+Wolfram Alpha              |  Wolfram Mathematica     | R
+:-------------------------:|:------------------------:|:-------------------------:
+![](https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Proofs/proof_level4.png)  |  ![](https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/experiments4.png)  |  ![](https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Proofs/proof_level4.2.png)![](https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Proofs/proof_level4.2.png)
 
 - Level 5: As we have seen in the solutions given by Wolfram Mathematica, we may think the answers are wrong because instead of giving a number, it gives the Lambert W function. However, let's check two things: the solution given by Wolfram Alpha and the graph:
 
@@ -538,11 +538,11 @@ Wolfram Mathematica        |  R
 
 It coincides with the result given by Wolfram Mathematica.
 
-- Level 8: The tool (Symbolab)[https://www.symbolab.com/] was used to study the convergence of the proposed function. The series has a value of 1, which corresponds to the ones obtained by Wolfram and R:
+- Level 8: The tool [Symbolab](https://www.symbolab.com/) was used to study the convergence of the proposed function. The series has a value of 1, which corresponds to the ones obtained by the Wolfram Mathematica plugin and R:
 
 Symbolab                   |  Wolfram Mathematica     | R
 :-------------------------:|:------------------------:|:-------------------------:
-![](https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Proofs/proof_level8.png)  |  ![](https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/experiments8.png)  |  
+![](https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Proofs/proof_level8.png)  |  ![](https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/experiments8.png)  |  ![](https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Proofs/proof_level8.2.png)
 
 
 - Level 9:
@@ -558,8 +558,8 @@ Wolfram Mathematica        |  R
 
 |         | Level 1 | Level 2 | Level 3 | Level 4 | Level 5 | Level 6 | Level 7 | Level 8 | Level 9 | Level 10 |
 |:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|
-| Wolfram Mathematica |    Pass    |    Pass    |    Pass    |    Pass    |    Pass    |    Pass    |    Pass    |    -    |    -    |    -    |
-| R  |    Pass    |    Pass    |    Pass    |    Pass    |    Pass    |    Pass    |    Fail    |    -    |    -    |    -    |
+| Wolfram Mathematica |    Pass    |    Pass    |    Pass    |    Pass    |    Pass    |    Pass    |    Pass    |    Pass    |    -    |    -    |
+| R  |    Pass    |    Pass    |    Pass    |    Pass    |    Pass    |    Pass    |    Fail    |    Pass    |    -    |    -    |
 
 
 
