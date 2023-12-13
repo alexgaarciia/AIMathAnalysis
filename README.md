@@ -482,16 +482,31 @@ Answer:
 #### Conclusions
 We have seen that even though most of the answers were correct, there were two specific ones with which it struggled: **Level 5** (Intersecting two functions) and **Level 7** (Integrating a function). The main reason why this may be happening is due to the "complexity" of the functions provided. The former contained an absolute value and the latter was an integral that required a "u" substitution. Overall, a lot can be done by simply using text as input. 
 
-However, here are some proven results and a table summarizing them:
+However, here are some proven results of levels that require it, and a table summarizing them:
 - Level 1: In order to check if a matrix was correctly inverted, we just need to multiply the original matrix with the inverse matrix. We should obtain the identity matrix. In both cases we have checked that it is correct, as can be seen in the images below.
 
-- Level 2: 
+Wolfram Mathematica        |  R
+:-------------------------:|:-------------------------:
+![](https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Proofs/proof_level1.png)  |  ![](https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Proofs/proof_level1.2.png)
+
+
+- Level 2: What we can do in this case is generating variables in Wolfram Mathematica and RStudio, and check the results. As may be observed below, even though in both cases the means and variances are not the expected ones, we must note that this is due to the nature of random sampling from a distribution. This randomness can lead to samples that don't perfectly reflect the underlying distribution, especially with smaller sample sizes.
+
+Wolfram Mathematica        |  R
+:-------------------------:|:-------------------------:
+![](https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Proofs/proof_level2.png)  |  ![](https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Proofs/proof_level2.1.png)
+
+- Level 3: No need of proof, both platforms represent correctly the function.
+
+
+
+- Level 4: 
 
 
 |         | Level 1 | Level 2 | Level 3 | Level 4 | Level 5 | Level 6 | Level 7 | Level 8 | Level 9 | Level 10 |
 |:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|
-| Wolfram Mathematica |    Pass    |    -    |    -    |    -    |    -    |    -    |    -    |    -    |    -    |    -    |
-| R  |    Pass    |    -    |    -    |    -    |    -    |    -    |    -    |    -    |    -    |    -    |
+| Wolfram Mathematica |    Pass    |    Pass    |    Pass    |    -    |    -    |    -    |    -    |    -    |    -    |    -    |
+| R  |    Pass    |    Pass    |    Pass    |    -    |    -    |    -    |    -    |    -    |    -    |    -    |
 
 
 
