@@ -531,7 +531,7 @@ Wolfram Mathematica        |  R
 :-------------------------:|:-------------------------:
 ![](https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/experiments6.png)  |  ![](https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Proofs/proof_level6.2.png)
 
-- Level 7: For this level, we can only check if the solution provided by Wolfram Mathematica is correct, since the code generated in R language only integrates the function in a specific range. The solution for the integral is:
+- Level 7: For this level, we can only check if the solution provided by Wolfram Mathematica is correct, since the code generated in R language only integrates the function in a specific range. The solution for the integral, computed using [Integral Calculator](https://www.integral-calculator.com/), is:
 <p align = "center">
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Proofs/proof_level7.png" width = 500>
 </p>
@@ -544,22 +544,19 @@ Symbolab                   |  Wolfram Mathematica     | R
 :-------------------------:|:------------------------:|:-------------------------:
 ![](https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Proofs/proof_level8.png)  |  ![](https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/experiments8.png)  |  ![](https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Proofs/proof_level8.2.png)
 
+- Level 9: For this problem, we used again [Symbolab](https://www.symbolab.com/) to compute the Fourier transform. In this case, we can only compare it with the result obtained from ChatGPT, since the generated code for R does not return the Fourier transform. The solutions coincide.
 
-- Level 9:
-
-Wolfram Mathematica        |  R
+Symbolab                   |  Wolfram Mathematica 
 :-------------------------:|:-------------------------:
+![](https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Proofs/proof_level9.png)  |  ![](https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/experiments9.png)
 
-- Level 10: 
-
-Wolfram Mathematica        |  R
-:-------------------------:|:-------------------------:
+- Level 10: No need of proof, both platforms solved correctly the problem.
 
 
 |         | Level 1 | Level 2 | Level 3 | Level 4 | Level 5 | Level 6 | Level 7 | Level 8 | Level 9 | Level 10 |
 |:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|
-| Wolfram Mathematica |    Pass    |    Pass    |    Pass    |    Pass    |    Pass    |    Pass    |    Pass    |    Pass    |    -    |    -    |
-| R  |    Pass    |    Pass    |    Pass    |    Pass    |    Pass    |    Pass    |    Fail    |    Pass    |    -    |    -    |
+| Wolfram Mathematica |    Pass    |    Pass    |    Pass    |    Pass    |    Pass    |    Pass    |    Pass    |    Pass    |    Pass    |    Pass    |
+| R  |    Pass    |    Pass    |    Pass    |    Pass    |    Pass    |    Pass    |    Fail    |    Pass    |    Fail    |    Pass    |
 
 
 
