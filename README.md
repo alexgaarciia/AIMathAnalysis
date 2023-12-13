@@ -47,10 +47,14 @@ To begin with, we will try to generate a 5-router network by providing the follo
 | State 5 |    0    |    0    |    1    |    1    |    0    |
 
 In the following picture we can observe the answer of ChatGPT after having give the specifications:
-?
+<p align = "center">
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Networking graphs/generating_graphs.png" width = 650>
+</p>
 
 Moreover, we asked ChatGPT to run the generated output on Wolfram Mathematica, and we can check that the output was correctly generated:
-?
+<p align = "center">
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Networking graphs/generating_graphs2.png" width = 650>
+</p>
 
 ### Step 2: Assigning distance, load and BeR values to the links.
 Moving on, we need to assign certain variables to each of the links, such as distance, load and Bit Error Rate values. The values will be the following ones:
