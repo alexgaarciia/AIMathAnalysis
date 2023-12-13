@@ -538,12 +538,14 @@ Wolfram Mathematica        |  R
 
 It coincides with the result given by Wolfram Mathematica.
 
-- Level 8: 
+- Level 8: The tool (Symbolab)[https://www.symbolab.com/] was used to study the convergence of the proposed function. The series has a value of 1, which corresponds to the ones obtained by Wolfram and R:
 
-Wolfram Mathematica        |  R
-:-------------------------:|:-------------------------:
+Symbolab                   |  Wolfram Mathematica     | R
+:-------------------------:|:------------------------:|:-------------------------:
+![](https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Proofs/proof_level8.png)  |  ![](https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/experiments8.png)  |  
 
-- Level 9: 
+
+- Level 9:
 
 Wolfram Mathematica        |  R
 :-------------------------:|:-------------------------:
