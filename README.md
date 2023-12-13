@@ -5,15 +5,25 @@ The main goal of this repository is to provide information about how to use [Cha
 
 ## How to combine ChatGPT & Wolfram Mathematica
 1. Click on your current version of ChatGPT:
-
+   <p align="center">
+     <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Plugin installation/step1.png" alt="Step 1" width = 500/>
+   </p>
 2. Select "Plugins" from the dropdown:
-
+   <p align="center">
+     <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Plugin installation/step2.png" alt="Step 1" width = 300/>
+   </p>
 3. In case you do not have the Wolfram Mathematica plugin installed, click on the "No plugins installed" dropdown and click on "Plugin store":
-
+   <p align="center">
+     <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Plugin installation/step3.png" alt="Step 1" width = 300/>
+   </p>
 4. Search for Wolfram on the search tab and click on Install:
-
+   <p align="center">
+     <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Plugin installation/step4.png" alt="Step 1" width = 300/>
+   </p>
 5. Finally, select it in the plugins dropdown:
-
+   <p align="center">
+     <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Plugin installation/step5.png" alt="Step 1" width = 300/>
+   </p>
 
 
 ## Interacting with Wolfram Mathematica
@@ -492,14 +502,20 @@ Wolfram Mathematica        |  R
 :-------------------------:|:-------------------------:
 ![](https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Proofs/proof_level3.png)  |  ![](https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Proofs/proof_level3.2.png)
 
-- Level 4: In order to check that the answers are correct, we will obtain the minimum using Wolfram Alpha. Moreover, we will compare it to the result obtained in Wolfram Mathematica and R.
+- Level 4: In order to check that the answers are correct, we will obtain the minimum using Wolfram Alpha. Moreover, we will compare it to the result obtained in Wolfram Mathematica and R. As observed, in both cases the minimum is correct (-9/16 = -0'5625).
+
+Wolfram Mathematica        |  R
+:-------------------------:|:-------------------------:
+![](https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Proofs/proof_level4.png)  |  ![](https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Proofs/proof_level4.2.png)
+
+- Level 5:
 
 
 
 |         | Level 1 | Level 2 | Level 3 | Level 4 | Level 5 | Level 6 | Level 7 | Level 8 | Level 9 | Level 10 |
 |:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|
-| Wolfram Mathematica |    Pass    |    Pass    |    Pass    |    -    |    -    |    -    |    -    |    -    |    -    |    -    |
-| R  |    Pass    |    Pass    |    Pass    |    -    |    -    |    -    |    -    |    -    |    -    |    -    |
+| Wolfram Mathematica |    Pass    |    Pass    |    Pass    |    Pass    |    -    |    -    |    -    |    -    |    -    |    -    |
+| R  |    Pass    |    Pass    |    Pass    |    Pass    |    -    |    -    |    -    |    -    |    -    |    -    |
 
 
 
