@@ -508,14 +508,54 @@ Wolfram Mathematica        |  R
 :-------------------------:|:-------------------------:
 ![](https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Proofs/proof_level4.png)  |  ![](https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Proofs/proof_level4.2.png)
 
-- Level 5:
+- Level 5: As we have seen in the solutions given by Wolfram Mathematica, we may think the answers are wrong because instead of giving a number, it gives the Lambert W function. However, let's check two things: the solution given by Wolfram Alpha and the graph:
 
+Wolfram Alpha        |  Graph
+:-------------------:|:-------------------:
+![](https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Proofs/proof_level5.png)  |  ![](https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Proofs/proof_level5.2.png)
+
+We can see that the former returns two intersection points. Both are expressed using the Lambert W function; the first intersection point is equal to 3'693 and the second one is 6'936. If we return above, where we prompt ChatGPT in Level 5, we see that the answer was, in the end, correct, but it only returns one of the intersection points. What about R? This one, on the other hand, was able to return both intersection points:
+
+<p align = "center">
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Proofs/proof_level5.3.png" width = 400>
+</p>
+
+- Level 6: As a way of checking that the answers were correct, we simply ask Wolfram Alpha to derive the function, and check if it coincides with derivatives obtained in Level 6. The solution of Wolfram Alpha is:
+<p align = "center">
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Proofs/proof_level6.png" width = 200>
+</p>
+
+This answer is the same that we obtained in Level 6:
+
+Wolfram Mathematica        |  R
+:-------------------------:|:-------------------------:
+![](https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/experiments6.png)  |  ![](https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Proofs/proof_level6.2.png)
+
+- Level 7: 
+
+Wolfram Mathematica        |  R
+:-------------------------:|:-------------------------:
+
+- Level 8: 
+
+Wolfram Mathematica        |  R
+:-------------------------:|:-------------------------:
+
+- Level 9: 
+
+Wolfram Mathematica        |  R
+:-------------------------:|:-------------------------:
+
+- Level 10: 
+
+Wolfram Mathematica        |  R
+:-------------------------:|:-------------------------:
 
 
 |         | Level 1 | Level 2 | Level 3 | Level 4 | Level 5 | Level 6 | Level 7 | Level 8 | Level 9 | Level 10 |
 |:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|
-| Wolfram Mathematica |    Pass    |    Pass    |    Pass    |    Pass    |    -    |    -    |    -    |    -    |    -    |    -    |
-| R  |    Pass    |    Pass    |    Pass    |    Pass    |    -    |    -    |    -    |    -    |    -    |    -    |
+| Wolfram Mathematica |    Pass    |    Pass    |    Pass    |    Pass    |    Pass    |    Pass    |    -    |    -    |    -    |    -    |
+| R  |    Pass    |    Pass    |    Pass    |    Pass    |    Pass    |    Pass    |    -    |    -    |    -    |    -    |
 
 
 
