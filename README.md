@@ -494,7 +494,7 @@ Wolfram Mathematica        |  R
 
 Wolfram Mathematica        |  R
 :-------------------------:|:-------------------------:
-![](https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Proofs/proof_level2.png)  |  
+![](https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Proofs/proof_level2.png)  |  ![](https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Proofs/proof_level2.2.png)
 
 - Level 3: No need of proof, both platforms represent correctly the function.
 
@@ -506,7 +506,7 @@ Wolfram Mathematica        |  R
 
 Wolfram Mathematica        |  R
 :-------------------------:|:-------------------------:
-![](https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Proofs/proof_level4.png)  |  
+![](https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Proofs/proof_level4.png)  |  ![](https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Proofs/proof_level4.2.png)
 
 - Level 5:
 
