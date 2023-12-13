@@ -83,15 +83,15 @@ approx_sum
 library(signal)  # for the FFT function
 
 # Define the parameters
-ω_0 <- 1  # You can set this to any desired frequency
+w_0 <- 1  # You can set this to any desired frequency
 t <- seq(0, 10, length.out = 1000)  # time vector
-f_t <- cos(ω_0 * t)  # function f(t)
+f_t <- cos(w_0 * t)  # function f(t)
 
 # Compute the Fourier Transform
-F_ω <- fft(f_t)
+F_w <- fft(f_t)
 
 # Plotting the magnitude of the Fourier Transform
-plot(abs(F_ω), type = 'l')
+plot(abs(F_w), type = 'l')
 
 
 ################################################################################
