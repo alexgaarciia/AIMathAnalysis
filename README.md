@@ -506,7 +506,7 @@ Wolfram Mathematica        |  R
 
 Wolfram Alpha              |  Wolfram Mathematica     | R
 :-------------------------:|:------------------------:|:-------------------------:
-![](https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Proofs/proof_level4.png)  |  ![](https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/experiments4.png)  |  ![](https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Proofs/proof_level4.2.png)![](https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Proofs/proof_level4.2.png)
+![](https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Proofs/proof_level4.png)  |  ![](https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Experiments/experiments4.png)  |  ![](https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Proofs/proof_level4.2.png)![](https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Proofs/proof_level4.2.png)
 
 - Level 5: As we have seen in the solutions given by Wolfram Mathematica, we may think the answers are wrong because instead of giving a number, it gives the Lambert W function. However, let's check two things: the solution given by Wolfram Alpha and the graph:
 
@@ -529,7 +529,7 @@ This answer is the same that we obtained in Level 6:
 
 Wolfram Mathematica        |  R
 :-------------------------:|:-------------------------:
-![](https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/experiments6.png)  |  ![](https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Proofs/proof_level6.2.png)
+![](https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Experiments/experiments6.png)  |  ![](https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Proofs/proof_level6.2.png)
 
 - Level 7: For this level, we can only check if the solution provided by Wolfram Mathematica is correct, since the code generated in R language only integrates the function in a specific range. The solution for the integral, computed using [Integral Calculator](https://www.integral-calculator.com/), is:
 <p align = "center">
@@ -542,13 +542,13 @@ It coincides with the result given by Wolfram Mathematica.
 
 Symbolab                   |  Wolfram Mathematica     | R
 :-------------------------:|:------------------------:|:-------------------------:
-![](https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Proofs/proof_level8.png)  |  ![](https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/experiments8.png)  |  ![](https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Proofs/proof_level8.2.png)
+![](https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Proofs/proof_level8.png)  |  ![](https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Experiments/experiments8.png)  |  ![](https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Proofs/proof_level8.2.png)
 
 - Level 9: For this problem, we used again [Symbolab](https://www.symbolab.com/) to compute the Fourier transform. In this case, we can only compare it with the result obtained from ChatGPT, since the generated code for R does not return the Fourier transform. The solutions coincide.
 
 Symbolab                   |  Wolfram Mathematica 
 :-------------------------:|:-------------------------:
-![](https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Proofs/proof_level9.png)  |  ![](https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/experiments9.png)
+![](https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Proofs/proof_level9.png)  |  ![](https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Experiments/experiments9.png)
 
 - Level 10: No need of proof, both platforms solved correctly the problem.
 
