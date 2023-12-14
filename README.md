@@ -552,12 +552,70 @@ Symbolab                   |  Wolfram Mathematica
 
 - Level 10: No need of proof, both platforms solved correctly the problem.
 
-
 |         | Level 1 | Level 2 | Level 3 | Level 4 | Level 5 | Level 6 | Level 7 | Level 8 | Level 9 | Level 10 |
 |:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|
 | Wolfram Mathematica |    Pass    |    Pass    |    Pass    |    Pass    |    Pass    |    Pass    |    Pass    |    Pass    |    Pass    |    Pass    |
 | R  |    Pass    |    Pass    |    Pass    |    Pass    |    Pass    |    Pass    |    Fail    |    Pass    |    Fail    |    Pass    |
 
 
-
 ### General instructions
+#### Level 1: Find the area (requires knowing that an integral must be used).
+- Prompt:
+```ruby
+### I will provide you some mathematical problems to solve with Wolfram Mathematica and I want you to (1) return the code that you would use in Wolfram Mathematica and the output after passing that code to Wolfram Mathematica, and (2) an equivalent of that code into R ###
+
+Problem: Find the area bounded by the curve y = x^2 + x + 4, the x-axis and the ordinates x = 1 and x = 3.
+
+Answer:
+```
+
+- Wolfram Mathematica Output:
+<p align = "center">
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/General instructions/level1.png" width = 600>
+</p>
+
+- Equivalent R Code:
+<p align = "center">
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/General instructions/level1.2.png" width = 600>
+</p>
+
+#### Level 2: Predicting the range of a projectile (requires knowing that kinematic equations must be used).
+- Prompt:
+```ruby
+### I will provide you some mathematical problems to solve with Wolfram Mathematica and I want you to (1) return the code that you would use in Wolfram Mathematica and the output after passing that code to Wolfram Mathematica, and (2) an equivalent of that code into R ###
+
+Problem: A soccer player kicks a ball at an angle of 30 degrees to the horizontal. The initial speed of the ball is 20 meters per second. Assuming no air resistance and that the ball is kicked from ground level, predict how far the ball will travel horizontally before hitting the ground. Use the acceleration due to gravity as 9.8 m/s^2.
+
+Answer:
+```
+
+- Wolfram Mathematica Output:
+<p align = "center">
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/General instructions/level2.png" width = 600>
+</p>
+
+- Equivalent R Code:
+<p align = "center">
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/General instructions/level2.2.png" width = 600>
+</p>
+
+#### Level 3: Getting the best path from one node to another (requires knowing that Dijkstra's algorithm must be used).
+- Prompt:
+```ruby
+### I will provide you some mathematical problems to solve with Wolfram Mathematica and I want you to (1) return the code that you would use in Wolfram Mathematica and the output after passing that code to Wolfram Mathematica, and (2) an equivalent of that code into R ###
+
+Problem: Imagine I have a graph (with nodes s, s1, s2, s3, s4, s5, t), whose connections (with weights) are represented with the following adjacency matrix: ((0,1,3,0,0,0,0), (1,0,0,8,4,0,0), (3,0,0,0,3,0,0), (0,8,0,0,0,1,7), (0,4,3,0,0,1,0), (0,0,0,1,1,0,10),(0,0,0,7,0,10,0)). Obtain the shortest path from s to t.
+
+Answer:
+```
+- Wolfram Mathematica Output:
+<p align = "center">
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/General instructions/level3.3.png" width = 600>
+</p>
+
+- Equivalent R Code:
+<p align = "center">
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/General instructions/level3.4.png" width = 550>
+</p>
+
+
