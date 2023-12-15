@@ -640,7 +640,7 @@ Answer:
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/General instructions/level4.2.png" width = 600>
 </p>
 
-#### Level 5: Calculating the Future Value of an Investment (requires understanding and applying the compound interest formula).
+#### Level 5: Calculating the future value of an investment (requires understanding and applying the compound interest formula).
 The example from below comes from this webpage: [Calculating the Future Value](https://ecampusontario.pressbooks.pub/businessfinancialmath/chapter/4-2-calculating-future-value/).
 
 - Prompt:
@@ -684,7 +684,7 @@ Answer:
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/General instructions/level6.2.png" width = 600>
 </p>
 
-#### Level 7: Calculating the time it takes for an object to cool down to a certain temperature (requires the use ofNewton's Law of Cooling, which often involves solving differential equations).
+#### Level 7: Calculating the time it takes for an object to cool down to a certain temperature (requires the use of Newton's Law of Cooling, which often involves solving differential equations).
 - Prompt:
 ```ruby
 ### I will provide you some mathematical problems to solve with Wolfram Mathematica and I want you to (1) return the code that you would use in Wolfram Mathematica and the output after passing that code to Wolfram Mathematica, and (2) an equivalent of that code into R ###
