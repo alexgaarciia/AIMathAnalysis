@@ -99,3 +99,42 @@ optimize(function(k) abs(cooling_function(20, k) - 100), c(0, 1))$minimum -> k_o
 # Find the time t when the temperature reaches 50ºC
 optimize(function(t) abs(cooling_function(t, k_opt) - 50), c(0, 100))$minimum
 
+
+################################################################################
+#              CALCULATING THE WORK DONE IN COMPRESSING A STRING
+################################################################################
+Force <- 100    # Force in Newtons
+Distance <- 0.05  # Distance in meters (5cm)
+WorkDone <- Force * Distance
+WorkDone
+
+
+################################################################################
+#                                      EOQ
+################################################################################
+# Calculating the most economical number of units to order:
+AnnualDemand <- 48000
+OrderCost <- 9
+CarryingCostRate <- 0.15
+UnitCost <- 4
+EconomicOrderQuantity <- sqrt((2 * AnnualDemand * OrderCost) / (CarryingCostRate * UnitCost))
+EconomicOrderQuantity
+
+# Calculating the number of orders to place in a year:
+NumberOfOrders <- AnnualDemand / EconomicOrderQuantity
+NumberOfOrders
+
+# Calculating how often an order should be placed:
+OrderFrequency <- 365 / NumberOfOrders
+OrderFrequency
+
+
+################################################################################
+#                        COMPUTING THE ORBITAL PERIOD
+################################################################################
+OrbitalPeriodTitan <- 15.95
+OrbitalRadiusTitan <- 1.22 * 10^9
+OrbitalRadiusHyperion <- 1.48 * 10^9
+
+OrbitalPeriodHyperion <- sqrt((OrbitalPeriodTitan^2 * OrbitalRadiusHyperion^3) / OrbitalRadiusTitan^3)
+OrbitalPeriodHyperion
