@@ -600,6 +600,8 @@ Answer:
 </p>
 
 #### Level 3: Getting the best path from one node to another (requires knowing that Dijkstra's algorithm must be used).
+The example from below comes from this pdf: [Fundamental Algorithms 12 - Solution Examples](https://www7.in.tum.de/~kretinsk/teaching/fundamental%20algorithms/fundalg12sol.pdf).
+
 - Prompt:
 ```ruby
 ### I will provide you some mathematical problems to solve with Wolfram Mathematica and I want you to (1) return the code that you would use in Wolfram Mathematica and the output after passing that code to Wolfram Mathematica, and (2) an equivalent of that code into R ###
@@ -618,4 +620,45 @@ Answer:
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/General instructions/level3.4.png" width = 550>
 </p>
 
+#### Level 4: Predicting the next number in a complex sequence (requires recognizing and applying the underlying pattern or mathematical rule governing the sequence).
+- Prompt:
+```ruby
+### I will provide you some mathematical problems to solve with Wolfram Mathematica and I want you to (1) return the code that you would use in Wolfram Mathematica and the output after passing that code to Wolfram Mathematica, and (2) an equivalent of that code into R ###
+
+Problem: Consider the following sequence of numbers: 3, 8, 15, 24, 35, 48, ...Your task is to predict the next number in this sequence.
+
+Answer:
+```
+
+- Wolfram Mathematica Output:
+<p align = "center">
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/General instructions/level4.png" width = 600>
+</p>
+
+- Equivalent R Code:
+<p align = "center">
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/General instructions/level4.2.png" width = 600>
+</p>
+
+#### Level 5: Calculating the Future Value of an Investment (requires understanding and applying the compound interest formula).
+The example from below comes from this webpage: [Calculating the Future Value](https://ecampusontario.pressbooks.pub/businessfinancialmath/chapter/4-2-calculating-future-value/).
+
+- Prompt:
+```ruby
+### I will provide you some mathematical problems to solve with Wolfram Mathematica and I want you to (1) return the code that you would use in Wolfram Mathematica and the output after passing that code to Wolfram Mathematica, and (2) an equivalent of that code into R ###
+
+Problem: If you invested $5,000 for 10 years at 9% compounded quarterly, how much money would you have? What is the interest earned during the term?
+
+Answer:
+```
+
+- Wolfram Mathematica Output:
+<p align = "center">
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/General instructions/level5.png" width = 600>
+</p>
+
+- Equivalent R Code:
+<p align = "center">
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/General instructions/level5.2.png" width = 600>
+</p>
 
