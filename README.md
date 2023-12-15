@@ -684,15 +684,24 @@ Answer:
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/General instructions/level6.2.png" width = 600>
 </p>
 
-#### Level 7: TO-DO.
+#### Level 7: Calculating the time it takes for an object to cool down to a certain temperature (requires the use ofNewton's Law of Cooling, which often involves solving differential equations).
 - Prompt:
 ```ruby
 ### I will provide you some mathematical problems to solve with Wolfram Mathematica and I want you to (1) return the code that you would use in Wolfram Mathematica and the output after passing that code to Wolfram Mathematica, and (2) an equivalent of that code into R ###
 
-Problem: 
+Problem: A freshly baked pie is taken out of the oven and left to cool in a room. The temperature of the oven was 200ºC, and the room temperature is a constant 25ºC. When the pie is first taken out, its temperature is 180ºC. After 20 minutes, the temperature of the pie drops to 100ºC. Calculate the time it takes for the pie to cool down to 50ºC.
 
 Answer:
 ```
+
+<p align = "center">
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/General instructions/level7.png" width = 600>
+</p>
+
+- Equivalent R Code:
+<p align = "center">
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/General instructions/level7.2.png" width = 600>
+</p>
 
 #### Level 8: TO-DO.
 - Prompt:
@@ -704,7 +713,7 @@ Problem:
 Answer:
 ```
 
-#### Level 9: 
+#### Level 9: TO-DO.
 - Prompt:
 ```ruby
 ### I will provide you some mathematical problems to solve with Wolfram Mathematica and I want you to (1) return the code that you would use in Wolfram Mathematica and the output after passing that code to Wolfram Mathematica, and (2) an equivalent of that code into R ###
@@ -723,6 +732,4 @@ Problem:
 
 Answer:
 ```
-
-
 
