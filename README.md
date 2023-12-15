@@ -694,6 +694,7 @@ Problem: A freshly baked pie is taken out of the oven and left to cool in a room
 Answer:
 ```
 
+- Wolfram Mathematica Output:
 <p align = "center">
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/General instructions/level7.png" width = 600>
 </p>
@@ -703,25 +704,52 @@ Answer:
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/General instructions/level7.2.png" width = 600>
 </p>
 
-#### Level 8: TO-DO.
+#### Level 8: Calculating the work done in compressing a spring (requires knowing Hooke's Law)
+The example from below comes from the following YouTube video: [Work done by Spring Example](https://www.youtube.com/watch?v=uUgMK8wQAcU).
+
 - Prompt:
 ```ruby
 ### I will provide you some mathematical problems to solve with Wolfram Mathematica and I want you to (1) return the code that you would use in Wolfram Mathematica and the output after passing that code to Wolfram Mathematica, and (2) an equivalent of that code into R ###
 
-Problem: 
+Problem: A person compresses a spring a distance of 5cm, which requires a force of 100N. How much work does the person do?
 
 Answer:
 ```
 
-#### Level 9: TO-DO.
+- Wolfram Mathematica Output:
+<p align = "center">
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/General instructions/level8.png" width = 600>
+</p>
+
+- Equivalent R Code:
+<p align = "center">
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/General instructions/level8.2.png" width = 600>
+</p>
+
+#### Level 9: Computing the quantity a company should make for its inventory given production cost, demand rate, and other variables (requires understanding EOQ).
+The example from below comes from the following webpage: [Economic Order Quantity (EOQ): Practical Problems and Solutions](https://www.financestrategists.com/accounting/cost-accounting/material-costing/economic-order-quantity-eoq-problems-and-solutions/).
+
 - Prompt:
 ```ruby
 ### I will provide you some mathematical problems to solve with Wolfram Mathematica and I want you to (1) return the code that you would use in Wolfram Mathematica and the output after passing that code to Wolfram Mathematica, and (2) an equivalent of that code into R ###
 
-Problem: 
+Problem: The John Equipment Company estimates its carrying cost at 15% and its ordering cost at $9 per order. The estimated annual requirement is 48,000 units at a price of $4 per unit. What is the most economical number of units to order? How many orders should be placed in a year? How often should an order be placed?
 
 Answer:
 ```
+
+- Wolfram Mathematica Output:
+<p align = "center">
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/General instructions/level9.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/General instructions/level9.2.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/General instructions/level9.3.png" width = 600>
+</p>
+
+- Equivalent R Code:
+<p align = "center">
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/General instructions/level9.4.png" width = 600>
+</p>
+
 
 #### Level 10: TO-DO.
 - Prompt:
