@@ -780,7 +780,7 @@ Answer:
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/General instructions/level9.4.png" width = 600>
 </p>
 
-ChatGPT understood that it was an EOQ problem, so it proceeded correctly by using the EOQ formula:
+ChatGPT understood that it was an EOQ problem, so it proceeded correctly by using the EOQ formula from below. Plus, the results coincide with the solutions.
 <p align = "center">
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/General instructions/Proofs/proof_level9.png" width = 300>
 </p>
@@ -807,11 +807,12 @@ Answer:
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/General instructions/level10.2.png" width = 600>
 </p>
 
+Finally, ChatGPT was impressively able to understand that we were dealing with **Kepler's third law**. By checking the correct solution from the PDF above, we see that the same result is obtained: the orbital period of Hyperion is 21.31 days.
+
 #### Conclusions
 As in the conclusions for the section of specific instructions, we have seen that even though most of the answers were correct, there were also two specific ones with which it struggled: **Level 3** (Getting the best path from one node to another) and **Level 8** (Calculating the work done in compressing a spring). 
 
 |         | Level 1 | Level 2 | Level 3 | Level 4 | Level 5 | Level 6 | Level 7 | Level 8 | Level 9 | Level 10 |
 |:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|
-| Wolfram Mathematica |    Pass    |    Pass    |    Fail    |    Pass    |    Pass    |    Pass    |    Fail    |    Fail    |    -    |    -    |
-| R  |    Pass    |    Pass    |    Fail    |    Pass    |    Pass    |    Pass    |    Pass    |    Fail    |    -    |    -    |
-
+| Wolfram Mathematica |    Pass    |    Pass    |    Fail    |    Pass    |    Pass    |    Pass    |    Fail    |    Fail    |    Pass    |    Pass    |
+| R  |    Pass    |    Pass    |    Fail    |    Pass    |    Pass    |    Pass    |    Pass    |    Fail    |    Pass    |    Pass    |
