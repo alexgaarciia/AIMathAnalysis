@@ -560,6 +560,8 @@ Symbolab                   |  Wolfram Mathematica
 
 ### General instructions
 #### Level 1: Find the area (requires knowing that an integral must be used).
+The example from below comes from this pdf: [Finding areas by integration](https://www.mathcentre.ac.uk/resources/uploaded/mc-ty-areas-2009-1.pdf).
+
 - Prompt:
 ```ruby
 ### I will provide you some mathematical problems to solve with Wolfram Mathematica and I want you to (1) return the code that you would use in Wolfram Mathematica and the output after passing that code to Wolfram Mathematica, and (2) an equivalent of that code into R ###
@@ -772,3 +774,6 @@ Answer:
 <p align = "center">
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/General instructions/level10.2.png" width = 600>
 </p>
+
+#### Conclusions
+
