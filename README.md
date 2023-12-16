@@ -608,9 +608,9 @@ Answer:
 
 The problem of this level was proposed by ChatGPT, and the solution coincides with the results obtained above:
 <p align = "center">
-   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/General instructions/Proofs/proof_level2.png" width = 500>
-   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/General instructions/Proofs/proof_level2.2.png" width = 500>
-   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/General instructions/Proofs/proof_level2.3.png" width = 500>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/General instructions/Proofs/proof_level2.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/General instructions/Proofs/proof_level2.2.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/General instructions/Proofs/proof_level2.3.png" width = 600>
 </p>
 
 #### Level 3: Getting the best path from one node to another (requires knowing that Dijkstra's algorithm must be used).
@@ -726,6 +726,12 @@ Answer:
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/General instructions/level7.2.png" width = 600>
 </p>
 
+The problem of this level was proposed by ChatGPT, and the solution coincides **only with the results of R**:
+<p align = "center">
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/General instructions/Proofs/proof_level7.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/General instructions/Proofs/proof_level7.2.png" width = 600>
+</p>
+
 #### Level 8: Calculating the work done in compressing a spring (requires knowing Hooke's Law)
 The example from below comes from the following YouTube video: [Work done by Spring Example](https://www.youtube.com/watch?v=uUgMK8wQAcU).
 
@@ -747,6 +753,8 @@ Answer:
 <p align = "center">
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/General instructions/level8.2.png" width = 600>
 </p>
+
+In this case, ChatGPT failed to know that in order to find the work we must know the spring constant K. By applying the formula F=kx, we must have obtained that K=2000N/m. Then, we must use the equation for the work done on our spring: W=0'5kx^2, giving W=2'5J. 
 
 #### Level 9: Computing the quantity a company should make for its inventory given production cost, demand rate, and other variables (requires understanding EOQ).
 The example from below comes from the following webpage: [Economic Order Quantity (EOQ): Practical Problems and Solutions](https://www.financestrategists.com/accounting/cost-accounting/material-costing/economic-order-quantity-eoq-problems-and-solutions/).
@@ -772,6 +780,10 @@ Answer:
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/General instructions/level9.4.png" width = 600>
 </p>
 
+ChatGPT understood that it was an EOQ problem, so it proceeded correctly by using the EOQ formula:
+<p align = "center">
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/General instructions/Proofs/proof_level9.png" width = 300>
+</p>
 
 #### Level 10: Computing the orbital period (requires knowing Kepler’s third law of planetary motion).
 The example from below comes from the following PDF: [Solutions to Physics I Gravity and Kepler’s Laws Practice Problems](https://www.lehman.edu/faculty/anchordoqui/101-P4_s.pdf).
@@ -800,6 +812,6 @@ As in the conclusions for the section of specific instructions, we have seen tha
 
 |         | Level 1 | Level 2 | Level 3 | Level 4 | Level 5 | Level 6 | Level 7 | Level 8 | Level 9 | Level 10 |
 |:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|
-| Wolfram Mathematica |    Pass    |    Pass    |    Fail    |    Pass    |    Pass    |    Pass    |    -    |    -    |    -    |    -    |
-| R  |    Pass    |    Pass    |    Fail    |    Pass    |    Pass    |    Pass    |    -    |    -    |    -    |    -    |
+| Wolfram Mathematica |    Pass    |    Pass    |    Fail    |    Pass    |    Pass    |    Pass    |    Fail    |    Fail    |    -    |    -    |
+| R  |    Pass    |    Pass    |    Fail    |    Pass    |    Pass    |    Pass    |    Pass    |    Fail    |    -    |    -    |
 
