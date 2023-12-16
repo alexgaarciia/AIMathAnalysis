@@ -583,7 +583,7 @@ Answer:
 
 In this case, ChatGPT has correctly guessed that integrals are required to solve this problem. As indicated in the PDF, the solution is doing the integral of x^2+x+4 between 1 and 3. To check if the answers were correct, the platform [Integral Calculator](https://www.integral-calculator.com/) was used. As observed, the results coincide:
 <p align = "center">
-   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Proofs (Part 2)/proof_level1.png" width = 500>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/General instructions/Proofs/proof_level1.png" width = 500>
 </p>
 
 #### Level 2: Predicting the range of a projectile (requires knowing that kinematic equations must be used).
@@ -608,9 +608,9 @@ Answer:
 
 The problem of this level was proposed by ChatGPT, and the solution coincides with the results obtained above:
 <p align = "center">
-   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Proofs (Part 2)/proof_level2.png" width = 600>
-   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Proofs (Part 2)/proof_level2.2.png" width = 600>
-   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Proofs (Part 2)/proof_level2.3.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/General instructions/Proofs/proof_level2.png" width = 500>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/General instructions/Proofs/proof_level2.2.png" width = 500>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/General instructions/Proofs/proof_level2.3.png" width = 500>
 </p>
 
 #### Level 3: Getting the best path from one node to another (requires knowing that Dijkstra's algorithm must be used).
