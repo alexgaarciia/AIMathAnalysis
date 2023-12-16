@@ -285,12 +285,12 @@ Answer:
 
 - Wolfram Mathematica Output:
 <p align = "center">
-   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Experiments/experiments1.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Specific instructions/level1.png" width = 600>
 </p>
 
 - Equivalent R Code:
 <p align = "center">
-   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Experiments/experiments1.2.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Specific instructions/level1.2.png" width = 600>
 </p>
 
 #### Level 2: Generating normally distributed variables with a specific mean and variance.
@@ -305,12 +305,12 @@ Answer:
 
 - Wolfram Mathematica Output:
 <p align = "center">
-   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Experiments/experiments2.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Specific instructions/level2.png" width = 600>
 </p>
 
 - Equivalent R Code:
 <p align = "center">
-   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Experiments/experiments2.2.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Specific instructions/level2.2.png" width = 600>
 </p>
 
 #### Level 3: Plotting a function.
@@ -325,12 +325,12 @@ Answer:
 
 - Wolfram Mathematica Output:
 <p align = "center">
-   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Experiments/experiments3.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Specific instructions/level3.png" width = 600>
 </p>
 
 - Equivalent R Code:
 <p align = "center">
-   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Experiments/experiments3.2.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Specific instructions/level3.2.png" width = 600>
 </p>
 
 #### Level 4: Finding a minimum.
@@ -345,12 +345,12 @@ Answer:
 
 - Wolfram Mathematica Output:
 <p align = "center">
-   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Experiments/experiments4.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Specific instructions/level4.png" width = 600>
 </p>
 
 - Equivalent R Code:
 <p align = "center">
-   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Experiments/experiments4.2.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Specific instructions/level4.2.png" width = 600>
 </p>
 
 #### Level 5: Intersecting two functions.
@@ -365,12 +365,12 @@ Answer:
 
 - Wolfram Mathematica Output:
 <p align = "center">
-   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Experiments/experiments5.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Specific instructions/level5.png" width = 600>
 </p>
 
 - Equivalent R Code:
 <p align = "center">
-   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Experiments/experiments5.2.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Specific instructions/level5.2.png" width = 600>
 </p>
 
 #### Level 6: Deriving a function.
@@ -385,12 +385,12 @@ Answer:
 
 - Wolfram Mathematica Output:
 <p align = "center">
-   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Experiments/experiments6.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Specific instructions/level6.png" width = 600>
 </p>
 
 - Equivalent R Code:
 <p align = "center">
-   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Experiments/experiments6.2.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Specific instructions/level6.2.png" width = 600>
 </p>
 
 #### Level 7: Integrating a function.
@@ -405,12 +405,12 @@ Answer:
 
 - Wolfram Mathematica Output:
 <p align = "center">
-   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Experiments/experiments7.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Specific instructions/level7.png" width = 600>
 </p>
 
 - Equivalent R Code:
 <p align = "center">
-   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Experiments/experiments7.2.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Specific instructions/level7.2.png" width = 600>
 </p>
 
 #### Level 8: Mathematical Series.
@@ -425,12 +425,12 @@ Answer:
 
 - Wolfram Mathematica Output:
 <p align = "center">
-   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Experiments/experiments8.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Specific instructions/level8.png" width = 600>
 </p>
 
 - Equivalent R Code:
 <p align = "center">
-   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Experiments/experiments8.2.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Specific instructions/level8.2.png" width = 600>
 </p>
 
 #### Level 9: Fourier transform.
@@ -445,12 +445,12 @@ Answer:
 
 - Wolfram Mathematica Output:
 <p align = "center">
-   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Experiments/experiments9.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Specific instructions/level9.png" width = 600>
 </p>
 
 - Equivalent R Code:
 <p align = "center">
-   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Experiments/experiments9.2.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Specific instructions/level9.2.png" width = 600>
 </p>
 
 #### Level 10: Doing regression in some data.
@@ -471,12 +471,12 @@ Answer:
 
 - Wolfram Mathematica Output:
 <p align = "center">
-   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Experiments/experiments10.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Specific instructions/level10.png" width = 600>
 </p>
 
 - Equivalent R Code:
 <p align = "center">
-   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Experiments/experiments10.2.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Specific instructions/level10.2.png" width = 600>
 </p>
 
 #### Conclusions
@@ -487,53 +487,53 @@ However, here are some proven results of levels that require it, and a table sum
 
 Wolfram Alpha        |  R
 :-------------------:|:-------------------------:
-![](https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Proofs/proof_level1.png)  |  ![](https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Proofs/proof_level1.2.png)
+![](https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Specific%20instructions/Proofs/proof_level1.png)  |  ![](https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Specific%20instructions/Proofs/proof_level1.2.png)
 
 
 - Level 2: What we can do in this case is generating variables with the plugin and RStudio, and check the results. As may be observed below, even though in both cases the means and variances are not the expected ones, we must note that this is due to the nature of random sampling from a distribution. This randomness can lead to samples that don't perfectly reflect the underlying distribution, especially with smaller sample sizes.
 
 Wolfram Mathematica        |  R
 :-------------------------:|:-------------------------:
-![](https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Proofs/proof_level2.png)  |  ![](https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Proofs/proof_level2.2.png)
+![](https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Specific%20instructions/Proofs/proof_level2.png)  |  ![](https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Specific%20instructions/Proofs/proof_level2.2.png)
 
 - Level 3: No need of proof, both platforms represent correctly the function.
 
 Wolfram Mathematica        |  R
 :-------------------------:|:-------------------------:
-![](https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Proofs/proof_level3.png)  |  ![](https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Proofs/proof_level3.2.png)
+![](https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Specific%20instructions/Proofs/proof_level3.png)  |  ![](https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Specific%20instructions/Proofs/proof_level3.2.png)
 
 - Level 4: In order to check that the answers are correct, we will obtain the minimum using Wolfram Alpha. Moreover, we will compare it to the result obtained in Wolfram Mathematica and R. As observed, in both cases the minimum is correct (-9/16 = -0'5625).
 
 Wolfram Alpha              |  Wolfram Mathematica     | R
 :-------------------------:|:------------------------:|:-------------------------:
-![](https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Proofs/proof_level4.png)  |  ![](https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Experiments/experiments4.png)  |  ![](https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Proofs/proof_level4.2.png)
+![](https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Specific%20instructions/Proofs/proof_level4.png)  |  ![](https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Specific%20instructions/level4.png)  |  ![](https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Specific%20instructions/Proofs/proof_level4.2.png)
 
 - Level 5: As we have seen in the solutions given by Wolfram Mathematica, we may think the answers are wrong because instead of giving a number, it gives the Lambert W function. However, let's check two things: the solution given by Wolfram Alpha and the graph:
 
 Wolfram Alpha        |  Graph
 :-------------------:|:-------------------:
-![](https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Proofs/proof_level5.png)  |  ![](https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Proofs/proof_level5.2.png)
+![](https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Specific%20instructions/Proofs/proof_level5.png)  |  ![](https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Specific%20instructions/Proofs/proof_level5.2.png)
 
 We can see that the former returns two intersection points. Both are expressed using the Lambert W function; the first intersection point is equal to 3'693 and the second one is 6'936. If we return above, where we prompt ChatGPT in Level 5, we see that the answer was, in the end, correct, but it only returns one of the intersection points. What about R? This one, on the other hand, was able to return both intersection points:
 
 <p align = "center">
-   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Proofs/proof_level5.3.png" width = 400>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Specific instructions/Proofs/proof_level5.3.png" width = 400>
 </p>
 
 - Level 6: As a way of checking that the answers were correct, we simply ask Wolfram Alpha to derive the function, and check if it coincides with derivatives obtained in Level 6. The solution of Wolfram Alpha is:
 <p align = "center">
-   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Proofs/proof_level6.png" width = 200>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Specific instructions/Proofs/proof_level6.png" width = 200>
 </p>
 
 This answer is the same that we obtained in Level 6:
 
 Wolfram Mathematica        |  R
 :-------------------------:|:-------------------------:
-![](https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Experiments/experiments6.png)  |  ![](https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Proofs/proof_level6.2.png)
+![](https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Specific%20instructions/level6.png)  |  ![](https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Specific%20instructions/Proofs/proof_level6.2.png)
 
 - Level 7: For this level, we can only check if the solution provided by Wolfram Mathematica is correct, since the code generated in R language only integrates the function in a specific range. The solution for the integral, computed using [Integral Calculator](https://www.integral-calculator.com/), is:
 <p align = "center">
-   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Proofs/proof_level7.png" width = 500>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Specific instructions/Proofs/proof_level7.png" width = 500>
 </p>
 
 It coincides with the result given by Wolfram Mathematica.
@@ -542,13 +542,13 @@ It coincides with the result given by Wolfram Mathematica.
 
 Symbolab                   |  Wolfram Mathematica     | R
 :-------------------------:|:------------------------:|:-------------------------:
-![](https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Proofs/proof_level8.png)  |  ![](https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Experiments/experiments8.png)  |  ![](https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Proofs/proof_level8.2.png)
+![](https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Specific%20instructions/Proofs/proof_level8.png)  |  ![](https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Specific%20instructions/level8.png)  |  ![](https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Specific%20instructions/Proofs/proof_level8.2.png)
 
 - Level 9: For this problem, we used again [Symbolab](https://www.symbolab.com/) to compute the Fourier transform. In this case, we can only compare it with the result obtained from ChatGPT, since the generated code for R does not return the Fourier transform. The solutions coincide.
 
 Symbolab                   |  Wolfram Mathematica 
 :-------------------------:|:-------------------------:
-![](https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Proofs/proof_level9.png)  |  ![](https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Experiments/experiments9.png)
+![](https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Specific%20instructions/Proofs/proof_level9.png)  |  ![](https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Specific%20instructions/level9.png)
 
 - Level 10: No need of proof, both platforms solved correctly the problem.
 
