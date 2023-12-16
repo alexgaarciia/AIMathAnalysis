@@ -680,6 +680,8 @@ Answer:
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/General instructions/level5.2.png" width = 600>
 </p>
 
+By checking the results, we can see that these coincide with the solutions. Hence, ChatGPT was able to understand that it was a compound interest problem.
+
 #### Level 6: Deciphering a phrase knowing each letter was shifted by a certain number (requires knowing that we are talking about Caesar's cipher decoding).
 The example from below comes from the following PDF: [Caesar Cipher Decoding: Answer Key](https://s3.amazonaws.com/prod-hmhco-vmg-craftcms-public/CipherAnswers.pdf).
 
@@ -701,6 +703,8 @@ Answer:
 <p align = "center">
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/General instructions/level6.2.png" width = 600>
 </p>
+
+This constitutes another problem that it solved correctly. After checking the solutions, we see that the deciphered message is "FREE PIZZA IN THE CAFETERIA". In the case of Wolfram Mathematica, this was easily solved using the built-in functions [Mod](https://reference.wolfram.com/language/ref/Mod.html) and [ToCharacterCode](https://reference.wolfram.com/language/ref/ToCharacterCode.html). In R, however, it developed an entire function to perform the Caesar cipher decoding with a specified shift.
 
 #### Level 7: Calculating the time it takes for an object to cool down to a certain temperature (requires the use of Newton's Law of Cooling, which often involves solving differential equations).
 - Prompt:
@@ -796,6 +800,6 @@ As in the conclusions for the section of specific instructions, we have seen tha
 
 |         | Level 1 | Level 2 | Level 3 | Level 4 | Level 5 | Level 6 | Level 7 | Level 8 | Level 9 | Level 10 |
 |:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|
-| Wolfram Mathematica |    Pass    |    Pass    |    Fail    |    Pass    |    -    |    -    |    -    |    -    |    -    |    -    |
-| R  |    Pass    |    Pass    |    Fail    |    Pass    |    -    |    -    |    -    |    -    |    -    |    -    |
+| Wolfram Mathematica |    Pass    |    Pass    |    Fail    |    Pass    |    Pass    |    Pass    |    -    |    -    |    -    |    -    |
+| R  |    Pass    |    Pass    |    Fail    |    Pass    |    Pass    |    Pass    |    -    |    -    |    -    |    -    |
 
