@@ -581,6 +581,11 @@ Answer:
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/General instructions/level1.2.png" width = 600>
 </p>
 
+In this case, ChatGPT has correctly guessed that integrals are required to solve this problem. As indicated in the PDF, the solution is doing the integral of x^2+x+4 between 1 and 3. To check if the answers were correct, the platform [Integral Calculator](https://www.integral-calculator.com/) was used. As observed, the results coincide:
+<p align = "center">
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Proofs (Part 2)/proof_level1.png" width = 500>
+</p>
+
 #### Level 2: Predicting the range of a projectile (requires knowing that kinematic equations must be used).
 - Prompt:
 ```ruby
@@ -599,6 +604,13 @@ Answer:
 - Equivalent R Code:
 <p align = "center">
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/General instructions/level2.2.png" width = 600>
+</p>
+
+The problem of this level was proposed by ChatGPT, and the solution coincides with the results obtained above:
+<p align = "center">
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Proofs (Part 2)/proof_level2.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Proofs (Part 2)/proof_level2.2.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Proofs (Part 2)/proof_level2.3.png" width = 600>
 </p>
 
 #### Level 3: Getting the best path from one node to another (requires knowing that Dijkstra's algorithm must be used).
@@ -622,6 +634,8 @@ Answer:
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/General instructions/level3.4.png" width = 550>
 </p>
 
+If we were to check the solutions, we could see that the shortest path will be s, s1, s4, s5, t; and not the one proposed by ChatGPT. This is because since we have not specified to use the Dijkstra method, it did not include it in the [FindShortestPath](https://reference.wolfram.com/language/ref/FindShortestPath.html) function.
+
 #### Level 4: Predicting the next number in a complex sequence (requires recognizing and applying the underlying pattern or mathematical rule governing the sequence).
 - Prompt:
 ```ruby
@@ -641,6 +655,8 @@ Answer:
 <p align = "center">
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/General instructions/level4.2.png" width = 600>
 </p>
+
+The underlying sequence was perfectly discovered thanks to the built-in function [FindSequenceFunction](https://reference.wolfram.com/language/ref/FindSequenceFunction.html) of Wolfram Mathematica, which gives the function/sequence applied to "n".
 
 #### Level 5: Calculating the future value of an investment (requires understanding and applying the compound interest formula).
 The example from below comes from this webpage: [Calculating the Future Value](https://ecampusontario.pressbooks.pub/businessfinancialmath/chapter/4-2-calculating-future-value/).
@@ -778,24 +794,8 @@ Answer:
 #### Conclusions
 As in the conclusions for the section of specific instructions, we have seen that even though most of the answers were correct, there were also two specific ones with which it struggled: **Level 3** (Getting the best path from one node to another) and **Level 8** (Calculating the work done in compressing a spring). 
 
-However, here are some proven results of levels that require it, and a table summarizing them:
-- Level 1: In this case, ChatGPT has correctly guessed that integrals are required to solve this problem. As indicated in the PDF, the solution is doing the integral of x^2+x+4 between 1 and 3. To check if the answers were correct, the platform [Integral Calculator](https://www.integral-calculator.com/) was used. As observed, the results coincide:
-<p align = "center">
-   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Proofs (Part 2)/proof_level1.png" width = 500>
-</p>
-
-- Level 2: The problem of this level was proposed by ChatGPT, and the solution coincide with the results obtained above.
-<p align = "center">
-   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Proofs (Part 2)/proof_level2.png" width = 500>
-
-</p>
-
-
-
 |         | Level 1 | Level 2 | Level 3 | Level 4 | Level 5 | Level 6 | Level 7 | Level 8 | Level 9 | Level 10 |
 |:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|
-| Wolfram Mathematica |    Pass    |    -    |    -    |    -    |    -    |    -    |    -    |    -    |    -    |    -    |
-| R  |    Pass    |    -    |    -    |    -    |    -    |    -    |    -    |    -    |    -    |    -    |
-
-
+| Wolfram Mathematica |    Pass    |    Pass    |    Fail    |    Pass    |    -    |    -    |    -    |    -    |    -    |    -    |
+| R  |    Pass    |    Pass    |    Fail    |    Pass    |    -    |    -    |    -    |    -    |    -    |    -    |
 
