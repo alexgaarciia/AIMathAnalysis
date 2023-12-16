@@ -506,7 +506,7 @@ Wolfram Mathematica        |  R
 
 Wolfram Alpha              |  Wolfram Mathematica     | R
 :-------------------------:|:------------------------:|:-------------------------:
-![](https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Proofs/proof_level4.png)  |  ![](https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Experiments/experiments4.png)  |  ![](https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Proofs/proof_level4.2.png)![](https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Proofs/proof_level4.2.png)
+![](https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Proofs/proof_level4.png)  |  ![](https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Experiments/experiments4.png)  |  ![](https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Proofs/proof_level4.2.png)
 
 - Level 5: As we have seen in the solutions given by Wolfram Mathematica, we may think the answers are wrong because instead of giving a number, it gives the Lambert W function. However, let's check two things: the solution given by Wolfram Alpha and the graph:
 
@@ -776,4 +776,26 @@ Answer:
 </p>
 
 #### Conclusions
+As in the conclusions for the section of specific instructions, we have seen that even though most of the answers were correct, there were also two specific ones with which it struggled: **Level 3** (Getting the best path from one node to another) and **Level 8** (Calculating the work done in compressing a spring). 
+
+However, here are some proven results of levels that require it, and a table summarizing them:
+- Level 1: In this case, ChatGPT has correctly guessed that integrals are required to solve this problem. As indicated in the PDF, the solution is doing the integral of x^2+x+4 between 1 and 3. To check if the answers were correct, the platform [Integral Calculator](https://www.integral-calculator.com/) was used. As observed, the results coincide:
+<p align = "center">
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Proofs (Part 2)/proof_level1.png" width = 500>
+</p>
+
+- Level 2: The problem of this level was proposed by ChatGPT, and the solution coincide with the results obtained above.
+<p align = "center">
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Proofs (Part 2)/proof_level2.png" width = 500>
+
+</p>
+
+
+
+|         | Level 1 | Level 2 | Level 3 | Level 4 | Level 5 | Level 6 | Level 7 | Level 8 | Level 9 | Level 10 |
+|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|
+| Wolfram Mathematica |    Pass    |    -    |    -    |    -    |    -    |    -    |    -    |    -    |    -    |    -    |
+| R  |    Pass    |    -    |    -    |    -    |    -    |    -    |    -    |    -    |    -    |    -    |
+
+
 
