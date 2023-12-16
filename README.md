@@ -559,7 +559,7 @@ Symbolab                   |  Wolfram Mathematica
 
 
 ### General instructions
-#### Level 1: Find the area (requires knowing that an integral must be used).
+#### Level 1: Finding the area (requires knowing that an integral must be used).
 The example from below comes from this pdf: [Finding areas by integration](https://www.mathcentre.ac.uk/resources/uploaded/mc-ty-areas-2009-1.pdf).
 
 - Prompt:
