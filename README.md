@@ -259,7 +259,7 @@ Before ending this section, it would be worth mentioning key functions that made
 
 
 ## Prompting Wolfram Mathematica with ChatGPT
-One of our other objetives is to find how much we can do with text only. In order to do this, we would like to discover the correct manner of prompting Wolfram. We have seen before that this plugin is highly powerful, being able to solve an entire network problem itself. However, what if we could do it in fewer steps, just by correctly prompting it?
+One of our other objectives is finding how much we can do with text only. In order to do this, we would like to discover the correct manner of prompting Wolfram. We have seen before that this plugin is highly powerful, being able to solve an entire network problem itself. However, what if we could do it in fewer steps, just by correctly prompting it?
 
 ### Available resources
 First off, we would like to know if there are already some investigations/guides in this regard. We found out that there are no specific texts on the most efficient way of prompting Wolfram Mathematica with ChatGPT. However, there is an interesting introduction to using the plugin in the offical Wolfram webpage: [Plugin de Wolfram para ChatGPT](https://www.wolfram.com/wolfram-plugin-chatgpt/). This link is from the official webpage of Wolfram. It provides an installation guide and some applications of it and, at the end of the page, there is a link about [using the Wolfram Plugin for ChatGPT](https://www.youtube.com/watch?v=EOQV9VakBgE&ab_channel=Wolfram), where several prompts are carried out.
@@ -268,7 +268,7 @@ First off, we would like to know if there are already some investigations/guides
 
 
 ## Experiments
-In order to _test how much we can do by simply giving text as input_, we provided some mathematical problems with varying difficulty, and therefore asked to translate the code to any other programming language such as R or Python (the "translated codes" can be found [here](https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/mathexperiments.R)).
+In order to _test how much we can do by simply giving text as input_, we provided some mathematical problems with varying difficulty, and therefore asked to translate the code to any other programming language such as R or Python (the "translated codes" can be found [here](https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/mathexperiments.R) and [here](https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/mathexperiments2.R)).
 
 There will be two different sections of experiments. The very first one will be very specific about what we want to do, and the second one will try to show how much we can do without being very specific. For example, instead of asking ChatGPT to solve an integral in a range (specific instructions), we could ask to obtain the area and check if it knows that an integral must be computed (general instructions). With this, we are trying to solve two main questions: Does ChatGPT require background thinking? How much we can do without being very specific?
 
@@ -548,11 +548,11 @@ Answer:
 No need of proof, both platforms solved correctly the problem.
 
 #### Conclusions
-We have seen that even though most of the answers were correct, there were two specific ones with which it struggled: **Level 7** (Integrating a function) and **Level 9** (Fourier transform). The problem is with the solution provided by R: for the former, it sets values for the lower and upper limits without any reason, and it does not return the integration itself; and for the latter, it does not return the Fourier transform. This may be simply because R cannot carry out these kind of exercises, but rather those focused on probability, statistics, visualization...Overall, a lot can be done by simply using text as input. 
+We have seen that even though most of the answers were correct, there were two specific ones with which it struggled: **Level 7** (Integrating a function) and **Level 9** (Fourier transform). The problem is with the solution provided by R: for the former, it sets values for the lower and upper limits without any reason, and it does not return the integration itself; and for the latter, it does not return the Fourier transform. This may be simply because R cannot carry out these kind of exercises, but rather those focused on probability, statistics, visualization...Furthermore, Wolfram Mathematica returned only one of the intersection points in **Level 5**. Overall, a lot can be done by simply using text as input. 
 
 |         | Level 1 | Level 2 | Level 3 | Level 4 | Level 5 | Level 6 | Level 7 | Level 8 | Level 9 | Level 10 |
 |:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|
-| Wolfram Mathematica |    Pass    |    Pass    |    Pass    |    Pass    |    Pass    |    Pass    |    Pass    |    Pass    |    Pass    |    Pass    |
+| Wolfram Mathematica |    Pass    |    Pass    |    Pass    |    Pass    |    Fail    |    Pass    |    Pass    |    Pass    |    Pass    |    Pass    |
 | R  |    Pass    |    Pass    |    Pass    |    Pass    |    Pass    |    Pass    |    Fail    |    Pass    |    Fail    |    Pass    |
 
 
@@ -654,7 +654,7 @@ Answer:
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/General instructions/level4.2.png" width = 600>
 </p>
 
-The underlying sequence was perfectly discovered thanks to the built-in function [FindSequenceFunction](https://reference.wolfram.com/language/ref/FindSequenceFunction.html) of Wolfram Mathematica, which gives the function/sequence applied to "n".
+The underlying sequence was perfectly discovered thanks to the built-in function [FindSequenceFunction](https://reference.wolfram.com/language/ref/FindSequenceFunction.html) of Wolfram Mathematica, which gives the function/sequence applied to a variable "n".
 
 #### Level 5: Calculating the future value of an investment (requires understanding and applying the compound interest formula).
 The example from below comes from this webpage: [Calculating the Future Value](https://ecampusontario.pressbooks.pub/businessfinancialmath/chapter/4-2-calculating-future-value/).
