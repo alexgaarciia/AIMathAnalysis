@@ -821,7 +821,7 @@ We have already tested how ChatGPT behaves when given specific and general instr
 
 In Zero-shot-CoT, the model essentially "thinks out loud," breaking down its reasoning process into a chain of thoughts or steps. This approach helps in understanding how the model arrives at its conclusion and also improves its ability to tackle complex problems. We will try to solve the problems that we have tried above and check the results.
 
-#### Level 1: Inventing and inverting a matrix.
+#### Level 1: Inverting a matrix.
 In this case, we will consider a matrix from this PDF: [Inverse Matrices](https://web.viu.ca/pughg/Spring2006/math152S0602/homework8.pdf).
 - Prompt:
 ```ruby
