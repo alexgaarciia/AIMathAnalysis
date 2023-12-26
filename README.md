@@ -930,3 +930,41 @@ In order to check if the answers are correct, we will check the graph:
 </p>
 
 We can see that there are two intersection points, both expressed using the Lambert W function; the first intersection point is equal to 3'693 and the second one is 6'936. If we return above, we can see that ChatGPT got the same intersection points.
+
+#### Level 6: Deriving a function.
+- Prompt:
+```ruby
+What is the derivative of f(x)=5/(sqrt(3x-1))?
+Let's think step by step.
+```
+
+- ChatGPT Output:
+<p align = "center">
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Zero-shot-CoT/level6.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Zero-shot-CoT/level6.2.png" width = 600>
+</p>
+
+As a way of checking that the answer is correct, we simply asked Wolfram Alpha to derive the function, and check if it coincides with the derivative obtained by ChatGPT. The solution of Wolfram Alpha is:
+<p align = "center">
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Specific instructions/Proofs/proof_level6.png" width = 200>
+</p>
+
+#### Level 7: Integrating a function.
+- Prompt:
+```ruby
+What is the integral of sin2xcos2x?
+Let's think step by step.
+```
+
+- ChatGPT Output:
+<p align = "center">
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Zero-shot-CoT/level7.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Zero-shot-CoT/level7.2.png" width = 600>
+</p>
+
+For this level, to check if the answer is correct, we solved the integral using [Integral Calculator](https://www.integral-calculator.com/):
+<p align = "center">
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Specific instructions/Proofs/proof_level7.png" width = 500>
+</p>
+
+It coincides with the result given by ChatGPT.
