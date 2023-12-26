@@ -1007,3 +1007,20 @@ For this problem, we used again [Symbolab](https://www.symbolab.com/) to compute
 </p>
 
 #### Level 10: Doing regression in some data.
+- Prompt:
+```ruby
+The following table shows information regarding the sales of daily press in the year 1998, as the number of daily copies sold per thousand inhabitants in 8 autonomous Spanish regions. The sales are assumed to be related to economic activity levels as measured by the Gross Domestic Product (GDP) per inhabitant in thousands of euros (Source: INE. Anuario Estadistico).
+
+GDP 8.3 9.7 10.7 11.7 12.4 15.4 16.3 17.2
+Copies sold 57.4 106.8 104.4 131.9 144.6 146.4 177.4 186.9
+
+Use least squares to estimate a simple regression model that explains the number of copies sold as a function of GDP per capita.
+Let's think step by step.
+```
+
+- ChatGPT Output:
+<p align = "center">
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Zero-shot-CoT/level10.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Zero-shot-CoT/level10.2.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Zero-shot-CoT/level10.3.png" width = 600>
+</p>
