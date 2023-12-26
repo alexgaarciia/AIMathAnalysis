@@ -820,3 +820,52 @@ As in the conclusions for the section of specific instructions, we have seen tha
 We have already tested how ChatGPT behaves when given specific and general instructions. However, how would it behave under Zero-shot-CoT? Zero-shot Chain of Thought (Zero-shot-CoT) is an approach in artificial intelligence where the model demonstrates the ability to solve complex problems or answer questions in a detailed, step-by-step manner without having been explicitly trained on those specific tasks or examples. This is referred to as "zero-shot" because the model is dealing with tasks it has not seen during training.
 
 In Zero-shot-CoT, the model essentially "thinks out loud," breaking down its reasoning process into a chain of thoughts or steps. This approach helps in understanding how the model arrives at its conclusion and also improves its ability to tackle complex problems. We will try to solve the problems that we have tried above and check the results.
+
+#### Level 1: Inventing and inverting a matrix.
+In this case, we will consider a matrix from this PDF: [Inverse Matrices](https://web.viu.ca/pughg/Spring2006/math152S0602/homework8.pdf).
+- Prompt:
+```ruby
+Given the matrix A = [[1, -2, 1], [-2, 3, 1], [5, -7, -3]], find the inverse (A^-1).
+Let's think step by step.
+```
+
+- ChatGPT output:
+<p align = "center">
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Zero-shot-CoT/level1.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Zero-shot-CoT/level1.2.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Zero-shot-CoT/level1.3.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Zero-shot-CoT/level1.4.png" width = 600>
+</p>
+
+The answer is correct, since it coincides with the solution of the PDF.
+
+#### Level 2: Generating normally distributed variables with a specific mean and variance.
+- Prompt:
+```ruby
+Generate several normally distributed variables with mean=45.6 and variance=13.84.
+Let's think step by step.
+```
+
+- ChatGTP output:
+<p align = "center">
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Zero-shot-CoT/level2.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Zero-shot-CoT/level2.2.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Zero-shot-CoT/level2.3.png" width = 600>
+</p>
+
+If we were to check how ChatGPT generated these values, we can simply click on the analysis button at the end of the answer:
+```ruby
+# Number of variables to generate
+num_variables = 1000
+
+# Generating normally distributed variables
+normally_distributed_vars = np.random.normal(mean, standard_deviation, num_variables)
+normally_distributed_vars[:10]  # Displaying the first 10 values for reference
+```
+
+It used the command 'np.random.normal(mean, standard_deviation, num_variables)' from the NumPy library. It generates random numbers based on the normal (Gaussian) distribution. Here's what each parameter means:
+1. **mean**: This is the mean (or average) value of the normal distribution. 
+2. **standard_deviation**: This is the standard deviation of the normal distribution, which determines how spread out the values are around the mean. 
+3. **num_variables**: This parameter specifies the number of random variables you want to generate from this distribution.
+
+For example, if you wanted to generate 5 random numbers from a normal distribution with a mean of 0 and a standard deviation of 1, you would use 'np.random.normal(0, 1, 5)'. This might give you an array of numbers like `[-0.23, 0.45, 0.68, -1.23, 0.10]`. Each of these numbers is a random draw from a normal distribution centered around 0, with most values falling within one standard deviation (1 in this case) of the mean.
