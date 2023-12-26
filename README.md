@@ -968,3 +968,42 @@ For this level, to check if the answer is correct, we solved the integral using 
 </p>
 
 It coincides with the result given by ChatGPT.
+
+#### Level 8: Mathematical Series.
+- Prompt:
+```ruby
+Study the convergence of the infinite series starting from n equals 1 to infinity of the sum of the reciprocal of the product of n and n plus 1.
+Let's think step by step.
+```
+
+- ChatGPT Output:
+<p align = "center">
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Zero-shot-CoT/level8.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Zero-shot-CoT/level8.2.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Zero-shot-CoT/level8.3.png" width = 600>
+</p>
+
+The tool [Symbolab](https://www.symbolab.com/) was used to study the convergence of the proposed function. The series has a value of 1, which corresponds to the value obtained by ChatGPT:
+<p align = "center">
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Specific%20instructions/Proofs/proof_level8.png" width = 600>
+</p>
+
+#### Level 9: Fourier transform.
+- Prompt:
+```ruby
+Compute the Fourier transform of f(t)=cosω0t.
+Let's think step by step.
+```
+
+- ChatGPT Output:
+<p align = "center">
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Zero-shot-CoT/level9.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Zero-shot-CoT/level9.2.png" width = 600>
+</p>
+
+For this problem, we used again [Symbolab](https://www.symbolab.com/) to compute the Fourier transform. After comparing it with the result obtained from ChatGPT,the solutions coincide:
+<p align = "center">
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Specific%20instructions/Proofs/proof_level9.png" width = 600>
+</p>
+
+#### Level 10: Doing regression in some data.
