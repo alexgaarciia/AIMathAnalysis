@@ -890,3 +890,22 @@ Graphing Calculator        |  ChatGPT
 ![](https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Zero-shot-CoT/level3.4.png)  |  ![](https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Zero-shot-CoT/level3.2.png)
 
 #### Level 4: Finding a minimum.
+- Prompt:
+```ruby
+Find the minimum of the function f(x)=(x^2-x-2)/(x^2-6x+9).
+Let's think step by step.
+```
+
+- ChatGPT Output:
+<p align = "center">
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Zero-shot-CoT/level4.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Zero-shot-CoT/level4.2.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Zero-shot-CoT/level4.3.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Zero-shot-CoT/level4.4.png" width = 600>
+</p>
+
+In order to check that the answers are correct, we will obtain the minimum using Wolfram Alpha. As observed, in both cases the minimum is correct (-9/16 = -0'5625).
+- Wolfram Alpha:
+<p align = "center">
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Specific%20instructions/Proofs/proof_level4.png" width = 600>
+</p>
