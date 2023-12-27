@@ -1024,3 +1024,59 @@ Let's think step by step.
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Zero-shot-CoT/level10.2.png" width = 600>
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Zero-shot-CoT/level10.3.png" width = 600>
 </p>
+
+#### Level 11: Finding the area.
+The example from below comes from this pdf: [Finding areas by integration](https://www.mathcentre.ac.uk/resources/uploaded/mc-ty-areas-2009-1.pdf).
+
+- Prompt:
+```ruby
+Find the area bounded by the curve y = x^2 + x + 4, the x-axis and the ordinates x = 1 and x = 3.
+Let's think step by step.
+```
+
+- ChatGPT Output:
+<p align = "center">
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Zero-shot-CoT/level11.png" width = 600>
+</p>
+
+In this case, ChatGPT has correctly guessed that integrals are required to solve this problem. As indicated in the PDF, the solution is doing the integral of x^2+x+4 between 1 and 3. To check if the answers were correct, the platform [Integral Calculator](https://www.integral-calculator.com/) was used. As observed, the results coincide:
+<p align = "center">
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/General instructions/Proofs/proof_level1.png" width = 500>
+</p>
+
+#### Level 12: Predicting the range of a projectile.
+- Prompt:
+```ruby
+A soccer player kicks a ball at an angle of 30 degrees to the horizontal. The initial speed of the ball is 20 meters per second. Assuming no air resistance and that the ball is kicked from ground level, predict how far the ball will travel horizontally before hitting the ground. Use the acceleration due to gravity as 9.8 m/s^2.
+Let's think step by step.
+```
+
+- ChatGPT Output:
+<p align = "center">
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Zero-shot-CoT/level12.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Zero-shot-CoT/level12.2.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Zero-shot-CoT/level12.3.png" width = 600>
+</p>
+
+The problem of this level was proposed by ChatGPT, and the solution coincides with the results obtained above:
+<p align = "center">
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/General instructions/Proofs/proof_level2.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/General instructions/Proofs/proof_level2.2.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/General instructions/Proofs/proof_level2.3.png" width = 600>
+</p>
+
+#### Level 13: Getting the best path from one node to another.
+The example from below comes from this pdf: [Fundamental Algorithms 12 - Solution Examples](https://www7.in.tum.de/~kretinsk/teaching/fundamental%20algorithms/fundalg12sol.pdf).
+
+- Prompt:
+```ruby
+Imagine I have a graph (with nodes s, s1, s2, s3, s4, s5, t), whose connections (with weights) are represented with the following adjacency matrix: ((0,1,3,0,0,0,0), (1,0,0,8,4,0,0), (3,0,0,0,3,0,0), (0,8,0,0,0,1,7), (0,4,3,0,0,1,0), (0,0,0,1,1,0,10),(0,0,0,7,0,10,0)). Obtain the shortest path from s to t.
+Let's think step by step.
+```
+- ChatGPT Output:
+<p align = "center">
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Zero-shot-CoT/level13.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Zero-shot-CoT/level13.2.png" width = 600>
+</p>
+
+If we were to check the solutions, we could see that the shortest path is `s, s1, s4, s5, s3, t`; as the one proposed by ChatGPT.
