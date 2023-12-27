@@ -1195,3 +1195,10 @@ Let's think step by step.
 </p>
 
 Finally, ChatGPT was again able to understand that we were dealing with Kepler's third law. By checking the solution from the PDF above, we see that the same result is obtained: the orbital period of Hyperion is 21.31 days.
+
+#### Conclusions
+In this last part of the project, we have seen that ChatGPT has performed quite well. Nonetheless, we must not forget that it couldn't solve two problems: **Level 17** (Calculating the time it takes for an object to cool down to a certain temperature) and **Level 19** (Computing the quantity a company should make for its inventory given production cost, demand rate, and other variables). Regarding the former, it couldn't get the cooling constant; in the latter, even though it answered two questions correctly, it wasn't able to answer the last one. Overall, 18/20 problems were solved successfully; and for each of them, ChatGPT gave specific steps on how to solve them.
+
+|         | Level 1 | Level 2 | Level 3 | Level 4 | Level 5 | Level 6 | Level 7 | Level 8 | Level 9 | Level 10 | Level 11 | Level 12 | Level 13 | Level 14 | Level 15 | Level 16 | Level 17 | Level 18 | Level 19 | Level 20 |
+|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|
+| Zero-shot-CoT |    Pass    |    Pass    |    Pass    |    Pass    |    Pass    |    Pass    |    Pass    |    Pass    |    Pass    |    Pass    |    Pass    |    Pass    |    Pass    |    Pass    |    Pass    |    Pass    |    Fail    |    Pass    |    Fail    |    Pass    |
