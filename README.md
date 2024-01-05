@@ -863,12 +863,12 @@ normally_distributed_vars = np.random.normal(mean, standard_deviation, num_varia
 normally_distributed_vars[:10]  # Displaying the first 10 values for reference
 ```
 
-It used the command 'np.random.normal(mean, standard_deviation, num_variables)' from the NumPy library. It generates random numbers based on the normal (Gaussian) distribution. Here's what each parameter means:
+It used the command `np.random.normal(mean, standard_deviation, num_variables)` from the NumPy library. It generates random numbers based on the normal (Gaussian) distribution. Here's what each parameter means:
 1. **mean**: This is the mean (or average) value of the normal distribution. 
 2. **standard_deviation**: This is the standard deviation of the normal distribution, which determines how spread out the values are around the mean. 
 3. **num_variables**: This parameter specifies the number of random variables you want to generate from this distribution.
 
-For example, if you wanted to generate 5 random numbers from a normal distribution with a mean of 0 and a standard deviation of 1, you would use 'np.random.normal(0, 1, 5)'. This might give you an array of numbers like `[-0.23, 0.45, 0.68, -1.23, 0.10]`. Each of these numbers is a random draw from a normal distribution centered around 0, with most values falling within one standard deviation (1 in this case) of the mean.
+For example, if you wanted to generate 5 random numbers from a normal distribution with a mean of 0 and a standard deviation of 1, you would use `np.random.normal(0, 1, 5)`. This might give you an array of numbers like `[-0.23, 0.45, 0.68, -1.23, 0.10]`. Each of these numbers is a random draw from a normal distribution centered around 0, with most values falling within one standard deviation (1 in this case) of the mean.
 
 #### Level 3: Plotting a function.
 - Prompt:
