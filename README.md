@@ -1202,6 +1202,263 @@ For the section of `General instructions`, it struggled with **Level 13** (Getti
 
 ## ChatGPT-4 (Wolfram Mathematica plugin off)
 ### Zero-shot prompting
+#### Specific instructions
+##### Level 1: Inventing and inverting a matrix.
+- Prompt:
+```ruby
+Invent a matrix with random values and show it. Then, invert it.
+```
+
+- ChatGPT Output:
+<p align = "center">
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-off/Zero-shot/level1.png" width = 600>
+</p>
+
+##### Level 2: Generating normally distributed variables with a specific mean and variance.
+- Prompt:
+```ruby
+Generate several normally distributed variables with mean=45.6 and variance=13.84.
+```
+
+- ChatGPT Output:
+<p align = "center">
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-off/Zero-shot/level2.png" width = 600>
+</p>
+
+##### Level 3: Plotting a function.
+- Prompt:
+```ruby
+Plot -3*(x-2)^2-5.
+```
+
+- ChatGPT Output:
+<p align = "center">
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-off/Zero-shot/level3.png" width = 600>
+</p>
+
+##### Level 4: Finding a minimum.
+- Prompt:
+```ruby
+Find the minimum of the function f(x)=(x^2-x-2)/(x^2-6x+9).
+```
+
+- ChatGPT Output:
+<p align = "center">
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-off/Zero-shot/level4.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-off/Zero-shot/level4.2.png" width = 600>
+</p>
+
+##### Level 5: Intersecting two functions.
+- Prompt:
+```ruby
+Find the intersection points of the functions f(x)=|x-5| and g(x)=logx.
+```
+
+- ChatGPT Output:
+<p align = "center">
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-off/Zero-shot/level5.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-off/Zero-shot/level5.2.png" width = 600>
+</p>
+
+##### Level 6: Deriving a function.
+- Prompt:
+```ruby
+What is the derivative of f(x)=5/(sqrt(3x-1))?
+```
+
+- ChatGPT Output:
+<p align = "center">
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-off/Zero-shot/level6.png" width = 600>
+</p>
+
+##### Level 7: Integrating a function.
+- Prompt:
+```ruby
+What is the integral of sin2xcos2x?
+```
+
+- ChatGPT Output:
+<p align = "center">
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-off/Zero-shot/level7.png" width = 600>
+</p>
+
+##### Level 8: Mathematical Series.
+- Prompt:
+```ruby
+Study the convergence of the infinite series starting from n equals 1 to infinity of the sum of the reciprocal of the product of n and n plus 1.
+```
+
+- ChatGPT Output:
+<p align = "center">
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-off/Zero-shot/level8.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-off/Zero-shot/level8.2.png" width = 600>
+</p>
+
+##### Level 9: Fourier transform.
+- Prompt:
+```ruby
+Compute the Fourier transform of f(t)=cosω0t.
+```
+
+- ChatGPT Output:
+<p align = "center">
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-off/Zero-shot/level9.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-off/Zero-shot/level9.2.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-off/Zero-shot/level9.3.png" width = 600>
+</p>
+
+##### Level 10: Doing regression in some data.
+- Prompt:
+```ruby
+The following table shows information regarding the sales of daily press in the year 1998, as the number of daily copies sold per thousand inhabitants in 8 autonomous Spanish regions. The sales are assumed to be related to economic activity levels as measured by the Gross Domestic Product (GDP) per inhabitant in thousands of euros (Source: INE. Anuario Estadistico).
+
+GDP 8.3 9.7 10.7 11.7 12.4 15.4 16.3 17.2
+Copies sold 57.4 106.8 104.4 131.9 144.6 146.4 177.4 186.9
+
+Use least squares to estimate a simple regression model that explains the number of copies
+sold as a function of GDP per capita
+```
+
+- ChatGPT Output:
+<p align = "center">
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-off/Zero-shot/level10.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-off/Zero-shot/level10.2.png" width = 600>
+</p>
+
+#### General instructions
+##### Level 11: Finding the area (requires knowing that an integral must be used).
+The example from below comes from this pdf: [Finding areas by integration](https://www.mathcentre.ac.uk/resources/uploaded/mc-ty-areas-2009-1.pdf).
+
+- Prompt:
+```ruby
+Find the area bounded by the curve y = x^2 + x + 4, the x-axis and the ordinates x = 1 and x = 3.
+```
+
+- ChatGPT Output:
+<p align = "center">
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-off/Zero-shot/level11.png" width = 600>
+</p>
+
+##### Level 12: Predicting the range of a projectile (requires knowing that kinematic equations must be used).
+- Prompt:
+```ruby
+A soccer player kicks a ball at an angle of 30 degrees to the horizontal. The initial speed of the ball is 20 meters per second. Assuming no air resistance and that the ball is kicked from ground level, predict how far the ball will travel horizontally before hitting the ground. Use the acceleration due to gravity as 9.8 m/s^2.
+```
+
+- ChatGPT Output:
+<p align = "center">
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-off/Zero-shot/level12.png" width = 600>
+</p>
+
+##### Level 13: Getting the best path from one node to another (requires knowing that Dijkstra's algorithm must be used).
+The example from below comes from this pdf: [Fundamental Algorithms 12 - Solution Examples](https://www7.in.tum.de/~kretinsk/teaching/fundamental%20algorithms/fundalg12sol.pdf).
+
+- Prompt:
+```ruby
+Imagine I have a graph (with nodes s, s1, s2, s3, s4, s5, t), whose connections (with weights) are represented with the following adjacency matrix: ((0,1,3,0,0,0,0), (1,0,0,8,4,0,0), (3,0,0,0,3,0,0), (0,8,0,0,0,1,7), (0,4,3,0,0,1,0), (0,0,0,1,1,0,10),(0,0,0,7,0,10,0)). Obtain the shortest path from s to t.
+```
+
+- ChatGPT Output:
+<p align = "center">
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-off/Zero-shot/level13.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-off/Zero-shot/level13.2.png" width = 600>
+</p>
+
+##### Level 14: Predicting the next number in a complex sequence (requires recognizing and applying the underlying pattern or mathematical rule governing the sequence).
+- Prompt:
+```ruby
+Consider the following sequence of numbers: 3, 8, 15, 24, 35, 48, ...Your task is to predict the next number in this sequence.
+```
+
+- ChatGPT Output:
+<p align = "center">
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-off/Zero-shot/level14.png" width = 600>
+</p>
+
+##### Level 15: Calculating the future value of an investment (requires understanding and applying the compound interest formula).
+The example from below comes from this webpage: [Calculating the Future Value](https://ecampusontario.pressbooks.pub/businessfinancialmath/chapter/4-2-calculating-future-value/).
+
+- Prompt:
+```ruby
+If you invested $5,000 for 10 years at 9% compounded quarterly, how much money would you have? What is the interest earned during the term?
+```
+
+- ChatGPT Output:
+<p align = "center">
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-off/Zero-shot/level15.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-off/Zero-shot/level15.2.png" width = 600>
+</p>
+
+##### Level 16: Deciphering a phrase knowing each letter was shifted by a certain number (requires knowing that we are talking about Caesar's cipher decoding).
+The example from below comes from the following PDF: [Caesar Cipher Decoding: Answer Key](https://s3.amazonaws.com/prod-hmhco-vmg-craftcms-public/CipherAnswers.pdf).
+
+- Prompt:
+```ruby
+Decode this phrase "SERR CVMMN VA GUR PNSRGREVN" knowing that each letter was shifted by 13.
+```
+
+- ChatGPT Output:
+<p align = "center">
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-off/Zero-shot/level16.png" width = 600>
+</p>
+
+##### Level 17: Calculating the time it takes for an object to cool down to a certain temperature (requires the use of Newton's Law of Cooling, which often involves solving differential equations).
+- Prompt:
+```ruby
+A freshly baked pie is taken out of the oven and left to cool in a room. The temperature of the oven was 200ºC, and the room temperature is a constant 25ºC. When the pie is first taken out, its temperature is 180ºC. After 20 minutes, the temperature of the pie drops to 100ºC. Calculate the time it takes for the pie to cool down to 50ºC.
+```
+
+- ChatGPT Output:
+<p align = "center">
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-off/Zero-shot/level17.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-off/Zero-shot/level17.2.png" width = 600>
+</p>
+
+##### Level 18: Calculating the work done in compressing a spring (requires knowing Hooke's Law)
+The example from below comes from the following YouTube video: [Work done by Spring Example](https://www.youtube.com/watch?v=uUgMK8wQAcU).
+
+- Prompt:
+```ruby
+A person compresses a spring a distance of 5cm, which requires a force of 100N. How much work does the person do?
+```
+
+- ChatGPT Output:
+<p align = "center">
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-off/Zero-shot/level18.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-off/Zero-shot/level18.2.png" width = 600>
+</p>
+
+##### Level 19: Computing the quantity a company should make for its inventory given production cost, demand rate, and other variables (requires understanding EOQ).
+The example from below comes from the following webpage: [Economic Order Quantity (EOQ): Practical Problems and Solutions](https://www.financestrategists.com/accounting/cost-accounting/material-costing/economic-order-quantity-eoq-problems-and-solutions/).
+
+- Prompt:
+```ruby
+The John Equipment Company estimates its carrying cost at 15% and its ordering cost at $9 per order. The estimated annual requirement is 48,000 units at a price of $4 per unit. What is the most economical number of units to order? How many orders should be placed in a year? How often should an order be placed?
+```
+
+- ChatGPT Output:
+<p align = "center">
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-off/Zero-shot/level19.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-off/Zero-shot/level19.2.png" width = 600>
+</p>
+
+##### Level 20: Computing the orbital period (requires knowing Kepler’s third law of planetary motion).
+The example from below comes from the following PDF: [Solutions to Physics I Gravity and Kepler’s Laws Practice Problems](https://www.lehman.edu/faculty/anchordoqui/101-P4_s.pdf).
+
+- Prompt:
+```ruby
+Titan, the largest moon of Saturn, has a mean orbital radius of 1.22x109 m. The orbital period of Titan is 15.95 days. Hyperion, another moon of Saturn, orbits at a mean radius of 1.48x109 m. Predict the orbital period of Hyperion in days.
+```
+
+- ChatGPT Output:
+<p align = "center">
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-off/Zero-shot/level20.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-off/Zero-shot/level20.2.png" width = 600>
+</p>
+
+#### Conclusions
+
+
 ### Zero-shot-CoT prompting
 #### Specific instructions
 ##### Level 1: Inverting a matrix.
