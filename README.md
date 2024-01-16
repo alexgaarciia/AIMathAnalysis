@@ -1,6 +1,6 @@
 # ChatGPTWolfram
 ## Introduction to the repository
-The main goal of this repository is to provide information about how to use [ChatGPT](https://chat.openai.com/) and [Wolfram Mathematica](https://www.wolfram.com/mathematica/) together. In case any of these names seem unfamiliar, let me provide some basic definitions. **ChatGPT** is an AI language model designed to understand and generate human-like text based on the input it receives. **Wolfram Mathematica**, on the other hand, is a computing environment used for mathematical computation, algorithm development, data visualization, and symbolic manipulation, widely used in scientific, engineering, mathematical, and computing fields.
+The main goal of this repository is to analyze how [ChatGPT](https://chat.openai.com/) and [Wolfram Mathematica](https://www.wolfram.com/mathematica/) can work together. In case any of these names seem unfamiliar, let us provide some basic definitions. **ChatGPT** is an AI language model designed to understand and generate human-like text based on the input it receives. **Wolfram Mathematica**, on the other hand, is a computing environment used for mathematical computation, algorithm development, data visualization, and symbolic manipulation, widely used in scientific, engineering, mathematical, and computing fields.
 
 
 ## How to combine ChatGPT & Wolfram Mathematica
@@ -32,11 +32,10 @@ Combining ChatGPT and Wolfram Mathematica can be a powerful way to leverage the 
 2. Data Anaylsis and Visualization: It can also be used to interpret and structure data analysis queries. After passing these structured queries, Mathematica can then perform complex data analysis and generate visualizations.
 3. Algorithm Design: Combining them for algorithm development can be achieved by using ChatGPT for initial brainstorming and pseudocode generation, and then translating these ideas into Mathematica's powerful computational language for detailed analysis and visualization.
 
+### Example: Networking graphs
+We would like to provide a preliminary glimpse of what these platforms, when used together, can achieve through an example from one of our previous projects that demonstrates the potential of `packet latency` and `reinforcement learning`. Our goal is to check if, given a specific network, we can **find the shortest path** from one router to another using Wolfram Mathematica. Later on, we might want to try to ask ChatGPT to transform the generated code into R code.
 
-## Networking graphs
-One of our main goals is to check if, given a specific network, we can **find the shortest path** from one router to another using Wolfram Mathematica. Later on, we might want to try to ask ChatGPT to transform the generated code into R code.
-
-### Step 1: Generate the network.
+#### Step 1: Generate the network
 To begin with, we will try to generate a 5-router network by providing the following adjacency matrix (1 means there is connection, otherwise 0):
 |         | State 1 | State 2 | State 3 | State 4 | State 5 |
 |:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|
@@ -56,7 +55,7 @@ Moreover, we asked ChatGPT to run the generated output on Wolfram Mathematica, a
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Networking graphs/generating_graphs2.png" width = 650>
 </p>
 
-### Step 2: Assigning distance, load and BeR values to the links.
+#### Step 2: Assigning distance, load and BeR values to the links
 Moving on, we need to assign certain variables to each of the links, such as distance, load and Bit Error Rate values. The values will be the following ones:
 1. Distance values:
 
@@ -116,14 +115,13 @@ berMatrix = {
 };
 ```
 
-### Step 3: Choosing the best path.
+#### Step 3: Choosing the best path
 In this last part of the experiment, we will try to get the best path from one router to another. To do this, there is a key aspect that must be provided, which is the metric by which we are going to know if a path is preferrable to another. This metric will take into account aspects along the lines of:
-
 - Propagation delay: We will penalize 5us for each kilometer in the fiber.
 - Transmission queue delay: We will penalize 1us for each 1/(1-load).
 - BeR penalty: If BeR >= 10^-4 and Ber <= 1, we will assign a penalty of 1000us; If BeR > 10^-5 and BeR < 10^-4, the penalty will be of 50us; Otherwise, there is no penalty (0us).
 
-Finally, once this was specified, we asked ChatGPT the code that he would use to compute the best path from router 2 to router 4:
+Finally, once this was specified, we asked ChatGPT the code that would be use to compute the best path from router 2 to router 4:
 ```ruby
 (* Define the adjacency matrix *)
 adjMatrix = {
@@ -186,7 +184,7 @@ shortestPath = FindShortestPath[graph, 2, 4];
 shortestPath
 ```
 
-### Extra step: Getting an R equivalent of the code.
+#### Extra step: Getting an R equivalent of the code
 ```ruby
 # Defining the adjacency matrix:
 adjMatrix <- matrix(c(
@@ -252,28 +250,34 @@ g <- graph_from_adjacency_matrix(adjMatrix, mode = "undirected", weighted = TRUE
 E(g)$weight <- costMatrix[upper.tri(costMatrix, diag = TRUE)]
 shortestPath <- shortest_paths(g, from = 2, to = 4, output = "vpath")$vpath[[1]]
 ```
-### Important functions
+
+#### Outcomes and important functions
+With this example, we have had the opportunity to witness the strengths and capabilities of these platforms firsthand.
+
 Before ending this section, it would be worth mentioning key functions that made the code simpler and efficient:
 1. WeightedAdjacencyGraph: creates a graph from the given matrix, where non-zero elements represent the weights of edges between nodes. The position of a non-zero element in the matrix corresponds to the nodes it connects. For example, a non-zero element at the (i, j) position of the matrix would represent an edge with a certain weight between nodes i and j.
 2. FindShortestPath: The basic usage is FindShortestPath[graph, start, end], where graph is a graph object, and start and end are the nodes between which you want to find the shortest path.
 
 
 ## Prompting Wolfram Mathematica with ChatGPT
-One of our other objectives is finding how much we can do with text only. In order to do this, we would like to discover the correct manner of prompting Wolfram. We have seen before that this plugin is highly powerful, being able to solve an entire network problem itself. However, what if we could do it in fewer steps, just by correctly prompting it?
+One of our other objectives is finding out how much we can do with text only. In order to do this, we would like to discover the correct manner of prompting Wolfram. We have seen before that this plugin is highly powerful, being able to solve an entire network problem itself. However, what if we could do it in fewer steps, just by correctly prompting it?
 
 ### Available resources
-First off, we would like to know if there are already some investigations/guides in this regard. We found out that there are no specific texts on the most efficient way of prompting Wolfram Mathematica with ChatGPT. However, there is an interesting introduction to using the plugin in the offical Wolfram webpage: [Plugin de Wolfram para ChatGPT](https://www.wolfram.com/wolfram-plugin-chatgpt/). This link is from the official webpage of Wolfram. It provides an installation guide and some applications of it and, at the end of the page, there is a link about [using the Wolfram Plugin for ChatGPT](https://www.youtube.com/watch?v=EOQV9VakBgE&ab_channel=Wolfram), where several prompts are carried out.
+First off, we would like to know if there are already some investigations/guides in this regard. We found out that there are no specific texts on the most efficient way of prompting Wolfram Mathematica with ChatGPT. However, there is an interesting introduction to using the plugin in the offical Wolfram webpage: [Plugin de Wolfram para ChatGPT](https://www.wolfram.com/wolfram-plugin-chatgpt/). It provides an installation guide and some applications of it and, at the end of the page, there is a link about [using the Wolfram Plugin for ChatGPT](https://www.youtube.com/watch?v=EOQV9VakBgE&ab_channel=Wolfram), where several prompts are tested.
 
 **Note that the only resources that are close to talking about prompting the plugin are YouTube videos.**
 
 
 ## Experiments
-In order to _test how much we can do by simply giving text as input_, we provided some mathematical problems with varying difficulty, and therefore asked to translate the code to any other programming language such as R or Python (the "translated codes" can be found [here](https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/mathexperiments.R) and [here](https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/mathexperiments2.R)).
+In order to `test how much we can do by simply giving text as input`, we provided some mathematical problems with varying difficulty, and therefore asked to translate the code to any other programming language such as R or Python (the "translated codes" can be found [here](https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/mathexperiments.R) and [here](https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/mathexperiments2.R)).
 
-There will be two different sections of experiments. The very first one will be very specific about what we want to do, and the second one will try to show how much we can do without being very specific. For example, instead of asking ChatGPT to solve an integral in a range (specific instructions), we could ask to obtain the area and check if it knows that an integral must be computed (general instructions). With this, we are trying to solve two main questions: Does ChatGPT require background thinking? How much we can do without being very specific?
+There will be two different sections of experiments, each corresponding to a different version of ChatGPT (ChatGPT-3.5, ChatGPT-4). Inside each, there will be two subsections for two different types of prompting: `Zero-shot prompting` and `Zero-shot-CoT prompting`. For each one we will test their performance by being very specific about what we want to do and by not being specific about what we want to do (for example, instead of asking ChatGPT to solve an integral in a range (specific instructions), we could ask to obtain the area and check if it knows that an integral must be computed (general instructions)). With this, we are trying to solve two main questions: Does ChatGPT require background thinking? How much we can do without being very specific?
 
-### Specific instructions.
-#### Level 1: Inventing and inverting a matrix.
+## ChatGPT-3.5
+## ChatGPT-4 (Wolfram Mathematica plugin on)
+### Zero-shot prompting
+#### Specific instructions
+##### Level 1: Inventing and inverting a matrix.
 - Prompt:
 ```ruby
 ### I will provide you some mathematical problems to solve with Wolfram Mathematica and I want you to (1) return the code that you would use in Wolfram Mathematica and the output after passing that code to Wolfram Mathematica, and (2) an equivalent of that code into R ###
@@ -299,7 +303,7 @@ Wolfram Alpha        |  R
 :-------------------:|:-------------------------:
 ![](https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Specific%20instructions/Proofs/proof_level1.png)  |  ![](https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Specific%20instructions/Proofs/proof_level1.2.png)
 
-#### Level 2: Generating normally distributed variables with a specific mean and variance.
+##### Level 2: Generating normally distributed variables with a specific mean and variance.
 - Prompt:
 ```ruby
 ### I will provide you some mathematical problems to solve with Wolfram Mathematica and I want you to (1) return the code that you would use in Wolfram Mathematica and the output after passing that code to Wolfram Mathematica, and (2) an equivalent of that code into R ###
@@ -325,7 +329,7 @@ Wolfram Mathematica        |  R
 :-------------------------:|:-------------------------:
 ![](https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Specific%20instructions/Proofs/proof_level2.png)  |  ![](https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Specific%20instructions/Proofs/proof_level2.2.png)
 
-#### Level 3: Plotting a function.
+##### Level 3: Plotting a function.
 - Prompt:
 ```ruby
 ### I will provide you some mathematical problems to solve with Wolfram Mathematica and I want you to (1) return the code that you would use in Wolfram Mathematica and the output after passing that code to Wolfram Mathematica, and (2) an equivalent of that code into R ###
@@ -351,7 +355,7 @@ Wolfram Mathematica        |  R
 :-------------------------:|:-------------------------:
 ![](https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Specific%20instructions/Proofs/proof_level3.png)  |  ![](https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Specific%20instructions/Proofs/proof_level3.2.png)
 
-#### Level 4: Finding a minimum.
+##### Level 4: Finding a minimum.
 - Prompt:
 ```ruby
 ### I will provide you some mathematical problems to solve with Wolfram Mathematica and I want you to (1) return the code that you would use in Wolfram Mathematica and the output after passing that code to Wolfram Mathematica, and (2) an equivalent of that code into R ###
@@ -377,7 +381,7 @@ Wolfram Alpha              |  Wolfram Mathematica     | R
 :-------------------------:|:------------------------:|:-------------------------:
 ![](https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Specific%20instructions/Proofs/proof_level4.png)  |  ![](https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Specific%20instructions/level4.png)  |  ![](https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Specific%20instructions/Proofs/proof_level4.2.png)
 
-#### Level 5: Intersecting two functions.
+##### Level 5: Intersecting two functions.
 - Prompt:
 ```ruby
 ### I will provide you some mathematical problems to solve with Wolfram Mathematica and I want you to (1) return the code that you would use in Wolfram Mathematica and the output after passing that code to Wolfram Mathematica, and (2) an equivalent of that code into R ###
@@ -409,7 +413,7 @@ We can see that the former returns two intersection points. Both are expressed u
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Specific instructions/Proofs/proof_level5.3.png" width = 400>
 </p>
 
-#### Level 6: Deriving a function.
+##### Level 6: Deriving a function.
 - Prompt:
 ```ruby
 ### I will provide you some mathematical problems to solve with Wolfram Mathematica and I want you to (1) return the code that you would use in Wolfram Mathematica and the output after passing that code to Wolfram Mathematica, and (2) an equivalent of that code into R ###
@@ -440,7 +444,7 @@ Wolfram Mathematica        |  R
 :-------------------------:|:-------------------------:
 ![](https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Specific%20instructions/level6.png)  |  ![](https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Specific%20instructions/Proofs/proof_level6.2.png)
 
-#### Level 7: Integrating a function.
+##### Level 7: Integrating a function.
 - Prompt:
 ```ruby
 ### I will provide you some mathematical problems to solve with Wolfram Mathematica and I want you to (1) return the code that you would use in Wolfram Mathematica and the output after passing that code to Wolfram Mathematica, and (2) an equivalent of that code into R ###
@@ -467,7 +471,7 @@ For this level, we can only check if the solution provided by Wolfram Mathematic
 
 It coincides with the result given by Wolfram Mathematica.
 
-#### Level 8: Mathematical Series.
+##### Level 8: Mathematical Series.
 - Prompt:
 ```ruby
 ### I will provide you some mathematical problems to solve with Wolfram Mathematica and I want you to (1) return the code that you would use in Wolfram Mathematica and the output after passing that code to Wolfram Mathematica, and (2) an equivalent of that code into R ###
@@ -493,7 +497,7 @@ Symbolab                   |  Wolfram Mathematica     | R
 :-------------------------:|:------------------------:|:-------------------------:
 ![](https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Specific%20instructions/Proofs/proof_level8.png)  |  ![](https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Specific%20instructions/level8.png)  |  ![](https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Specific%20instructions/Proofs/proof_level8.2.png)
 
-#### Level 9: Fourier transform.
+##### Level 9: Fourier transform.
 - Prompt:
 ```ruby
 ### I will provide you some mathematical problems to solve with Wolfram Mathematica and I want you to (1) return the code that you would use in Wolfram Mathematica and the output after passing that code to Wolfram Mathematica, and (2) an equivalent of that code into R ###
@@ -519,7 +523,7 @@ Symbolab                   |  Wolfram Mathematica
 :-------------------------:|:-------------------------:
 ![](https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Specific%20instructions/Proofs/proof_level9.png)  |  ![](https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Specific%20instructions/level9.png)
 
-#### Level 10: Doing regression in some data.
+##### Level 10: Doing regression in some data.
 - Prompt:
 ```ruby
 ### I will provide you some mathematical problems to solve with Wolfram Mathematica and I want you to (1) return the code that you would use in Wolfram Mathematica and the output after passing that code to Wolfram Mathematica, and (2) an equivalent of that code into R ###
@@ -547,7 +551,7 @@ Answer:
 
 No need of proof, both platforms solved correctly the problem.
 
-#### Conclusions
+##### Conclusions
 We have seen that even though most of the answers were correct, there were two specific ones with which it struggled: **Level 7** (Integrating a function) and **Level 9** (Fourier transform). The problem is with the solution provided by R: for the former, it sets values for the lower and upper limits without any reason, and it does not return the integration itself; and for the latter, it does not return the Fourier transform. This may be simply because R cannot carry out these kind of exercises, but rather those focused on probability, statistics, visualization...Furthermore, Wolfram Mathematica returned only one of the intersection points in **Level 5**. Overall, a lot can be done by simply using text as input. 
 
 |         | Level 1 | Level 2 | Level 3 | Level 4 | Level 5 | Level 6 | Level 7 | Level 8 | Level 9 | Level 10 |
@@ -556,8 +560,8 @@ We have seen that even though most of the answers were correct, there were two s
 | R  |    Pass    |    Pass    |    Pass    |    Pass    |    Pass    |    Pass    |    Fail    |    Pass    |    Fail    |    Pass    |
 
 
-### General instructions
-#### Level 1: Finding the area (requires knowing that an integral must be used).
+#### General instructions
+##### Level 1: Finding the area (requires knowing that an integral must be used).
 The example from below comes from this pdf: [Finding areas by integration](https://www.mathcentre.ac.uk/resources/uploaded/mc-ty-areas-2009-1.pdf).
 
 - Prompt:
@@ -584,7 +588,7 @@ In this case, ChatGPT has correctly guessed that integrals are required to solve
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/General instructions/Proofs/proof_level1.png" width = 500>
 </p>
 
-#### Level 2: Predicting the range of a projectile (requires knowing that kinematic equations must be used).
+##### Level 2: Predicting the range of a projectile (requires knowing that kinematic equations must be used).
 - Prompt:
 ```ruby
 ### I will provide you some mathematical problems to solve with Wolfram Mathematica and I want you to (1) return the code that you would use in Wolfram Mathematica and the output after passing that code to Wolfram Mathematica, and (2) an equivalent of that code into R ###
@@ -611,7 +615,7 @@ The problem of this level was proposed by ChatGPT, and the solution coincides wi
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/General instructions/Proofs/proof_level2.3.png" width = 600>
 </p>
 
-#### Level 3: Getting the best path from one node to another (requires knowing that Dijkstra's algorithm must be used).
+##### Level 3: Getting the best path from one node to another (requires knowing that Dijkstra's algorithm must be used).
 The example from below comes from this pdf: [Fundamental Algorithms 12 - Solution Examples](https://www7.in.tum.de/~kretinsk/teaching/fundamental%20algorithms/fundalg12sol.pdf).
 
 - Prompt:
@@ -634,7 +638,7 @@ Answer:
 
 If we were to check the solutions, we could see that the shortest path will be s, s1, s4, s5, t; and not the one proposed by ChatGPT. This is because since we have not specified to use the Dijkstra method, it did not include it in the [FindShortestPath](https://reference.wolfram.com/language/ref/FindShortestPath.html) function.
 
-#### Level 4: Predicting the next number in a complex sequence (requires recognizing and applying the underlying pattern or mathematical rule governing the sequence).
+##### Level 4: Predicting the next number in a complex sequence (requires recognizing and applying the underlying pattern or mathematical rule governing the sequence).
 - Prompt:
 ```ruby
 ### I will provide you some mathematical problems to solve with Wolfram Mathematica and I want you to (1) return the code that you would use in Wolfram Mathematica and the output after passing that code to Wolfram Mathematica, and (2) an equivalent of that code into R ###
@@ -656,7 +660,7 @@ Answer:
 
 The underlying sequence was perfectly discovered thanks to the built-in function [FindSequenceFunction](https://reference.wolfram.com/language/ref/FindSequenceFunction.html) of Wolfram Mathematica, which gives the function/sequence applied to a variable "n".
 
-#### Level 5: Calculating the future value of an investment (requires understanding and applying the compound interest formula).
+##### Level 5: Calculating the future value of an investment (requires understanding and applying the compound interest formula).
 The example from below comes from this webpage: [Calculating the Future Value](https://ecampusontario.pressbooks.pub/businessfinancialmath/chapter/4-2-calculating-future-value/).
 
 - Prompt:
@@ -680,7 +684,7 @@ Answer:
 
 By checking the results, we can see that these coincide with the solutions. Hence, ChatGPT was able to understand that it was a compound interest problem.
 
-#### Level 6: Deciphering a phrase knowing each letter was shifted by a certain number (requires knowing that we are talking about Caesar's cipher decoding).
+##### Level 6: Deciphering a phrase knowing each letter was shifted by a certain number (requires knowing that we are talking about Caesar's cipher decoding).
 The example from below comes from the following PDF: [Caesar Cipher Decoding: Answer Key](https://s3.amazonaws.com/prod-hmhco-vmg-craftcms-public/CipherAnswers.pdf).
 
 - Prompt:
@@ -704,7 +708,7 @@ Answer:
 
 This constitutes another problem that it solved correctly. After checking the solutions, we see that the deciphered message is "FREE PIZZA IN THE CAFETERIA". In the case of Wolfram Mathematica, this was easily solved using the built-in functions [Mod](https://reference.wolfram.com/language/ref/Mod.html) and [ToCharacterCode](https://reference.wolfram.com/language/ref/ToCharacterCode.html). In R, however, it developed an entire function to perform the Caesar cipher decoding with a specified shift.
 
-#### Level 7: Calculating the time it takes for an object to cool down to a certain temperature (requires the use of Newton's Law of Cooling, which often involves solving differential equations).
+##### Level 7: Calculating the time it takes for an object to cool down to a certain temperature (requires the use of Newton's Law of Cooling, which often involves solving differential equations).
 - Prompt:
 ```ruby
 ### I will provide you some mathematical problems to solve with Wolfram Mathematica and I want you to (1) return the code that you would use in Wolfram Mathematica and the output after passing that code to Wolfram Mathematica, and (2) an equivalent of that code into R ###
@@ -730,7 +734,7 @@ The problem of this level was proposed by ChatGPT, and the solution coincides **
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/General instructions/Proofs/proof_level7.2.png" width = 600>
 </p>
 
-#### Level 8: Calculating the work done in compressing a spring (requires knowing Hooke's Law)
+##### Level 8: Calculating the work done in compressing a spring (requires knowing Hooke's Law)
 The example from below comes from the following YouTube video: [Work done by Spring Example](https://www.youtube.com/watch?v=uUgMK8wQAcU).
 
 - Prompt:
@@ -754,7 +758,7 @@ Answer:
 
 In this case, ChatGPT failed to know that in order to find the work we must know the spring constant K. By applying the formula F=kx, we must have obtained that K=2000N/m. Then, we must use the equation for the work done on our spring: W=0'5kx^2, giving W=2'5J. 
 
-#### Level 9: Computing the quantity a company should make for its inventory given production cost, demand rate, and other variables (requires understanding EOQ).
+##### Level 9: Computing the quantity a company should make for its inventory given production cost, demand rate, and other variables (requires understanding EOQ).
 The example from below comes from the following webpage: [Economic Order Quantity (EOQ): Practical Problems and Solutions](https://www.financestrategists.com/accounting/cost-accounting/material-costing/economic-order-quantity-eoq-problems-and-solutions/).
 
 - Prompt:
@@ -783,7 +787,7 @@ ChatGPT understood that it was an EOQ problem, so it proceeded correctly by usin
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/General instructions/Proofs/proof_level9.png" width = 300>
 </p>
 
-#### Level 10: Computing the orbital period (requires knowing Kepler’s third law of planetary motion).
+##### Level 10: Computing the orbital period (requires knowing Kepler’s third law of planetary motion).
 The example from below comes from the following PDF: [Solutions to Physics I Gravity and Kepler’s Laws Practice Problems](https://www.lehman.edu/faculty/anchordoqui/101-P4_s.pdf).
 
 - Prompt:
@@ -807,7 +811,7 @@ Answer:
 
 Finally, ChatGPT was impressively able to understand that we were dealing with **Kepler's third law**. By checking the correct solution from the PDF above, we see that the same result is obtained: the orbital period of Hyperion is 21.31 days.
 
-#### Conclusions
+##### Conclusions
 As in the conclusions for the section of specific instructions, we have seen that even though most of the answers were correct, there were also two specific ones with which it struggled: **Level 3** (Getting the best path from one node to another) and **Level 8** (Calculating the work done in compressing a spring). 
 
 |         | Level 1 | Level 2 | Level 3 | Level 4 | Level 5 | Level 6 | Level 7 | Level 8 | Level 9 | Level 10 |
@@ -815,13 +819,20 @@ As in the conclusions for the section of specific instructions, we have seen tha
 | Wolfram Mathematica |    Pass    |    Pass    |    Fail    |    Pass    |    Pass    |    Pass    |    Fail    |    Fail    |    Pass    |    Pass    |
 | R  |    Pass    |    Pass    |    Fail    |    Pass    |    Pass    |    Pass    |    Pass    |    Fail    |    Pass    |    Pass    |
 
-
-### Zero-shot-CoT prompting
-We have already tested how ChatGPT behaves when given specific and general instructions. However, how would it behave under Zero-shot-CoT? Zero-shot Chain of Thought (Zero-shot-CoT) is an approach in artificial intelligence where the model demonstrates the ability to solve complex problems or answer questions in a detailed, step-by-step manner without having been explicitly trained on those specific tasks or examples. This is referred to as "zero-shot" because the model is dealing with tasks it has not seen during training.
+### Zero-Shot-CoT prompting
+We have already tested how ChatGPT-4 behaves when given specific and general instructions under Zero-shot prompting using the plugin. However, how would it behave under Zero-shot-CoT? Zero-shot Chain of Thought (Zero-shot-CoT) is an approach in artificial intelligence where the model demonstrates the ability to solve complex problems or answer questions in a detailed, step-by-step manner without having been explicitly trained on those specific tasks or examples. This is referred to as "zero-shot" because the model is dealing with tasks it has not seen during training.
 
 In Zero-shot-CoT, the model essentially "thinks out loud," breaking down its reasoning process into a chain of thoughts or steps. This approach helps in understanding how the model arrives at its conclusion and also improves its ability to tackle complex problems. We will try to solve the problems that we have tried above and check the results.
 
-#### Level 1: Inverting a matrix.
+#### Specific instructions
+#### General instructions
+
+
+## ChatGPT-4 (Wolfram Mathematica plugin off)
+### Zero-shot prompting
+### Zero-shot-CoT prompting
+#### Specific instructions
+##### Level 1: Inverting a matrix.
 In this case, we will consider a matrix from this PDF: [Inverse Matrices](https://web.viu.ca/pughg/Spring2006/math152S0602/homework8.pdf).
 - Prompt:
 ```ruby
@@ -839,7 +850,7 @@ Let's think step by step.
 
 The answer is correct, since it coincides with the solution of the PDF.
 
-#### Level 2: Generating normally distributed variables with a specific mean and variance.
+##### Level 2: Generating normally distributed variables with a specific mean and variance.
 - Prompt:
 ```ruby
 Generate several normally distributed variables with mean=45.6 and variance=13.84.
@@ -870,7 +881,7 @@ It used the command `np.random.normal(mean, standard_deviation, num_variables)` 
 
 For example, if you wanted to generate 5 random numbers from a normal distribution with a mean of 0 and a standard deviation of 1, you would use `np.random.normal(0, 1, 5)`. This might give you an array of numbers like `[-0.23, 0.45, 0.68, -1.23, 0.10]`. Each of these numbers is a random draw from a normal distribution centered around 0, with most values falling within one standard deviation (1 in this case) of the mean.
 
-#### Level 3: Plotting a function.
+##### Level 3: Plotting a function.
 - Prompt:
 ```ruby
 Plot the function -3*(x-2)^2-5.
@@ -889,7 +900,7 @@ Graphing Calculator        |  ChatGPT
 :-------------------------:|:-------------------------:
 ![](https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Zero-shot-CoT/level3.4.png)  |  ![](https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Zero-shot-CoT/level3.2.png)
 
-#### Level 4: Finding a minimum.
+##### Level 4: Finding a minimum.
 - Prompt:
 ```ruby
 Find the minimum of the function f(x)=(x^2-x-2)/(x^2-6x+9).
@@ -910,7 +921,7 @@ In order to check that the answers are correct, we will obtain the minimum using
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Specific%20instructions/Proofs/proof_level4.png" width = 600>
 </p>
 
-#### Level 5: Intersecting two functions.
+##### Level 5: Intersecting two functions.
 - Prompt:
 ```ruby
 Find the intersection points of the functions f(x)=|x-5| and g(x)=logx.
@@ -931,7 +942,7 @@ In order to check if the answers are correct, we will check the graph:
 
 We can see that there are two intersection points, both expressed using the Lambert W function; the first intersection point is equal to 3'693 and the second one is 6'936. If we return above, we can see that ChatGPT got the same intersection points.
 
-#### Level 6: Deriving a function.
+##### Level 6: Deriving a function.
 - Prompt:
 ```ruby
 What is the derivative of f(x)=5/(sqrt(3x-1))?
@@ -949,7 +960,7 @@ As a way of checking that the answer is correct, we simply asked Wolfram Alpha t
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Specific instructions/Proofs/proof_level6.png" width = 200>
 </p>
 
-#### Level 7: Integrating a function.
+##### Level 7: Integrating a function.
 - Prompt:
 ```ruby
 What is the integral of sin2xcos2x?
@@ -969,7 +980,7 @@ For this level, to check if the answer is correct, we solved the integral using 
 
 It coincides with the result given by ChatGPT.
 
-#### Level 8: Mathematical Series.
+##### Level 8: Mathematical Series.
 - Prompt:
 ```ruby
 Study the convergence of the infinite series starting from n equals 1 to infinity of the sum of the reciprocal of the product of n and n plus 1.
@@ -988,7 +999,7 @@ The tool [Symbolab](https://www.symbolab.com/) was used to study the convergence
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Specific%20instructions/Proofs/proof_level8.png" width = 600>
 </p>
 
-#### Level 9: Fourier transform.
+##### Level 9: Fourier transform.
 - Prompt:
 ```ruby
 Compute the Fourier transform of f(t)=cosω0t.
@@ -1006,7 +1017,7 @@ For this problem, we used again [Symbolab](https://www.symbolab.com/) to compute
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Specific%20instructions/Proofs/proof_level9.png" width = 600>
 </p>
 
-#### Level 10: Doing regression in some data.
+##### Level 10: Doing regression in some data.
 - Prompt:
 ```ruby
 The following table shows information regarding the sales of daily press in the year 1998, as the number of daily copies sold per thousand inhabitants in 8 autonomous Spanish regions. The sales are assumed to be related to economic activity levels as measured by the Gross Domestic Product (GDP) per inhabitant in thousands of euros (Source: INE. Anuario Estadistico).
@@ -1025,7 +1036,8 @@ Let's think step by step.
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Zero-shot-CoT/level10.3.png" width = 600>
 </p>
 
-#### Level 11: Finding the area.
+#### General instructions
+##### Level 11: Finding the area.
 The example from below comes from this pdf: [Finding areas by integration](https://www.mathcentre.ac.uk/resources/uploaded/mc-ty-areas-2009-1.pdf).
 
 - Prompt:
@@ -1044,7 +1056,7 @@ In this case, ChatGPT has correctly guessed that integrals are required to solve
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/General instructions/Proofs/proof_level1.png" width = 500>
 </p>
 
-#### Level 12: Predicting the range of a projectile.
+##### Level 12: Predicting the range of a projectile.
 - Prompt:
 ```ruby
 A soccer player kicks a ball at an angle of 30 degrees to the horizontal. The initial speed of the ball is 20 meters per second. Assuming no air resistance and that the ball is kicked from ground level, predict how far the ball will travel horizontally before hitting the ground. Use the acceleration due to gravity as 9.8 m/s^2.
@@ -1065,7 +1077,7 @@ The problem of this level was proposed by ChatGPT, and the solution coincides wi
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/General instructions/Proofs/proof_level2.3.png" width = 600>
 </p>
 
-#### Level 13: Getting the best path from one node to another.
+##### Level 13: Getting the best path from one node to another.
 The example from below comes from this pdf: [Fundamental Algorithms 12 - Solution Examples](https://www7.in.tum.de/~kretinsk/teaching/fundamental%20algorithms/fundalg12sol.pdf).
 
 - Prompt:
@@ -1081,7 +1093,7 @@ Let's think step by step.
 
 If we were to check the solutions, we could see that the shortest path is `s, s1, s4, s5, s3, t`; as the one proposed by ChatGPT.
 
-#### Level 14: Predicting the next number in a complex sequence.
+##### Level 14: Predicting the next number in a complex sequence.
 - Prompt:
 ```ruby
 Consider the following sequence of numbers: 3, 8, 15, 24, 35, 48, ...Your task is to predict the next number in this sequence.
@@ -1096,7 +1108,7 @@ Let's think step by step.
 
 The underlying sequence was perfectly discovered.
 
-#### Level 15: Calculating the future value of an investment.
+##### Level 15: Calculating the future value of an investment.
 The example from below comes from this webpage: [Calculating the Future Value](https://ecampusontario.pressbooks.pub/businessfinancialmath/chapter/4-2-calculating-future-value/).
 
 - Prompt:
@@ -1113,7 +1125,7 @@ Let's think step by step.
 
 By checking the results, we can see that these coincide with the solutions. Hence, ChatGPT was able to understand that it was a compound interest problem.
 
-#### Level 16: Deciphering a phrase knowing each letter was shifted by a certain number.
+##### Level 16: Deciphering a phrase knowing each letter was shifted by a certain number.
 The example from below comes from the following PDF: [Caesar Cipher Decoding: Answer Key](https://s3.amazonaws.com/prod-hmhco-vmg-craftcms-public/CipherAnswers.pdf).
 
 - Prompt:
@@ -1129,7 +1141,7 @@ Let's think step by step.
 
 This constitutes another problem that it solved correctly. After checking the solutions, we see that the deciphered message is "FREE PIZZA IN THE CAFETERIA". 
 
-#### Level 17: Calculating the time it takes for an object to cool down to a certain temperature.
+##### Level 17: Calculating the time it takes for an object to cool down to a certain temperature.
 - Prompt:
 ```ruby
 A freshly baked pie is taken out of the oven and left to cool in a room. The temperature of the oven was 200ºC, and the room temperature is a constant 25ºC. When the pie is first taken out, its temperature is 180ºC. After 20 minutes, the temperature of the pie drops to 100ºC. Calculate the time it takes for the pie to cool down to 50ºC.
@@ -1145,7 +1157,7 @@ Let's think step by step.
 
 In this case, ChatGPT was unable to solve this problem. Even though it understood that it was a problem related to Newton's Law of Cooling, it couldn't determine the cooling constant `k`.
 
-#### Level 18: Calculating the work done in compressing a spring.
+##### Level 18: Calculating the work done in compressing a spring.
 The example from below comes from the following YouTube video: [Work done by Spring Example](https://www.youtube.com/watch?v=uUgMK8wQAcU).
 
 - Prompt:
@@ -1162,7 +1174,7 @@ Let's think step by step.
 
 In this case, ChatGPT **did not** fail to know that in order to find the work we must know the spring constant K. The result coincides with the solution, giving W=2'5J. 
 
-#### Level 19: Computing the quantity a company should make for its inventory given production cost, demand rate, and other variables.
+##### Level 19: Computing the quantity a company should make for its inventory given production cost, demand rate, and other variables.
 The example from below comes from the following webpage: [Economic Order Quantity (EOQ): Practical Problems and Solutions](https://www.financestrategists.com/accounting/cost-accounting/material-costing/economic-order-quantity-eoq-problems-and-solutions/).
 
 - Prompt:
@@ -1179,7 +1191,7 @@ Let's think step by step.
 
 ChatGPT understood that it was an EOQ problem, so it proceeded correctly by using the EOQ formula from below. However, the answer to the last question (How often should an order be placed?) does not coincide with the solutions.
 
-#### Level 20: Computing the orbital period.
+##### Level 20: Computing the orbital period.
 The example from below comes from the following PDF: [Solutions to Physics I Gravity and Kepler’s Laws Practice Problems](https://www.lehman.edu/faculty/anchordoqui/101-P4_s.pdf).
 
 - Prompt:
@@ -1196,7 +1208,7 @@ Let's think step by step.
 
 Finally, ChatGPT was again able to understand that we were dealing with Kepler's third law. By checking the solution from the PDF above, we see that the same result is obtained: the orbital period of Hyperion is 21.31 days.
 
-#### Conclusions
+##### Conclusions
 In this last part of the project, we have seen that ChatGPT has performed quite well. Nonetheless, we must not forget that it couldn't solve two problems: **Level 17** (Calculating the time it takes for an object to cool down to a certain temperature) and **Level 19** (Computing the quantity a company should make for its inventory given production cost, demand rate, and other variables). Regarding the former, it couldn't get the cooling constant; in the latter, even though it answered two questions correctly, it wasn't able to answer the last one. Overall, 18/20 problems were solved successfully; and for each of them, ChatGPT gave specific steps on how to solve them.
 
 |         | Level 1 | Level 2 | Level 3 | Level 4 | Level 5 | Level 6 | Level 7 | Level 8 | Level 9 | Level 10 | Level 11 | Level 12 | Level 13 | Level 14 | Level 15 | Level 16 | Level 17 | Level 18 | Level 19 | Level 20 |
