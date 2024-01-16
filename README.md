@@ -1187,13 +1187,13 @@ Let's think step by step.
 Finally, ChatGPT was again able to understand that we were dealing with Kepler's third law. By checking the solution from the PDF above, we see that the same result is obtained: the orbital period of Hyperion is 21.31 days.
 
 ##### Conclusions
-In this case, it got all the answers correct of the `Specific instructions`.
+In this case, it got all the answers correct for the problems of the `Specific instructions`.
 
 | Level 1 | Level 2 | Level 3 | Level 4 | Level 5 | Level 6 | Level 7 | Level 8 | Level 9 | Level 10 |
 |:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:--------:|
 |    Pass    |    Pass    |    Pass    |    Pass    |    Pass    |    Pass    |    Pass    |    Pass    |    Pass    |    Pass    |
 
-For the section of `General instructions`, it struggled with **Level 13** (Getting the best path from one node to another) and **Level 19** (Computing the quantity a company should make for its inventory given production cost, demand rate, and other variables). Regarding the former, it may have not understood well the adjacency matrix, since it says that `s` is directly connecte to `t` (which is not the case); in the other level, however, made the mistake of considering the working days and not all the days of the year.
+For the section of `General instructions`, it struggled with **Level 13** (Getting the best path from one node to another) and **Level 19** (Computing the quantity a company should make for its inventory given production cost, demand rate, and other variables). Regarding the former, it may have not understood well the adjacency matrix, since it says that `s` is directly connected to `t` (which is not the case); in the other level, however, made the mistake of considering the working days and not all the days of the year.
 
 | Level 11 | Level 12 | Level 13 | Level 14 | Level 15 | Level 16 | Level 17 | Level 18 | Level 19 | Level 20 |
 |:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|
