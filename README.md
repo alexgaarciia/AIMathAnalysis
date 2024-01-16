@@ -6,23 +6,23 @@ The main goal of this repository is to analyze how [ChatGPT](https://chat.openai
 ## How to combine ChatGPT & Wolfram Mathematica
 1. Click on your current version of ChatGPT:
    <p align="center">
-     <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Plugin installation/step1.png" alt="Step 1" width = 500/>
+     <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Plugin installation/step1.png" width = 500/>
    </p>
 2. Select "Plugins" from the dropdown:
    <p align="center">
-     <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Plugin installation/step2.png" alt="Step 1" width = 300/>
+     <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Plugin installation/step2.png" width = 300/>
    </p>
 3. In case you do not have the Wolfram Mathematica plugin installed, click on the "No plugins installed" dropdown and click on "Plugin store":
    <p align="center">
-     <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Plugin installation/step3.png" alt="Step 1" width = 300/>
+     <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Plugin installation/step3.png" width = 300/>
    </p>
 4. Search for Wolfram on the search tab and click on Install:
    <p align="center">
-     <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Plugin installation/step4.png" alt="Step 1" width = 300/>
+     <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Plugin installation/step4.png" width = 300/>
    </p>
 5. Finally, select it in the plugins dropdown:
    <p align="center">
-     <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Plugin installation/step5.png" alt="Step 1" width = 300/>
+     <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Plugin installation/step5.png" width = 300/>
    </p>
 
 
@@ -419,7 +419,7 @@ Wolfram Alpha        |  Graph
 We can see that the former returns two intersection points. Both are expressed using the Lambert W function; the first intersection point is equal to 3'693 and the second one is 6'936. If we return above, where we prompt ChatGPT in Level 5, we see that the answer was, in the end, correct, but it only returns one of the intersection points. What about R? This one, on the other hand, was able to return both intersection points:
 
 <p align = "center">
-   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Specific instructions/Proofs/proof_level5.3.png" width = 400>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot/Specific%20instructions/Proofs/proof_level5.3.png" width = 400>
 </p>
 
 ##### Level 6: Deriving a function.
@@ -560,17 +560,8 @@ Answer:
 
 No need of proof, both platforms solved correctly the problem.
 
-##### Conclusions
-We have seen that even though most of the answers were correct, there were two specific ones with which it struggled: **Level 7** (Integrating a function) and **Level 9** (Fourier transform). The problem is with the solution provided by R: for the former, it sets values for the lower and upper limits without any reason, and it does not return the integration itself; and for the latter, it does not return the Fourier transform. This may be simply because R cannot carry out these kind of exercises, but rather those focused on probability, statistics, visualization...Furthermore, Wolfram Mathematica returned only one of the intersection points in **Level 5**. Overall, a lot can be done by simply using text as input. 
-
-|         | Level 1 | Level 2 | Level 3 | Level 4 | Level 5 | Level 6 | Level 7 | Level 8 | Level 9 | Level 10 |
-|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|
-| Wolfram Mathematica |    Pass    |    Pass    |    Pass    |    Pass    |    Fail    |    Pass    |    Pass    |    Pass    |    Pass    |    Pass    |
-| R  |    Pass    |    Pass    |    Pass    |    Pass    |    Pass    |    Pass    |    Fail    |    Pass    |    Fail    |    Pass    |
-
-
 #### General instructions
-##### Level 1: Finding the area (requires knowing that an integral must be used).
+##### Level 11: Finding the area (requires knowing that an integral must be used).
 The example from below comes from this pdf: [Finding areas by integration](https://www.mathcentre.ac.uk/resources/uploaded/mc-ty-areas-2009-1.pdf).
 
 - Prompt:
@@ -584,20 +575,20 @@ Answer:
 
 - Wolfram Mathematica Output:
 <p align = "center">
-   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/General instructions/level1.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot/General%20instructions/level11.png" width = 600>
 </p>
 
 - Equivalent R Code:
 <p align = "center">
-   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/General instructions/level1.2.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot/General%20instructions/level11.2.png" width = 600>
 </p>
 
 In this case, ChatGPT has correctly guessed that integrals are required to solve this problem. As indicated in the PDF, the solution is doing the integral of x^2+x+4 between 1 and 3. To check if the answers were correct, the platform [Integral Calculator](https://www.integral-calculator.com/) was used. As observed, the results coincide:
 <p align = "center">
-   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/General instructions/Proofs/proof_level1.png" width = 500>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot/General%20instructions/Proofs/proof_level11.png" width = 500>
 </p>
 
-##### Level 2: Predicting the range of a projectile (requires knowing that kinematic equations must be used).
+##### Level 12: Predicting the range of a projectile (requires knowing that kinematic equations must be used).
 - Prompt:
 ```ruby
 ### I will provide you some mathematical problems to solve with Wolfram Mathematica and I want you to (1) return the code that you would use in Wolfram Mathematica and the output after passing that code to Wolfram Mathematica, and (2) an equivalent of that code into R ###
@@ -609,22 +600,22 @@ Answer:
 
 - Wolfram Mathematica Output:
 <p align = "center">
-   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/General instructions/level2.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot/General%20instructions/level12.png" width = 600>
 </p>
 
 - Equivalent R Code:
 <p align = "center">
-   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/General instructions/level2.2.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot/General%20instructions/level12.2.png" width = 600>
 </p>
 
 The problem of this level was proposed by ChatGPT, and the solution coincides with the results obtained above:
 <p align = "center">
-   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/General instructions/Proofs/proof_level2.png" width = 600>
-   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/General instructions/Proofs/proof_level2.2.png" width = 600>
-   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/General instructions/Proofs/proof_level2.3.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot/General%20instructions/Proofs/proof_level12.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot/General%20instructions/Proofs/proof_level12.2.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot/General%20instructions/Proofs/proof_level12.3.png" width = 600>
 </p>
 
-##### Level 3: Getting the best path from one node to another (requires knowing that Dijkstra's algorithm must be used).
+##### Level 13: Getting the best path from one node to another (requires knowing that Dijkstra's algorithm must be used).
 The example from below comes from this pdf: [Fundamental Algorithms 12 - Solution Examples](https://www7.in.tum.de/~kretinsk/teaching/fundamental%20algorithms/fundalg12sol.pdf).
 
 - Prompt:
@@ -637,17 +628,17 @@ Answer:
 ```
 - Wolfram Mathematica Output:
 <p align = "center">
-   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/General instructions/level3.3.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot/General%20instructions/level13.3.png" width = 600>
 </p>
 
 - Equivalent R Code:
 <p align = "center">
-   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/General instructions/level3.4.png" width = 550>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot/General%20instructions/level13.4.png" width = 500>
 </p>
 
 If we were to check the solutions, we could see that the shortest path will be s, s1, s4, s5, t; and not the one proposed by ChatGPT. This is because since we have not specified to use the Dijkstra method, it did not include it in the [FindShortestPath](https://reference.wolfram.com/language/ref/FindShortestPath.html) function.
 
-##### Level 4: Predicting the next number in a complex sequence (requires recognizing and applying the underlying pattern or mathematical rule governing the sequence).
+##### Level 14: Predicting the next number in a complex sequence (requires recognizing and applying the underlying pattern or mathematical rule governing the sequence).
 - Prompt:
 ```ruby
 ### I will provide you some mathematical problems to solve with Wolfram Mathematica and I want you to (1) return the code that you would use in Wolfram Mathematica and the output after passing that code to Wolfram Mathematica, and (2) an equivalent of that code into R ###
@@ -659,17 +650,17 @@ Answer:
 
 - Wolfram Mathematica Output:
 <p align = "center">
-   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/General instructions/level4.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot/General%20instructions/level14.png" width = 600>
 </p>
 
 - Equivalent R Code:
 <p align = "center">
-   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/General instructions/level4.2.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot/General%20instructions/level14.2.png" width = 600>
 </p>
 
 The underlying sequence was perfectly discovered thanks to the built-in function [FindSequenceFunction](https://reference.wolfram.com/language/ref/FindSequenceFunction.html) of Wolfram Mathematica, which gives the function/sequence applied to a variable "n".
 
-##### Level 5: Calculating the future value of an investment (requires understanding and applying the compound interest formula).
+##### Level 15: Calculating the future value of an investment (requires understanding and applying the compound interest formula).
 The example from below comes from this webpage: [Calculating the Future Value](https://ecampusontario.pressbooks.pub/businessfinancialmath/chapter/4-2-calculating-future-value/).
 
 - Prompt:
@@ -683,17 +674,17 @@ Answer:
 
 - Wolfram Mathematica Output:
 <p align = "center">
-   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/General instructions/level5.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot/General%20instructions/level15.png" width = 600>
 </p>
 
 - Equivalent R Code:
 <p align = "center">
-   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/General instructions/level5.2.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot/General%20instructions/level15.2.png" width = 600>
 </p>
 
 By checking the results, we can see that these coincide with the solutions. Hence, ChatGPT was able to understand that it was a compound interest problem.
 
-##### Level 6: Deciphering a phrase knowing each letter was shifted by a certain number (requires knowing that we are talking about Caesar's cipher decoding).
+##### Level 16: Deciphering a phrase knowing each letter was shifted by a certain number (requires knowing that we are talking about Caesar's cipher decoding).
 The example from below comes from the following PDF: [Caesar Cipher Decoding: Answer Key](https://s3.amazonaws.com/prod-hmhco-vmg-craftcms-public/CipherAnswers.pdf).
 
 - Prompt:
@@ -707,17 +698,17 @@ Answer:
 
 - Wolfram Mathematica Output:
 <p align = "center">
-   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/General instructions/level6.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot/General%20instructions/level16.png" width = 600>
 </p>
 
 - Equivalent R Code:
 <p align = "center">
-   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/General instructions/level6.2.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot/General%20instructions/level16.2.png" width = 600>
 </p>
 
 This constitutes another problem that it solved correctly. After checking the solutions, we see that the deciphered message is "FREE PIZZA IN THE CAFETERIA". In the case of Wolfram Mathematica, this was easily solved using the built-in functions [Mod](https://reference.wolfram.com/language/ref/Mod.html) and [ToCharacterCode](https://reference.wolfram.com/language/ref/ToCharacterCode.html). In R, however, it developed an entire function to perform the Caesar cipher decoding with a specified shift.
 
-##### Level 7: Calculating the time it takes for an object to cool down to a certain temperature (requires the use of Newton's Law of Cooling, which often involves solving differential equations).
+##### Level 17: Calculating the time it takes for an object to cool down to a certain temperature (requires the use of Newton's Law of Cooling, which often involves solving differential equations).
 - Prompt:
 ```ruby
 ### I will provide you some mathematical problems to solve with Wolfram Mathematica and I want you to (1) return the code that you would use in Wolfram Mathematica and the output after passing that code to Wolfram Mathematica, and (2) an equivalent of that code into R ###
@@ -729,21 +720,21 @@ Answer:
 
 - Wolfram Mathematica Output:
 <p align = "center">
-   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/General instructions/level7.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot/General%20instructions/level17.png" width = 600>
 </p>
 
 - Equivalent R Code:
 <p align = "center">
-   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/General instructions/level7.2.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot/General%20instructions/level17.2.png" width = 600>
 </p>
 
 The problem of this level was proposed by ChatGPT, and the solution coincides **only with the results of R**:
 <p align = "center">
-   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/General instructions/Proofs/proof_level7.png" width = 600>
-   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/General instructions/Proofs/proof_level7.2.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot/General%20instructions/Proofs/proof_level17.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot/General%20instructions/Proofs/proof_level17.2.png" width = 600>
 </p>
 
-##### Level 8: Calculating the work done in compressing a spring (requires knowing Hooke's Law)
+##### Level 18: Calculating the work done in compressing a spring (requires knowing Hooke's Law)
 The example from below comes from the following YouTube video: [Work done by Spring Example](https://www.youtube.com/watch?v=uUgMK8wQAcU).
 
 - Prompt:
@@ -757,17 +748,17 @@ Answer:
 
 - Wolfram Mathematica Output:
 <p align = "center">
-   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/General instructions/level8.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot/General%20instructions/level18.png" width = 600>
 </p>
 
 - Equivalent R Code:
 <p align = "center">
-   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/General instructions/level8.2.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot/General%20instructions/level18.2.png" width = 600>
 </p>
 
 In this case, ChatGPT failed to know that in order to find the work we must know the spring constant K. By applying the formula F=kx, we must have obtained that K=2000N/m. Then, we must use the equation for the work done on our spring: W=0'5kx^2, giving W=2'5J. 
 
-##### Level 9: Computing the quantity a company should make for its inventory given production cost, demand rate, and other variables (requires understanding EOQ).
+##### Level 19: Computing the quantity a company should make for its inventory given production cost, demand rate, and other variables (requires understanding EOQ).
 The example from below comes from the following webpage: [Economic Order Quantity (EOQ): Practical Problems and Solutions](https://www.financestrategists.com/accounting/cost-accounting/material-costing/economic-order-quantity-eoq-problems-and-solutions/).
 
 - Prompt:
@@ -781,22 +772,22 @@ Answer:
 
 - Wolfram Mathematica Output:
 <p align = "center">
-   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/General instructions/level9.png" width = 600>
-   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/General instructions/level9.2.png" width = 600>
-   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/General instructions/level9.3.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot/General%20instructions/level19.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot/General%20instructions/level19.2.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot/General%20instructions/level19.3.png" width = 600>
 </p>
 
 - Equivalent R Code:
 <p align = "center">
-   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/General instructions/level9.4.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot/General%20instructions/level19.4.png" width = 600>
 </p>
 
 ChatGPT understood that it was an EOQ problem, so it proceeded correctly by using the EOQ formula from below. Plus, the results coincide with the solutions.
 <p align = "center">
-   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/General instructions/Proofs/proof_level9.png" width = 300>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot/General%20instructions/Proofs/proof_level19.png" width = 300>
 </p>
 
-##### Level 10: Computing the orbital period (requires knowing Kepler’s third law of planetary motion).
+##### Level 20: Computing the orbital period (requires knowing Kepler’s third law of planetary motion).
 The example from below comes from the following PDF: [Solutions to Physics I Gravity and Kepler’s Laws Practice Problems](https://www.lehman.edu/faculty/anchordoqui/101-P4_s.pdf).
 
 - Prompt:
@@ -810,20 +801,27 @@ Answer:
 
 - Wolfram Mathematica Output:
 <p align = "center">
-   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/General instructions/level10.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot/General%20instructions/level20.png" width = 600>
 </p>
 
 - Equivalent R Code:
 <p align = "center">
-   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/General instructions/level10.2.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot/General%20instructions/level20.2.png" width = 600>
 </p>
 
 Finally, ChatGPT was impressively able to understand that we were dealing with **Kepler's third law**. By checking the correct solution from the PDF above, we see that the same result is obtained: the orbital period of Hyperion is 21.31 days.
 
 ##### Conclusions
-As in the conclusions for the section of specific instructions, we have seen that even though most of the answers were correct, there were also two specific ones with which it struggled: **Level 3** (Getting the best path from one node to another) and **Level 8** (Calculating the work done in compressing a spring). 
+We have seen that even though most of the answers were correct, there were two specific ones with which it struggled: **Level 7** (Integrating a function) and **Level 9** (Fourier transform). The problem is with the solution provided by R: for the former, it sets values for the lower and upper limits without any reason, and it does not return the integration itself; and for the latter, it does not return the Fourier transform. This may be simply because R cannot carry out these kind of exercises, but rather those focused on probability, statistics, visualization...Furthermore, Wolfram Mathematica returned only one of the intersection points in **Level 5**. Overall, a lot can be done by simply using text as input. 
 
 |         | Level 1 | Level 2 | Level 3 | Level 4 | Level 5 | Level 6 | Level 7 | Level 8 | Level 9 | Level 10 |
+|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|
+| Wolfram Mathematica |    Pass    |    Pass    |    Pass    |    Pass    |    Fail    |    Pass    |    Pass    |    Pass    |    Pass    |    Pass    |
+| R  |    Pass    |    Pass    |    Pass    |    Pass    |    Pass    |    Pass    |    Fail    |    Pass    |    Fail    |    Pass    |
+
+As in the conclusions for the section of specific instructions, we have seen that even though most of the answers were correct, there were also two specific ones with which it struggled: **Level 13** (Getting the best path from one node to another) and **Level 18** (Calculating the work done in compressing a spring). 
+
+|         | Level 11 | Level 12 | Level 13 | Level 14 | Level 15 | Level 16 | Level 17 | Level 18 | Level 19 | Level 20 |
 |:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|
 | Wolfram Mathematica |    Pass    |    Pass    |    Fail    |    Pass    |    Pass    |    Pass    |    Fail    |    Fail    |    Pass    |    Pass    |
 | R  |    Pass    |    Pass    |    Fail    |    Pass    |    Pass    |    Pass    |    Pass    |    Fail    |    Pass    |    Pass    |
@@ -1183,7 +1181,7 @@ Let's think step by step.
 
 For this problem, we used again [Symbolab](https://www.symbolab.com/) to compute the Fourier transform. After comparing it with the result obtained from ChatGPT,the solutions coincide:
 <p align = "center">
-   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Specific%20instructions/Proofs/proof_level9.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot/Specific%20instructions/Proofs/proof_level9.png" width = 600>
 </p>
 
 ##### Level 10: Doing regression in some data.
