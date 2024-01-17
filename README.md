@@ -45,7 +45,7 @@ To begin with, we will try to generate a 5-router network by providing the follo
 | State 4 |    0    |    1    |    0    |    0    |    1    |
 | State 5 |    0    |    0    |    1    |    1    |    0    |
 
-In the following picture we can observe the answer of ChatGPT after having give the specifications:
+In the following picture we can observe the answer of ChatGPT after having given the specifications:
 <p align = "center">
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Networking graphs/generating_graphs.png" width = 650>
 </p>
@@ -260,7 +260,7 @@ Before ending this section, it would be worth mentioning key functions that made
 
 
 ## Prompting Wolfram Mathematica with ChatGPT
-One of our other objectives is finding out how much we can do with text only. In order to do this, we would like to discover the correct manner of prompting Wolfram. We have seen before that this plugin is highly powerful, being able to solve an entire network problem itself. However, what if we could do it in fewer steps, just by correctly prompting it?
+One of our other objectives is finding out how much we can do with only text. In order to do this, we would like to discover the correct manner of prompting ChatGPT. We have seen before that with plugins, it is highly powerful, being able to solve an entire network problem itself. However, what if we could do it in fewer steps, just by correctly prompting it?
 
 ### Available resources
 First off, we would like to know if there are already some investigations/guides in this regard. We found out that there are no specific texts on the most efficient way of prompting Wolfram Mathematica with ChatGPT. However, there is an interesting introduction to using the plugin in the offical Wolfram webpage: [Plugin de Wolfram para ChatGPT](https://www.wolfram.com/wolfram-plugin-chatgpt/). It provides an installation guide and some applications of it and, at the end of the page, there is a link about [using the Wolfram Plugin for ChatGPT](https://www.youtube.com/watch?v=EOQV9VakBgE&ab_channel=Wolfram), where several prompts are tested.
@@ -818,7 +818,7 @@ Let's think step by step.
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-3.5/Zero-shot-CoT/Specific%20instructions/level10.png" width = 600>
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-3.5/Zero-shot-CoT/Specific%20instructions/level10.2.png" width = 600>
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-3.5/Zero-shot-CoT/Specific%20instructions/level10.3.png" width = 600>
-   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-3.5/Zero-shot-CoT/Specific%20instructions/level0.4.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-3.5/Zero-shot-CoT/Specific%20instructions/level10.4.png" width = 600>
 </p>
 
 The process was stated, but no answer given.
