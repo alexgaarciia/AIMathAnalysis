@@ -4,7 +4,7 @@ The main goal of this repository is to analyze how [ChatGPT](https://chat.openai
 
 
 ## How to combine ChatGPT & Wolfram Mathematica
-| Step | Instructions                                 | Image                                                                      |
+| Step | Instructions                                 | Example                                                                    |
 |------|----------------------------------------------|----------------------------------------------------------------------------|
 | 1    | Click on your current version of ChatGPT    | <p align="center"><img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Plugin%20installation/step1.png" width="500"/></p> |
 | 2    | Select "Plugins" from the dropdown    | <p align="center"><img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Plugin%20installation/step2.png" width="300"/></p> |
