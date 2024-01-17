@@ -4,26 +4,14 @@ The main goal of this repository is to analyze how [ChatGPT](https://chat.openai
 
 
 ## How to combine ChatGPT & Wolfram Mathematica
-1. Click on your current version of ChatGPT:
-   <p align="center">
-     <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Plugin installation/step1.png" width = 500/>
-   </p>
-2. Select "Plugins" from the dropdown:
-   <p align="center">
-     <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Plugin installation/step2.png" width = 300/>
-   </p>
-3. In case you do not have the Wolfram Mathematica plugin installed, click on the "No plugins installed" dropdown and click on "Plugin store":
-   <p align="center">
-     <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Plugin installation/step3.png" width = 300/>
-   </p>
-4. Search for Wolfram on the search tab and click on Install:
-   <p align="center">
-     <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Plugin installation/step4.png" width = 300/>
-   </p>
-5. Finally, select it in the plugins dropdown:
-   <p align="center">
-     <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Plugin installation/step5.png" width = 300/>
-   </p>
+| Step | Instructions                                 | Image                                                                      |
+|------|----------------------------------------------|----------------------------------------------------------------------------|
+| 1    | Click on your current version of ChatGPT    | <p align="center"><img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Plugin%20installation/step1.png" width="500"/></p> |
+| 2    | Select "Plugins" from the dropdown    | <p align="center"><img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Plugin%20installation/step2.png" width="300"/></p> |
+| 3    | In case you do not have the Wolfram Mathematica plugin installed, click on the "No plugins installed" dropdown and click on "Plugin store"    | <p align="center"><img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Plugin%20installation/step3.png" width="300"/></p> |
+| 4    | Search for Wolfram on the search tab and click on Install    | <p align="center"><img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Plugin%20installation/step4.png" width="300"/></p> |
+| 5    | Finally, select it in the plugins dropdown    | <p align="center"><img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Plugin%20installation/step5.png" width="300"/></p> |
+
 
 
 ## Interacting with Wolfram Mathematica
