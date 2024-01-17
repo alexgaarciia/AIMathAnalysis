@@ -33,7 +33,7 @@ Combining ChatGPT and Wolfram Mathematica can be a powerful way to leverage the 
 3. Algorithm Design: Combining them for algorithm development can be achieved by using ChatGPT for initial brainstorming and pseudocode generation, and then translating these ideas into Mathematica's powerful computational language for detailed analysis and visualization.
 
 ### Example: Networking graphs
-We would like to provide a preliminary glimpse of what these platforms, when used together, can achieve through an example from one of our previous projects that demonstrates the potential of `packet latency` and `reinforcement learning`. Our goal is to check if, given a specific network, we can **find the shortest path** from one router to another using Wolfram Mathematica. Later on, we might want to try to ask ChatGPT to transform the generated code into R code.
+We would like to provide a preliminary glimpse of what these platforms, when used together, can achieve through an example from one of our previous projects that demonstrates the potential of `packet latency` and `reinforcement learning`. Our goal is to check if, given a specific network, we can **find the shortest path** from one router to another using Wolfram Mathematica. Later on, we might want to try to ask ChatGPT to transform the generated code into R code (find the generated code [here](https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/networkingraphs_test.R)).
 
 #### Step 1: Generate the network
 To begin with, we will try to generate a 5-router network by providing the following adjacency matrix (1 means there is connection, otherwise 0):
