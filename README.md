@@ -380,6 +380,7 @@ As a way of checking that the answer is correct, we simply asked Wolfram Alpha t
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot/Specific%20instructions/Proofs/proof_level6.png" width = 200>
 </p>
 
+Hence, the answer is incorrect.
 
 ##### Level 7: Integrating a function.
 - Prompt:
@@ -621,6 +622,19 @@ Titan, the largest moon of Saturn, has a mean orbital radius of 1.22x109 m. The 
 
 Even though the answer is not exactly the solution, it understood the problem correctly.
 
+##### Conclusions
+As observed, not many exercises were solved correctly. Regarding the section **Specific instructions**, only 3 exercises were correct.
+
+| Level 1 | Level 2 | Level 3 | Level 4 | Level 5 | Level 6 | Level 7 | Level 8 | Level 9 | Level 10 |
+|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|
+|    Fail    |    Pass    |    Pass    |    Fail    |    Fail    |    Fail    |    Fail    |    Pass    |    Fail    |    Fail    |
+
+For the case of **General instructions**, only 4 exercises were solved correctly.
+
+| Level 11 | Level 12 | Level 13 | Level 14 | Level 15 | Level 16 | Level 17 | Level 18 | Level 19 | Level 20 |
+|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|
+|    Pass    |    Pass    |    Fail    |    Pass    |    Fail    |    Fail    |    Fail    |    Fail    |    Fail    |    Pass    |
+
 ### Zero-shot-CoT prompting
 #### Specific instructions
 ##### Level 1: Inverting a matrix.
@@ -633,13 +647,13 @@ Let's think step by step.
 
 - ChatGPT Output:
 <p align = "center">
-   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-off/Zero-shot-CoT/level1.png" width = 600>
-   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-off/Zero-shot-CoT/level1.2.png" width = 600>
-   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-off/Zero-shot-CoT/level1.3.png" width = 600>
-   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-off/Zero-shot-CoT/level1.4.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-3.5/Zero-shot-CoT/Specific%20instructions/level1.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-3.5/Zero-shot-CoT/Specific%20instructions/level1.2.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-3.5/Zero-shot-CoT/Specific%20instructions/level1.3.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-3.5/Zero-shot-CoT/Specific%20instructions/level1.4.png" width = 600>
 </p>
 
-The answer is correct, since it coincides with the solution of the PDF.
+The answer is not correct; it does not coincide with the solution.
 
 ##### Level 2: Generating normally distributed variables with a specific mean and variance.
 - Prompt:
@@ -650,27 +664,12 @@ Let's think step by step.
 
 - ChatGTP Output:
 <p align = "center">
-   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-off/Zero-shot-CoT/level2.png" width = 600>
-   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-off/Zero-shot-CoT/level2.2.png" width = 600>
-   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-off/Zero-shot-CoT/level2.3.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-3.5/Zero-shot-CoT/Specific%20instructions/level2.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-3.5/Zero-shot-CoT/Specific%20instructions/level2.2.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-3.5/Zero-shot-CoT/Specific%20instructions/level2.3.png" width = 600>
 </p>
 
-If we were to check how ChatGPT generated these values, we can simply click on the analysis button at the end of the answer:
-```ruby
-# Number of variables to generate
-num_variables = 1000
-
-# Generating normally distributed variables
-normally_distributed_vars = np.random.normal(mean, standard_deviation, num_variables)
-normally_distributed_vars[:10]  # Displaying the first 10 values for reference
-```
-
-It used the command `np.random.normal(mean, standard_deviation, num_variables)` from the NumPy library. It generates random numbers based on the normal (Gaussian) distribution. Here's what each parameter means:
-1. **mean**: This is the mean (or average) value of the normal distribution. 
-2. **standard_deviation**: This is the standard deviation of the normal distribution, which determines how spread out the values are around the mean. 
-3. **num_variables**: This parameter specifies the number of random variables you want to generate from this distribution.
-
-For example, if you wanted to generate 5 random numbers from a normal distribution with a mean of 0 and a standard deviation of 1, you would use `np.random.normal(0, 1, 5)`. This might give you an array of numbers like `[-0.23, 0.45, 0.68, -1.23, 0.10]`. Each of these numbers is a random draw from a normal distribution centered around 0, with most values falling within one standard deviation (1 in this case) of the mean.
+Even though it did not give examples, it showed the code that will generate the random variable.
 
 ##### Level 3: Plotting a function.
 - Prompt:
@@ -681,15 +680,15 @@ Let's think step by step.
 
 - ChatGPT Output:
 <p align = "center">
-   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-off/Zero-shot-CoT/level3.png" width = 600>
-   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-off/Zero-shot-CoT/level3.2.png" width = 600>
-   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-off/Zero-shot-CoT/level3.3.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-3.5/Zero-shot-CoT/Specific%20instructions/level3.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-3.5/Zero-shot-CoT/Specific%20instructions/level3.2.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-3.5/Zero-shot-CoT/Specific%20instructions/level3.3.png" width = 600>
 </p>
 
-In order to check if the answer is correct, we used the tool [Graphing Calculator](https://www.geogebra.org/graphing) and compared the graphs generated by both. As observed, they coincide:
+ChatGPT did not run the code, but we could run it in Python and compare it to a plot generated by [Graphing Calculator](https://www.geogebra.org/graphing). When compared, they coincide:
 Graphing Calculator        |  ChatGPT
 :-------------------------:|:-------------------------:
-![](https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-off/Zero-shot-CoT/level3.4.png)  |  ![](https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-off/Zero-shot-CoT/level3.2.png)
+![](https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-off/Zero-shot-CoT/level3.4.png)  |  ![](https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-3.5/Zero-shot-CoT/Specific%20instructions/level3.4.png)
 
 ##### Level 4: Finding a minimum.
 - Prompt:
@@ -700,17 +699,11 @@ Let's think step by step.
 
 - ChatGPT Output:
 <p align = "center">
-   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-off/Zero-shot-CoT/level4.png" width = 600>
-   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-off/Zero-shot-CoT/level4.2.png" width = 600>
-   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-off/Zero-shot-CoT/level4.3.png" width = 600>
-   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-off/Zero-shot-CoT/level4.4.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-3.5/Zero-shot-CoT/Specific%20instructions/level4.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-3.5/Zero-shot-CoT/Specific%20instructions/level4.2.png" width = 600>
 </p>
 
-In order to check that the answers are correct, we will obtain the minimum using Wolfram Alpha. As observed, in both cases the minimum is correct (-9/16 = -0'5625).
-- Wolfram Alpha:
-<p align = "center">
-   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot/Specific%20instructions/Proofs/proof_level4.png" width = 600>
-</p>
+As we will see in some other levels, this happens more than expected. ChatGPT does not return the answer; it only gives the steps and lets the user **"make the calculations"**.
 
 ##### Level 5: Intersecting two functions.
 - Prompt:
@@ -721,17 +714,12 @@ Let's think step by step.
 
 - ChatGPT Output:
 <p align = "center">
-   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-off/Zero-shot-CoT/level5.png" width = 600>
-   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-off/Zero-shot-CoT/level5.2.png" width = 600>
-   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-off/Zero-shot-CoT/level5.3.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-3.5/Zero-shot-CoT/Specific%20instructions/level5.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-3.5/Zero-shot-CoT/Specific%20instructions/level5.2.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-3.5/Zero-shot-CoT/Specific%20instructions/level5.3.png" width = 600>
 </p>
 
-In order to check if the answers are correct, we will check the graph:
-<p align = "center">
-   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot/Specific%20instructions/Proofs/proof_level5.2.png" width = 600>
-</p>
-
-We can see that there are two intersection points, both expressed using the Lambert W function; the first intersection point is equal to 3'693 and the second one is 6'936. If we return above, we can see that ChatGPT got the same intersection points.
+As before, no results are given.
 
 ##### Level 6: Deriving a function.
 - Prompt:
@@ -742,8 +730,8 @@ Let's think step by step.
 
 - ChatGPT Output:
 <p align = "center">
-   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-off/Zero-shot-CoT/level6.png" width = 600>
-   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-off/Zero-shot-CoT/level6.2.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-3.5/Zero-shot-CoT/Specific%20instructions/level6.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-3.5/Zero-shot-CoT/Specific%20instructions/level6.2.png" width = 600>
 </p>
 
 As a way of checking that the answer is correct, we simply asked Wolfram Alpha to derive the function, and check if it coincides with the derivative obtained by ChatGPT. The solution of Wolfram Alpha is:
@@ -751,6 +739,7 @@ As a way of checking that the answer is correct, we simply asked Wolfram Alpha t
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot/Specific%20instructions/Proofs/proof_level6.png" width = 200>
 </p>
 
+Hence, the answer is wrong.
 
 ##### Level 7: Integrating a function.
 - Prompt:
@@ -761,8 +750,8 @@ Let's think step by step.
 
 - ChatGPT Output:
 <p align = "center">
-   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-off/Zero-shot-CoT/level7.png" width = 600>
-   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-off/Zero-shot-CoT/level7.2.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-3.5/Zero-shot-CoT/Specific%20instructions/level7.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-3.5/Zero-shot-CoT/Specific%20instructions/level7.2.png" width = 600>
 </p>
 
 For this level, to check if the answer is correct, we solved the integral using [Integral Calculator](https://www.integral-calculator.com/):
@@ -781,12 +770,12 @@ Let's think step by step.
 
 - ChatGPT Output:
 <p align = "center">
-   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-off/Zero-shot-CoT/level8.png" width = 600>
-   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-off/Zero-shot-CoT/level8.2.png" width = 600>
-   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-off/Zero-shot-CoT/level8.3.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-3.5/Zero-shot-CoT/Specific%20instructions/level8.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-3.5/Zero-shot-CoT/Specific%20instructions/level8.2.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-3.5/Zero-shot-CoT/Specific%20instructions/level8.3.png" width = 600>
 </p>
 
-The tool [Symbolab](https://www.symbolab.com/) was used to study the convergence of the proposed function. The series has a value of 1, which corresponds to the value obtained by ChatGPT:
+The tool [Symbolab](https://www.symbolab.com/) was used to study the convergence of the proposed function. The series has a value of 1 (converges), which corresponds to the value obtained by ChatGPT:
 <p align = "center">
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot/Specific%20instructions/Proofs/proof_level8.png" width = 600>
 </p>
@@ -800,14 +789,17 @@ Let's think step by step.
 
 - ChatGPT Output:
 <p align = "center">
-   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-off/Zero-shot-CoT/level9.png" width = 600>
-   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-off/Zero-shot-CoT/level9.2.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-3.5/Zero-shot-CoT/Specific%20instructions/level9.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-3.5/Zero-shot-CoT/Specific%20instructions/level9.2.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-3.5/Zero-shot-CoT/Specific%20instructions/level9.3.png" width = 600>
 </p>
 
-For this problem, we used again [Symbolab](https://www.symbolab.com/) to compute the Fourier transform. After comparing it with the result obtained from ChatGPT,the solutions coincide:
+For this problem, we used again [Symbolab](https://www.symbolab.com/) to compute the Fourier transform. After comparing it with the result obtained from ChatGPT, the solutions do not coincide:
 <p align = "center">
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot/Specific%20instructions/Proofs/proof_level9.png" width = 600>
 </p>
+
+These two expressions represent different mathematical entities due to the different coefficients in front of the Dirac delta functions.
 
 ##### Level 10: Doing regression in some data.
 - Prompt:
@@ -823,10 +815,13 @@ Let's think step by step.
 
 - ChatGPT Output:
 <p align = "center">
-   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-off/Zero-shot-CoT/level10.png" width = 600>
-   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-off/Zero-shot-CoT/level10.2.png" width = 600>
-   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-off/Zero-shot-CoT/level10.3.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-3.5/Zero-shot-CoT/Specific%20instructions/level10.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-3.5/Zero-shot-CoT/Specific%20instructions/level10.2.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-3.5/Zero-shot-CoT/Specific%20instructions/level10.3.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-3.5/Zero-shot-CoT/Specific%20instructions/level0.4.png" width = 600>
 </p>
+
+The process was stated, but no answer given.
 
 #### General instructions
 ##### Level 11: Finding the area.
@@ -840,10 +835,12 @@ Let's think step by step.
 
 - ChatGPT Output:
 <p align = "center">
-   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-off/Zero-shot-CoT/level11.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-3.5/Zero-shot-CoT/General%20instructions/level11.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-3.5/Zero-shot-CoT/General%20instructions/level11.2.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-3.5/Zero-shot-CoT/General%20instructions/level11.3.png" width = 600>
 </p>
 
-In this case, ChatGPT has correctly guessed that integrals are required to solve this problem. As indicated in the PDF, the solution is doing the integral of x^2+x+4 between 1 and 3. To check if the answers were correct, the platform [Integral Calculator](https://www.integral-calculator.com/) was used. As observed, the results coincide:
+As in the rest of the cases, ChatGPT has correctly guessed that integrals are required to solve this problem. As indicated in the PDF, the solution is doing the integral of x^2+x+4 between 1 and 3. To check if the answers were correct, the platform [Integral Calculator](https://www.integral-calculator.com/) was used. As observed, the results do not coincide (even though the integral is the same):
 <p align = "center">
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot/General%20instructions/Proofs/proof_level11.png" width = 500>
 </p>
@@ -857,12 +854,13 @@ Let's think step by step.
 
 - ChatGPT Output:
 <p align = "center">
-   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-off/Zero-shot-CoT/level12.png" width = 600>
-   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-off/Zero-shot-CoT/level12.2.png" width = 600>
-   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-off/Zero-shot-CoT/level12.3.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-3.5/Zero-shot-CoT/General%20instructions/level12.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-3.5/Zero-shot-CoT/General%20instructions/level12.2.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-3.5/Zero-shot-CoT/General%20instructions/level12.3.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-3.5/Zero-shot-CoT/General%20instructions/level12.4.png" width = 600>
 </p>
 
-The problem of this level was proposed by ChatGPT, and the solution coincides with the results obtained above:
+The problem of this level was proposed by ChatGPT, and the solution does not coincide with the results obtained above:
 <p align = "center">
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot/General%20instructions/Proofs/proof_level12.png" width = 600>
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot/General%20instructions/Proofs/proof_level12.2.png" width = 600>
@@ -879,11 +877,14 @@ Let's think step by step.
 ```
 - ChatGPT Output:
 <p align = "center">
-   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-off/Zero-shot-CoT/level13.png" width = 600>
-   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-off/Zero-shot-CoT/level13.2.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-3.5/Zero-shot-CoT/General%20instructions/level13.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-3.5/Zero-shot-CoT/General%20instructions/level13.2.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-3.5/Zero-shot-CoT/General%20instructions/level13.3.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-3.5/Zero-shot-CoT/General%20instructions/level13.4.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-3.5/Zero-shot-CoT/General%20instructions/level13.5.png" width = 600>
 </p>
 
-If we were to check the solutions, we could see that the shortest path is `s, s1, s4, s5, s3, t`; as the one proposed by ChatGPT.
+If we were to check the solutions, we could see that the shortest path is `s, s1, s4, s5, s3, t`; contrary to the one proposed by ChatGPT.
 
 ##### Level 14: Predicting the next number in a complex sequence.
 - Prompt:
@@ -894,8 +895,8 @@ Let's think step by step.
 
 - ChatGPT Output:
 <p align = "center">
-   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-off/Zero-shot-CoT/level14.png" width = 600>
-   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-off/Zero-shot-CoT/level14.2.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-3.5/Zero-shot-CoT/General%20instructions/level14.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-3.5/Zero-shot-CoT/General%20instructions/level14.2.png" width = 600>
 </p>
 
 The underlying sequence was perfectly discovered.
@@ -911,11 +912,11 @@ Let's think step by step.
 
 - ChatGPT Output:
 <p align = "center">
-   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-off/Zero-shot-CoT/level15.png" width = 600>
-   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-off/Zero-shot-CoT/level15.2.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-3.5/Zero-shot-CoT/General%20instructions/level15.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-3.5/Zero-shot-CoT/General%20instructions/level15.2.png" width = 600>
 </p>
 
-By checking the results, we can see that these coincide with the solutions. Hence, ChatGPT was able to understand that it was a compound interest problem.
+By checking the results, we can see that these do not coincide with the solutions, despite being able to understand that it was a compound interest problem.
 
 ##### Level 16: Deciphering a phrase knowing each letter was shifted by a certain number.
 The example from below comes from the following PDF: [Caesar Cipher Decoding: Answer Key](https://s3.amazonaws.com/prod-hmhco-vmg-craftcms-public/CipherAnswers.pdf).
@@ -928,10 +929,11 @@ Let's think step by step.
 
 - ChatGPT Output:
 <p align = "center">
-   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-off/Zero-shot-CoT/level16.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-3.5/Zero-shot-CoT/General%20instructions/level16.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-3.5/Zero-shot-CoT/General%20instructions/level16.2.png" width = 600>
 </p>
 
-This constitutes another problem that it solved correctly. After checking the solutions, we see that the deciphered message is "FREE PIZZA IN THE CAFETERIA". 
+After checking the solutions, we see that the deciphered message is "FREE PIZZA IN THE CAFETERIA", and not the one deciphered by ChatGPT.
 
 ##### Level 17: Calculating the time it takes for an object to cool down to a certain temperature.
 - Prompt:
@@ -942,12 +944,13 @@ Let's think step by step.
 
 - ChatGPT Output:
 <p align = "center">
-   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-off/Zero-shot-CoT/level17.png" width = 600>
-   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-off/Zero-shot-CoT/level17.2.png" width = 600>
-   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-off/Zero-shot-CoT/level17.3.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-3.5/Zero-shot-CoT/General%20instructions/level17.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-3.5/Zero-shot-CoT/General%20instructions/level17.2.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-3.5/Zero-shot-CoT/General%20instructions/level17.3.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-3.5/Zero-shot-CoT/General%20instructions/level17.4.png" width = 600>
 </p>
 
-In this case, ChatGPT was unable to solve this problem. Even though it understood that it was a problem related to Newton's Law of Cooling, it couldn't determine the cooling constant `k`.
+In this case, ChatGPT was unable to solve this problem, since it couldn't determine the cooling constant `k`. There is no way of knowing if the problem is correct.
 
 ##### Level 18: Calculating the work done in compressing a spring.
 The example from below comes from the following YouTube video: [Work done by Spring Example](https://www.youtube.com/watch?v=uUgMK8wQAcU).
@@ -960,11 +963,10 @@ Let's think step by step.
 
 - ChatGPT Output:
 <p align = "center">
-   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-off/Zero-shot-CoT/level18.png" width = 600>
-   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-off/Zero-shot-CoT/level18.2.png" width = 600>
-</p>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-3.5/Zero-shot-CoT/General%20instructions/level18.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-3.5/Zero-shot-CoT/General%20instructions/level18.2.png" width = 600>
 
-In this case, ChatGPT **did not** fail to know that in order to find the work we must know the spring constant K. The result coincides with the solution, giving W=2'5J. 
+In this case, ChatGPT failed to know that in order to find the work we must know the spring constant K. 
 
 ##### Level 19: Computing the quantity a company should make for its inventory given production cost, demand rate, and other variables.
 The example from below comes from the following webpage: [Economic Order Quantity (EOQ): Practical Problems and Solutions](https://www.financestrategists.com/accounting/cost-accounting/material-costing/economic-order-quantity-eoq-problems-and-solutions/).
@@ -977,11 +979,12 @@ Let's think step by step.
 
 - ChatGPT Output:
 <p align = "center">
-   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-off/Zero-shot-CoT/level19.png" width = 600>
-   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-off/Zero-shot-CoT/level19.2.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-3.5/Zero-shot-CoT/General%20instructions/level19.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-3.5/Zero-shot-CoT/General%20instructions/level19.2.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-3.5/Zero-shot-CoT/General%20instructions/level19.3.png" width = 600>
 </p>
 
-ChatGPT understood that it was an EOQ problem, so it proceeded correctly by using the EOQ formula from below. However, the answer to the last question (How often should an order be placed?) does not coincide with the solutions.
+ChatGPT understood that it was an EOQ problem, so it proceeded correctly by using the EOQ formula from below. Furthermore, it solved all of the questions correctly. 
 
 ##### Level 20: Computing the orbital period.
 The example from below comes from the following PDF: [Solutions to Physics I Gravity and Kepler’s Laws Practice Problems](https://www.lehman.edu/faculty/anchordoqui/101-P4_s.pdf).
@@ -994,13 +997,24 @@ Let's think step by step.
 
 - ChatGPT Output:
 <p align = "center">
-   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-off/Zero-shot-CoT/level20.png" width = 600>
-   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-off/Zero-shot-CoT/level20.2.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-3.5/Zero-shot-CoT/General%20instructions/level20.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-3.5/Zero-shot-CoT/General%20instructions/level20.2.png" width = 600>
 </p>
 
-Finally, ChatGPT was again able to understand that we were dealing with Kepler's third law. By checking the solution from the PDF above, we see that the same result is obtained: the orbital period of Hyperion is 21.31 days.
+ChatGPT was able to understand that we were dealing with Kepler's third law. The process is correct and the answer is close to the solution.
 
 ##### Conclusions
+Once the two sections are finished, it is time to gather everything that was exposed above. First off, regarding the section **Specific instructions**, only 4 exercises were correct.
+
+| Level 1 | Level 2 | Level 3 | Level 4 | Level 5 | Level 6 | Level 7 | Level 8 | Level 9 | Level 10 |
+|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|
+|    Fail    |    Pass    |    Pass    |    Fail    |    Fail    |    Fail    |    Pass    |    Pass    |    Fail    |    Fail    |
+
+As in the conclusions for the section of specific instructions, we have seen that only three levels where solved correctly under the **General instructions**:
+
+| Level 11 | Level 12 | Level 13 | Level 14 | Level 15 | Level 16 | Level 17 | Level 18 | Level 19 | Level 20 |
+|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|
+|    Fail    |    Fail    |    Fail    |    Pass    |    Fail    |    Fail    |    Fail    |    Fail    |    Pass    |    Pass    |
 
 
 ## ChatGPT-4 (Wolfram Mathematica plugin on)
