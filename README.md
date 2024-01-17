@@ -420,7 +420,7 @@ Compute the Fourier transform of f(t)=cosω0t.
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-3.5/Zero-shot/Specific%20instructions/level9.3.png" width = 600>
 </p>
 
-For this problem, we used again [Symbolab](https://www.symbolab.com/) to compute the Fourier transform. After comparing it with the result obtained from ChatGPT,the solutions do not coincide:
+For this problem, we used again [Symbolab](https://www.symbolab.com/) to compute the Fourier transform. After comparing it with the result obtained from ChatGPT, the solutions do not coincide:
 <p align = "center">
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot/Specific%20instructions/Proofs/proof_level9.png" width = 600>
 </p>
@@ -782,12 +782,12 @@ Let's think step by step.
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-3.5/Zero-shot-CoT/Specific%20instructions/level9.3.png" width = 600>
 </p>
 
-For this problem, we used again [Symbolab](https://www.symbolab.com/) to compute the Fourier transform. After comparing it with the result obtained from ChatGPT, the solutions do not coincide:
+For this problem, we used again [Symbolab](https://www.symbolab.com/) to compute the Fourier transform. After comparing it with the result obtained from ChatGPT, the solutions coincide:
 <p align = "center">
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot/Specific%20instructions/Proofs/proof_level9.png" width = 600>
 </p>
 
-These two expressions represent different mathematical entities due to the different coefficients in front of the Dirac delta functions.
+These two expressions are different due to the scaling factors, but they represent the same underlying signal structure with different scaling.
 
 ##### Level 10: Doing regression in some data.
 - Prompt:
@@ -992,11 +992,11 @@ Let's think step by step.
 ChatGPT was able to understand that we were dealing with Kepler's third law. The process is correct and the answer is close to the solution.
 
 ##### Conclusions
-Once the two sections are finished, it is time to gather everything that was exposed above. First off, regarding the section **Specific instructions**, only 4 exercises were correct.
+Once the two sections are finished, it is time to gather everything that was exposed above. First off, regarding the section **Specific instructions**, only 5 exercises were correct.
 
 | Level 1 | Level 2 | Level 3 | Level 4 | Level 5 | Level 6 | Level 7 | Level 8 | Level 9 | Level 10 |
 |:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|
-|    Fail    |    Pass    |    Pass    |    Fail    |    Fail    |    Fail    |    Pass    |    Pass    |    Fail    |    Fail    |
+|    Fail    |    Pass    |    Pass    |    Fail    |    Fail    |    Fail    |    Pass    |    Pass    |    Pass    |    Fail    |
 
 As in the conclusions for the section of specific instructions, we have seen that only three levels where solved correctly under the **General instructions**:
 
