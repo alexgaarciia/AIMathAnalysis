@@ -1008,10 +1008,10 @@ As in the conclusions for the section of specific instructions, we have seen tha
 ## ChatGPT-4 (Wolfram Mathematica plugin on)
 ### Zero-shot prompting
 #### Specific instructions
-##### Level 1: Inventing and inverting a matrix.
+##### Level 1: Inverting a matrix.
 - Prompt:
 ```ruby
-Invent a matrix with random values and show it. Then, invert it.
+Given the matrix A = [[1, -2, 1], [-2, 3, 1], [5, -7, -3]], find the inverse (A^-1).
 ```
 
 - ChatGPT Output:
@@ -1019,10 +1019,7 @@ Invent a matrix with random values and show it. Then, invert it.
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot/Specific%20instructions/level1.png" width = 600>
 </p>
 
-In order to check if a matrix was correctly inverted, we just need to multiply the original matrix with the inverse matrix. We should obtain the identity matrix. To check it, we used R:
-<p align = "center">
-   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot/Specific%20instructions/Proofs/proof_level1.png" width = 600>
-</p>
+The answer is correct.
 
 ##### Level 2: Generating normally distributed variables with a specific mean and variance.
 - Prompt:
@@ -1725,16 +1722,18 @@ For the section of `General instructions`, it struggled with **Level 13** (Getti
 ## ChatGPT-4 (Wolfram Mathematica plugin off)
 ### Zero-shot prompting
 #### Specific instructions
-##### Level 1: Inventing and inverting a matrix.
+##### Level 1: Inverting a matrix.
 - Prompt:
 ```ruby
-Invent a matrix with random values and show it. Then, invert it.
+Given the matrix A = [[1, -2, 1], [-2, 3, 1], [5, -7, -3]], find the inverse (A^-1).
 ```
 
 - ChatGPT Output:
 <p align = "center">
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-off/Zero-shot/level1.png" width = 600>
 </p>
+
+The answer coincides with the solution.
 
 ##### Level 2: Generating normally distributed variables with a specific mean and variance.
 - Prompt:
