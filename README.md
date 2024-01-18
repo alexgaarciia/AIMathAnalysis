@@ -528,7 +528,7 @@ If you invested $5,000 for 10 years at 9% compounded quarterly, how much money w
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-3.5/Zero-shot/General%20instructions/level15.2.png" width = 600>
 </p>
 
-By checking the results, we can see that these do not coincide with the solutions.
+By checking the results, we can see that the answer does not match the solution, but it is due to some approximations with a term of the formula. It solved it correctly.
 
 ##### Level 16: Deciphering a phrase knowing each letter was shifted by a certain number.
 The example from below comes from the following PDF: [Caesar Cipher Decoding: Answer Key](https://s3.amazonaws.com/prod-hmhco-vmg-craftcms-public/CipherAnswers.pdf).
