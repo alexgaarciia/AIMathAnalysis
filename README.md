@@ -904,7 +904,7 @@ Let's think step by step.
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-3.5/Zero-shot-CoT/General%20instructions/level15.2.png" width = 600>
 </p>
 
-By checking the results, we can see that these do not coincide with the solutions, despite being able to understand that it was a compound interest problem.
+By checking the results, we can see that these do not coincide with the solutions, but it is due to the approximation in one of the terms of the formula. However, the problem is correct.
 
 ##### Level 16: Deciphering a phrase knowing each letter was shifted by a certain number.
 The example from below comes from the following PDF: [Caesar Cipher Decoding: Answer Key](https://s3.amazonaws.com/prod-hmhco-vmg-craftcms-public/CipherAnswers.pdf).
