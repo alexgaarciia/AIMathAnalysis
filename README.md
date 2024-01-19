@@ -172,7 +172,7 @@ shortestPath = FindShortestPath[graph, 2, 4];
 shortestPath
 ```
 
-#### Extra step: Getting an R equivalent of the code
+#### Extra step: Getting an R equivalent of the code (find the generated code [here](https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/networkingraphs_test.R))
 ```ruby
 # Defining the adjacency matrix:
 adjMatrix <- matrix(c(
