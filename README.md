@@ -13,7 +13,6 @@ The main goal of this repository is to analyze how [ChatGPT](https://chat.openai
 | 5    | Finally, select it in the plugins dropdown    | <p align="center"><img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Plugin%20installation/step5.png" width="300"/></p> |
 
 
-
 ## Interacting with Wolfram Mathematica
 Combining ChatGPT and Wolfram Mathematica can be a powerful way to leverage the strengths of both platforms. ChatGPT is proficient in natural language processing and can handle a wide range of queries and tasks, while Wolfram Mathematica excels in computational mathematics, data analysis, and visualization. Here are a few ways to integrate them:
 1. Automating Mathematica Scripts: ChatGPT can be used to create a user-friendly interface to create Mathematica scripts. Users can **describe in natural language** what they want to compute or analyze, and then ChatGPT will **translate** into a Mathematica script and execute it.
@@ -248,18 +247,22 @@ Before ending this section, it would be worth mentioning key functions that made
 
 
 ## Prompting Wolfram Mathematica with ChatGPT
-One of our other objectives is finding out how much we can do with only text. In order to do this, we would like to discover the correct manner of prompting ChatGPT. We have seen before that with plugins, it is highly powerful, being able to solve an entire network problem itself. However, what if we could do it in fewer steps, just by correctly prompting it?
+In the rapidly evolving field of artificial intelligence, particularly in the domain of language models, "prompting" emerges as a pivotal concept. This term refers to the method of interacting with an AI language model by providing it with specific inputs (prompts), which guide the model in generating a desired output.
+
+The goal of this project is to evaluate ChatGPT's ability to interpret and respond to prompts with varying levels of specificity, determining whether it requires detailed background context for effective problem-solving or if it can efficiently derive solutions from minimal information.
 
 ### Available resources
-First off, we would like to know if there are already some investigations/guides in this regard. We found out that there are no specific texts on the most efficient way of prompting Wolfram Mathematica with ChatGPT. However, there is an interesting introduction to using the plugin in the offical Wolfram webpage: [Plugin de Wolfram para ChatGPT](https://www.wolfram.com/wolfram-plugin-chatgpt/). It provides an installation guide and some applications of it and, at the end of the page, there is a link about [using the Wolfram Plugin for ChatGPT](https://www.youtube.com/watch?v=EOQV9VakBgE&ab_channel=Wolfram), where several prompts are tested.
+First off, we would like to know if there are already some investigations/guides in this regard. We found out that there are no specific texts on the most efficient way of prompting Wolfram Mathematica with ChatGPT. However, there is an interesting introduction to using the plugin in the offical Wolfram webpage: [Wolfram ChatGPT](https://www.wolfram.com/wolfram-plugin-chatgpt/index.php.en?source=footer). It provides an installation guide and some applications of it and, at the end of the page, there is a link about [using the Wolfram Plugin for ChatGPT](https://www.youtube.com/watch?v=EOQV9VakBgE&ab_channel=Wolfram), where several prompts are tested.
 
 **Note that the only resources that are close to talking about prompting the plugin are YouTube videos.**
 
 
 ## Experiments
-In order to `test how much we can do by simply giving text as input`, we provided some mathematical problems with varying difficulty. There will be two different sections of experiments, each corresponding to a different version of ChatGPT (ChatGPT-3.5, ChatGPT-4).
+In order to test how much we can do by simply giving text as input, we provided some mathematical problems with varying difficulty. There will be three different sections of experiments, each corresponding to a different version of ChatGPT (ChatGPT-3.5, ChatGPT-4 (Wolfram Mathematica plugin on, ChatGPT-4 (Wolfram Mathematica plugin off).
 
-Inside each, there will be two subsections for two different types of prompting: `Zero-shot prompting` and `Zero-shot-CoT prompting`. For each one we will test their performance by being very specific about what we want to do and by not being specific about what we want to do (for example, instead of asking ChatGPT to solve an integral in a range (specific instructions), we could ask to obtain the area and check if it knows that an integral must be computed (general instructions)). With this, we are trying to solve two main questions: Does ChatGPT require background thinking? How much we can do without being very specific?
+Inside each, there will be two subsections for two different types of prompting: \textbf{Zero-shot learning} and \textbf{Zero-shot-CoT}. For each one, we will test their performance by being very specific about what we want to do and by not being specific about what we want to do.
+
+That is, for example, instead of asking ChatGPT to solve an integral in a range (specific instructions), we could ask to obtain the area and check if it knows that an integral must be computed (general instructions). With this, we are trying to solve two main questions: Does ChatGPT require background thinking? How much we can do without being very specific?
 
 
 ## ChatGPT-3.5
