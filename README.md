@@ -255,7 +255,7 @@ The goal of this project is to evaluate ChatGPT's ability to interpret and respo
 A prompt is essentially an input statement or question given to an AI model. It acts as a catalyst that initiates the model's generation process, leading to a variety of potential outputs. Prompts can vary significantly in complexity, ranging from simple questions to detailed instructions or scenarios.
 
 #### Prompting techniques
-In the course of this paper, we focuse particularly on two advanced prompting techniques: **zero-shot learning** and **zero-shot chain of thought** (zero-shot-CoT). 
+In the course of this repository, we focuse particularly on two advanced prompting techniques: **zero-shot learning** and **zero-shot chain of thought** (zero-shot-CoT). 
 - Zero-shot learning: Zero-shot learning is a technique where the AI model responds to prompts without any prior specific training or examples related to that task. It relies on the model's pre-trained knowledge and its ability to generalize from that knowledge to new scenarios.
 - Zero-shot-CoT: It constitutes a nuanced extension of the zero-shot technique. In this approach, the model is prompted to articulate its reasoning process step by step, leading to the final answer. This method not only sheds light on the model's decision-making process but also enhances the clarity and interpretability of its responses. To do this, the sentence "Let's think step by step" is added at the end of the prompt.
 
