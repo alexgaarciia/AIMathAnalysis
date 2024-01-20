@@ -15,12 +15,12 @@ The main goal of this repository is to analyze how [ChatGPT](https://chat.openai
 
 ## Interacting with Wolfram Mathematica
 Combining ChatGPT and Wolfram Mathematica can be a powerful way to leverage the strengths of both platforms. ChatGPT is proficient in natural language processing and can handle a wide range of queries and tasks, while Wolfram Mathematica excels in computational mathematics, data analysis, and visualization. Here are a few ways to integrate them:
-1. Automating Mathematica Scripts: ChatGPT can be used to create a user-friendly interface to create Mathematica scripts. Users can **describe in natural language** what they want to compute or analyze, and then ChatGPT will **translate** into a Mathematica script and execute it.
-2. Data Anaylsis and Visualization: It can also be used to interpret and structure data analysis queries. After passing these structured queries, Mathematica can then perform complex data analysis and generate visualizations.
-3. Algorithm Design: Combining them for algorithm development can be achieved by using ChatGPT for initial brainstorming and pseudocode generation, and then translating these ideas into Mathematica's powerful computational language for detailed analysis and visualization.
+1. **Automating Mathematica Scripts**: ChatGPT can be used to create a user-friendly interface to create Mathematica scripts. Users can **describe in natural language** what they want to compute or analyze, and then ChatGPT will **translate** into a Mathematica script and execute it.
+2. **Data Anaylsis and Visualization**: It can also be used to interpret and structure data analysis queries. After passing these structured queries, Mathematica can then perform complex data analysis and generate visualizations.
+3. **Algorithm Design**: Combining them for algorithm development can be achieved by using ChatGPT for initial brainstorming and pseudocode generation, and then translating these ideas into Mathematica's powerful computational language for detailed analysis and visualization.
 
 ### Example: Networking graphs
-We would like to provide a preliminary glimpse of what these platforms, when used together, can achieve through an example from one of our previous projects that demonstrates the potential of `packet latency` and `reinforcement learning`. Our goal is to check if, given a specific network, we can **find the shortest path** from one router to another using Wolfram Mathematica. Later on, we might want to try to ask ChatGPT to transform the generated code into R code (find the generated code [here](https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/networkingraphs_test.R)).
+We would like to provide a preliminary glimpse of what these platforms, when used together, can achieve through an example from one of our previous projects that demonstrates the potential of _packet latency_ and _reinforcement learning_. Our goal is to check if, given a specific network, we can \textbf{find the shortest path} from one router to another using Wolfram Mathematica. Later on, we might want to try to ask ChatGPT to transform the generated code into a certain programming language, such as R.
 
 #### Step 1: Generate the network
 To begin with, we will try to generate a 5-router network by providing the following adjacency matrix (1 means there is connection, otherwise 0):
@@ -108,7 +108,7 @@ In this last part of the experiment, we will try to get the best path from one r
 - Transmission queue delay: We will penalize 1us for each 1/(1-load).
 - BeR penalty: If BeR >= 10^-4 and Ber <= 1, we will assign a penalty of 1000us; If BeR > 10^-5 and BeR < 10^-4, the penalty will be of 50us; Otherwise, there is no penalty (0us).
 
-Finally, once this was specified, we asked ChatGPT the code that would be use to compute the best path from router 2 to router 4:
+Finally, once this was specified, we asked ChatGPT the code that would be use to compute the best path from router 2 to router 4 (find the generated code [here](https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/networkingraphs_test.nb)):
 ```ruby
 (* Define the adjacency matrix *)
 adjMatrix = {
@@ -250,6 +250,14 @@ Before ending this section, it would be worth mentioning key functions that made
 In the rapidly evolving field of artificial intelligence, particularly in the domain of language models, "prompting" emerges as a pivotal concept. This term refers to the method of interacting with an AI language model by providing it with specific inputs (prompts), which guide the model in generating a desired output.
 
 The goal of this project is to evaluate ChatGPT's ability to interpret and respond to prompts with varying levels of specificity, determining whether it requires detailed background context for effective problem-solving or if it can efficiently derive solutions from minimal information.
+
+### What is a prompt?
+A prompt is essentially an input statement or question given to an AI model. It acts as a catalyst that initiates the model's generation process, leading to a variety of potential outputs. Prompts can vary significantly in complexity, ranging from simple questions to detailed instructions or scenarios.
+
+#### Prompting techniques
+In the course of this paper, we focuse particularly on two advanced prompting techniques: **zero-shot learning** and **zero-shot chain of thought** (zero-shot-CoT). 
+- Zero-shot learning: Zero-shot learning is a technique where the AI model responds to prompts without any prior specific training or examples related to that task. It relies on the model's pre-trained knowledge and its ability to generalize from that knowledge to new scenarios.
+- Zero-shot-CoT: It constitutes a nuanced extension of the zero-shot technique. In this approach, the model is prompted to articulate its reasoning process step by step, leading to the final answer. This method not only sheds light on the model's decision-making process but also enhances the clarity and interpretability of its responses. To do this, the sentence "Let's think step by step" is added at the end of the prompt.
 
 ### Available resources
 First off, we would like to know if there are already some investigations/guides in this regard. We found out that there are no specific texts on the most efficient way of prompting Wolfram Mathematica with ChatGPT. However, there is an interesting introduction to using the plugin in the offical Wolfram webpage: [Wolfram ChatGPT](https://www.wolfram.com/wolfram-plugin-chatgpt/index.php.en?source=footer). It provides an installation guide and some applications of it and, at the end of the page, there is a link about [using the Wolfram Plugin for ChatGPT](https://www.youtube.com/watch?v=EOQV9VakBgE&ab_channel=Wolfram), where several prompts are tested.
@@ -618,13 +626,13 @@ As observed, not many exercises were solved correctly. Regarding the section **S
 
 | Level 1 | Level 2 | Level 3 | Level 4 | Level 5 | Level 6 | Level 7 | Level 8 | Level 9 | Level 10 |
 |:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|
-|    Fail    |    Pass    |    Pass    |    Fail    |    Fail    |    Fail    |    Fail    |    Pass    |    Fail    |    Fail    |
+|    Methodology-only    |    Methodology+Solution    |    Methodology+Solution    |    Methodology-only    |    Methodology-only    |    Methodology-only    |    Methodology-only    |    Methodology+Solution    |    Nothing    |    Methodology-only    |
 
 For the case of **General instructions**, only 4 exercises were solved correctly.
 
 | Level 11 | Level 12 | Level 13 | Level 14 | Level 15 | Level 16 | Level 17 | Level 18 | Level 19 | Level 20 |
 |:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|
-|    Pass    |    Pass    |    Fail    |    Pass    |    Fail    |    Fail    |    Fail    |    Fail    |    Fail    |    Pass    |
+|    Methodology+Solution    |    Methodology+Solution    |    Methodology-only    |    Methodology+Solution    |    Methodology+Solution    |    Methodology-only    |    Nothing    |    Methodology-only    |    Methodology-only    |    Methodology+Solution    |
 
 ### Zero-shot-CoT prompting
 #### Specific instructions
@@ -999,13 +1007,13 @@ Once the two sections are finished, it is time to gather everything that was exp
 
 | Level 1 | Level 2 | Level 3 | Level 4 | Level 5 | Level 6 | Level 7 | Level 8 | Level 9 | Level 10 |
 |:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|
-|    Fail    |    Pass    |    Pass    |    Fail    |    Fail    |    Fail    |    Pass    |    Pass    |    Pass    |    Fail    |
+|    Methodology-only    |    Methodology+Solution    |    Methodology+Solution    |    Methodology-only    |    Methodology-only    |    Nothing    |    Methodology+Solution    |    Methodology+Solution    |    Methodology+Solution    |    Methodology-only    |
 
 As in the conclusions for the section of specific instructions, we have seen that only three levels where solved correctly under the **General instructions**:
 
 | Level 11 | Level 12 | Level 13 | Level 14 | Level 15 | Level 16 | Level 17 | Level 18 | Level 19 | Level 20 |
 |:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|
-|    Fail    |    Fail    |    Fail    |    Pass    |    Fail    |    Fail    |    Fail    |    Fail    |    Pass    |    Pass    |
+|    Methodology-only    |    Methodology-only    |    Methodology-only    |    Methodology+Solution    |    Methodology+Solution    |    Methodology-only    |    Methodology-only    |    Methodology-only    |    Methodology+Solution    |    Methodology+Solution    |
 
 
 ## ChatGPT-4 (Wolfram Mathematica plugin on)
@@ -1340,13 +1348,13 @@ To sum up this trials, the conclusions from below can be observed, having 10/10 
 
  Level 1 | Level 2 | Level 3 | Level 4 | Level 5 | Level 6 | Level 7 | Level 8 | Level 9 | Level 10 |
 |:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|
-|    Pass    |    Pass    |    Pass    |    Pass    |    Pass    |    Pass    |    Pass    |    Pass    |    Pass    |    Pass    |
+|    Solution-only    |    Solution-only    |    Solution-only    |    Solution-only    |    Solution-only    |    Solution-only    |    Solution-only    |    Solution-only    |    Solution-only    |    Solution-only    |
 
 As for the section of **General instructions**, we have seen that the same happened except for **Level 19**, in which the last question was not correctly solved:
 
 | Level 11 | Level 12 | Level 13 | Level 14 | Level 15 | Level 16 | Level 17 | Level 18 | Level 19 | Level 20 |
 |:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|
-|    Pass    |    Pass    |    Pass    |    Pass    |    Pass    |    Pass    |    Pass    |    Pass    |    Fail    |    Pass    |
+|    Solution-only    |    Solution-only    |    Solution-only    |    Solution-only    |    Solution-only    |    Solution-only    |    Solution-only    |    Solution-only    |    Partial/Incorrect Solution    |    Solution-only    |
 
 ### Zero-Shot-CoT prompting
 We have already tested how ChatGPT-4 behaves when given specific and general instructions under Zero-shot prompting using the plugin. However, how would it behave under Zero-shot-CoT? Zero-shot Chain of Thought (Zero-shot-CoT) is an approach in artificial intelligence where the model demonstrates the ability to solve complex problems or answer questions in a detailed, step-by-step manner without having been explicitly trained on those specific tasks or examples. This is referred to as "zero-shot" because the model is dealing with tasks it has not seen during training.
@@ -1713,13 +1721,13 @@ In this case, it got all the answers correct for the problems of the `Specific i
 
 | Level 1 | Level 2 | Level 3 | Level 4 | Level 5 | Level 6 | Level 7 | Level 8 | Level 9 | Level 10 |
 |:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:--------:|
-|    Pass    |    Pass    |    Pass    |    Pass    |    Pass    |    Pass    |    Pass    |    Pass    |    Pass    |    Pass    |
+|    Methodology+Solution    |    Methodology+Solution    |    Methodology+Solution    |    Methodology+Solution    |    Methodology+Solution    |    Methodology+Solution    |    Methodology+Solution    |    Methodology+Solution    |    Methodology+Solution    |    Methodology+Solution    |
 
 For the section of `General instructions`, it struggled with **Level 13** (Getting the best path from one node to another) and **Level 19** (Computing the quantity a company should make for its inventory given production cost, demand rate, and other variables). Regarding the former, it may have not understood well the adjacency matrix, since it says that `s` is directly connected to `t` (which is not the case); in the other level, however, made the mistake of considering the working days and not all the days of the year.
 
 | Level 11 | Level 12 | Level 13 | Level 14 | Level 15 | Level 16 | Level 17 | Level 18 | Level 19 | Level 20 |
 |:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|
-|    Pass    |    Pass    |    Fail    |    Pass    |    Pass    |    Pass    |    Pass    |    Pass    |    Fail    |    Pass    |
+|    Methodology+Solution    |    Methodology+Solution    |    Partial/Incorrect Solution    |    Methodology+Solution    |    Methodology+Solution    |    Methodology+Solution    |    Methodology+Solution    |    Methodology+Solution    |    Partial/Incorrect Solution    |    Methodology+Solution    |
 
 
 ## ChatGPT-4 (Wolfram Mathematica plugin off)
@@ -2053,7 +2061,7 @@ Regarding these experiments, all were successfully solved.
 
 | Level 1 | Level 2 | Level 3 | Level 4 | Level 5 | Level 6 | Level 7 | Level 8 | Level 9 | Level 10 | Level 11 | Level 12 | Level 13 | Level 14 | Level 15 | Level 16 | Level 17 | Level 18 | Level 19 | Level 20 |
 |:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|
-|    Pass    |    Pass    |    Pass    |    Pass    |    Pass    |    Pass    |    Pass    |    Pass    |    Pass    |    Pass    |    Pass    |    Pass    |    Pass    |    Pass    |    Pass    |    Pass    |    Pass    |    Pass    |    Pass    |    Pass    |
+|    Solution-only    |    Solution-only    |    Solution-only    |    Methodology+Solution    |    Methodology+Solution    |    Methodology+Solution    |    Methodology+Solution    |    Methodology+Solution    |    Methodology+Solution    |    Methodology+Solution    |    Methodology+Solution    |    Methodology+Solution    |    Methodology+Solution    |    Methodology+Solution    |    Methodology+Solution    |    Methodology+Solution    |    Methodology+Solution    |    Methodology+Solution    |    Methodology+Solution    |    Methodology+Solution    |
 
 ### Zero-shot-CoT prompting
 #### Specific instructions
@@ -2437,6 +2445,18 @@ Finally, ChatGPT was again able to understand that we were dealing with Kepler's
 ##### Conclusions
 In this last part of the project, we have seen that ChatGPT has performed quite well. Nonetheless, we must not forget that it couldn't solve two problems: **Level 17** (Calculating the time it takes for an object to cool down to a certain temperature) and **Level 19** (Computing the quantity a company should make for its inventory given production cost, demand rate, and other variables). Regarding the former, it couldn't get the cooling constant; in the latter, even though it answered two questions correctly, it wasn't able to answer the last one. Overall, 18/20 problems were solved successfully; and for each of them, ChatGPT gave specific steps on how to solve them.
 
-|         | Level 1 | Level 2 | Level 3 | Level 4 | Level 5 | Level 6 | Level 7 | Level 8 | Level 9 | Level 10 | Level 11 | Level 12 | Level 13 | Level 14 | Level 15 | Level 16 | Level 17 | Level 18 | Level 19 | Level 20 |
-|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|
-| Zero-shot-CoT |    Pass    |    Pass    |    Pass    |    Pass    |    Pass    |    Pass    |    Pass    |    Pass    |    Pass    |    Pass    |    Pass    |    Pass    |    Pass    |    Pass    |    Pass    |    Pass    |    Fail    |    Pass    |    Fail    |    Pass    |
+| Level 1 | Level 2 | Level 3 | Level 4 | Level 5 | Level 6 | Level 7 | Level 8 | Level 9 | Level 10 | Level 11 | Level 12 | Level 13 | Level 14 | Level 15 | Level 16 | Level 17 | Level 18 | Level 19 | Level 20 |
+|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|
+|    Methodology+Solution    |    Methodology+Solution    |    Methodology+Solution    |    Methodology+Solution    |    Methodology+Solution    |    Methodology+Solution    |    Methodology+Solution    |    Methodology+Solution    |    Methodology+Solution    |    Methodology+Solution    |    Methodology+Solution    |    Methodology+Solution    |    Methodology+Solution    |    Methodology+Solution    |    Methodology+Solution    |    Methodology+Solution    |    Methodology-only    |    Methodology+Solution    |    Partial/Incorrect Solution    |    Methodology+Solution    |
+
+
+## Overall conclusion
+The conclusions from your project, focusing on the performance of ChatGPT-3.5 and ChatGPT-4 (with and without the Wolfram Mathematica plugin), can be articulated in the following paragraphs.
+
+On the one hand, **ChatGPT-3.5** displayed a variable level of proficiency, particularly under the zero-shot prompting framework. It demonstrated a partial success in specific instructions, handling some tasks with accuracy while struggling with others, particularly in complex mathematical problems. This performance indicated the model's capability in understanding basic instructions and methodologies but also highlighted its limitations in executing detailed computational steps. In the zero-shot-CoT (Chain of Thought) prompting, there was a slight improvement, suggesting that the model benefits from a structured approach in problem-solving, particularly in breaking down complex tasks. However, even with this approach, the model faced challenges in fully executing procedures and providing accurate solutions in more complex scenarios.
+
+On the other hand, the integration of the **Wolfram Mathematica plugin with ChatGPT-4** marked a significant advancement in the model's problem-solving abilities. Under zero-shot prompting, ChatGPT-4 showcased exceptional performance, successfully solving a wide range of mathematical tasks with specific instructions. This indicated a robust capability in handling computational and analytical problems, likely benefiting from the computational power of the plugin. Under the zero-shot-CoT framework, ChatGPT-4 continued to display strong capabilities, though it encountered some challenges in interpreting complex scenarios, particularly under general instructions. These instances highlighted that while external computational tools significantly enhance AI capabilities, **understanding the nuances of complex problem statements remains an area for further development**.
+
+Remarkably, **ChatGPT-4's performance without the external plugin** also demonstrated outstanding capabilities in handling a diverse array of mathematical problems. This was evident in both specific and general instructions under zero-shot prompting, where the model successfully tackled all tasks. This performance underscores the inherent strength of the model in understanding and addressing complex problems. With zero-shot-CoT prompting, although the model showed high proficiency in most tasks, it encountered difficulties in specific complex scenarios, particularly where advanced problem-solving strategies were required. This illustrates that while ChatGPT-4 is highly capable, there is room for improvement in its approach to certain complex and nuanced tasks.
+
+In summary, among the different configurations tested in the project, the best performance was observed in ChatGPT-4 when augmented with the Wolfram Mathematica plugin.
