@@ -20,7 +20,7 @@ Combining ChatGPT and Wolfram Mathematica can be a powerful way to leverage the 
 3. **Algorithm Design**: Combining them for algorithm development can be achieved by using ChatGPT for initial brainstorming and pseudocode generation, and then translating these ideas into Mathematica's powerful computational language for detailed analysis and visualization.
 
 ### Example: Networking graphs
-We would like to provide a preliminary glimpse of what these platforms, when used together, can achieve through an example from one of our previous projects that demonstrates the potential of _packet latency_ and _reinforcement learning_. Our goal is to check if, given a specific network, we can \textbf{find the shortest path} from one router to another using Wolfram Mathematica. Later on, we might want to try to ask ChatGPT to transform the generated code into a certain programming language, such as R.
+We would like to provide a preliminary glimpse of what these platforms, when used together, can achieve through an example from one of our previous projects that demonstrates the potential of _packet latency_ and _reinforcement learning_. Our goal is to check if, given a specific network, we can **find the shortest path** from one router to another using Wolfram Mathematica. Later on, we might want to try to ask ChatGPT to transform the generated code into a certain programming language, such as R.
 
 #### Step 1: Generate the network
 To begin with, we will try to generate a 5-router network by providing the following adjacency matrix (1 means there is connection, otherwise 0):
@@ -268,7 +268,7 @@ First off, we would like to know if there are already some investigations/guides
 ## Experiments
 In order to test how much we can do by simply giving text as input, we provided some mathematical problems with varying difficulty. There will be three different sections of experiments, each corresponding to a different version of ChatGPT (ChatGPT-3.5, ChatGPT-4 (Wolfram Mathematica plugin on, ChatGPT-4 (Wolfram Mathematica plugin off).
 
-Inside each, there will be two subsections for two different types of prompting: \textbf{Zero-shot learning} and \textbf{Zero-shot-CoT}. For each one, we will test their performance by being very specific about what we want to do and by not being specific about what we want to do.
+Inside each, there will be two subsections for two different types of prompting: **Zero-shot learning** and **Zero-shot-CoT**. For each one, we will test their performance by being very specific about what we want to do and by not being specific about what we want to do.
 
 That is, for example, instead of asking ChatGPT to solve an integral in a range (specific instructions), we could ask to obtain the area and check if it knows that an integral must be computed (general instructions). With this, we are trying to solve two main questions: Does ChatGPT require background thinking? How much we can do without being very specific?
 
