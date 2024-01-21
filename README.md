@@ -2459,4 +2459,25 @@ On the other hand, the integration of the **Wolfram Mathematica plugin with Chat
 
 Remarkably, **ChatGPT-4's performance without the external plugin** also demonstrated outstanding capabilities in handling a diverse array of mathematical problems. This was evident in both specific and general instructions under zero-shot prompting, where the model successfully tackled all tasks. This performance underscores the inherent strength of the model in understanding and addressing complex problems. With zero-shot-CoT prompting, although the model showed high proficiency in most tasks, it encountered difficulties in specific complex scenarios, particularly where advanced problem-solving strategies were required. This illustrates that while ChatGPT-4 is highly capable, there is room for improvement in its approach to certain complex and nuanced tasks.
 
-In summary, among the different configurations tested in the project, the best performance was observed in ChatGPT-4 when augmented with the Wolfram Mathematica plugin.
+To determine which configuration performed better, we need to compare the results of ChatGPT-4 with and without the Wolfram Mathematica plugin across different settings:
+1. With Wolfram Mathematica Plugin:
+* Zero-shot Prompting:
+   * Specific Instructions: 10/10 tasks solved.
+   * General Instructions: 9/10 tasks solved.
+* Zero-shot-CoT Prompting:
+   * Specific Instructions: 10/10 tasks solved.
+   * General Instructions: 8/10 tasks solved.
+
+1. Without Wolfram Mathematica Plugin:
+* Zero-shot Prompting:
+   * Specific Instructions: 10/10 tasks solved.
+   * General Instructions: 10/10 tasks solved.
+* Zero-shot-CoT Prompting:
+   * Specific Instructions: 10/10 tasks solved.
+   * General Instructions: 9/10 tasks solved.
+
+Based on this data:
+- In Zero-shot Prompting, ChatGPT-4 performed equally well in the "Specific Instructions" category both with and without the Wolfram Mathematica plugin, achieving perfect scores. However, without the plugin, it performed better in the "General Instructions" category, solving all tasks correctly compared to 9/10 with the plugin.
+- In Zero-shot-CoT Prompting, both configurations again performed perfectly in the "Specific Instructions" category. In the "General Instructions" category, ChatGPT-4 without the plugin again performed slightly better, solving 9/10 tasks correctly compared to 8/10 with the plugin.
+
+Overall, **ChatGPT-4 without the Wolfram Mathematica plugin** demonstrated **slightly better performance**, particularly in the "General Instructions" category across both Zero-shot and Zero-shot-CoT prompting scenarios.
