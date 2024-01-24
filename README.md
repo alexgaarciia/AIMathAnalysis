@@ -266,7 +266,7 @@ First off, we would like to know if there are already some investigations/guides
 
 
 ## Experiments
-In order to test how much we can do by simply giving text as input, we provided some mathematical problems with varying difficulty. There will be three different sections of experiments, each corresponding to a different version of ChatGPT (ChatGPT-3.5, ChatGPT-4 (Wolfram Mathematica plugin on, ChatGPT-4 (Wolfram Mathematica plugin off).
+In order to test how much we can do by simply giving text as input, we provided some mathematical problems with varying difficulty. There will be three different sections of experiments, each corresponding to a different version of ChatGPT (ChatGPT-3.5, ChatGPT-4 (Wolfram Mathematica plugin on, ChatGPT-4 (Wolfram Mathematica plugin off). Note that ChatGPT-4 without the Wolfram Mathematica plugin, solves math problems using Python. It uses libraries like sympy, numpy, or even math.
 
 Inside each, there will be two subsections for two different types of prompting: **Zero-shot learning** and **Zero-shot-CoT**. For each one, we will test their performance by being very specific about what we want to do and by not being specific about what we want to do.
 
