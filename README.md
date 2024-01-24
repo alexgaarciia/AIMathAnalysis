@@ -1357,10 +1357,6 @@ As for the section of **General instructions**, we have seen that the same happe
 |    Solution-only    |    Solution-only    |    Solution-only    |    Solution-only    |    Solution-only    |    Solution-only    |    Solution-only    |    Solution-only    |    Partial/Incorrect Solution    |    Solution-only    |
 
 ### Zero-Shot-CoT prompting
-We have already tested how ChatGPT-4 behaves when given specific and general instructions under Zero-shot prompting using the plugin. However, how would it behave under Zero-shot-CoT? Zero-shot Chain of Thought (Zero-shot-CoT) is an approach in artificial intelligence where the model demonstrates the ability to solve complex problems or answer questions in a detailed, step-by-step manner without having been explicitly trained on those specific tasks or examples. This is referred to as "zero-shot" because the model is dealing with tasks it has not seen during training.
-
-In Zero-shot-CoT, the model essentially "thinks out loud," breaking down its reasoning process into a chain of thoughts or steps. This approach helps in understanding how the model arrives at its conclusion and also improves its ability to tackle complex problems. We will try to solve the problems that we have tried above and check the results.
-
 #### Specific instructions
 ##### Level 1: Inverting a matrix.
 In this case, we will consider a matrix from this PDF: [Inverse Matrices](https://web.viu.ca/pughg/Spring2006/math152S0602/homework8.pdf).
