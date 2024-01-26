@@ -3,21 +3,20 @@
 The main goal of this repository is to analyze how [ChatGPT](https://chat.openai.com/) and [Wolfram Mathematica](https://www.wolfram.com/mathematica/) can work together. In case any of these names seem unfamiliar, let us provide some basic definitions. **ChatGPT** is an AI language model designed to understand and generate human-like text based on the input it receives. **Wolfram Mathematica**, on the other hand, is a computing environment used for mathematical computation, algorithm development, data visualization, and symbolic manipulation, widely used in scientific, engineering, mathematical, and computing fields.
 
 
-## How to combine ChatGPT & Wolfram Mathematica
-| Step | Instructions                                 | Example                                                                    |
-|------|----------------------------------------------|----------------------------------------------------------------------------|
-| 1    | Click on your current version of ChatGPT    | <p align="center"><img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Plugin%20installation/step1.png" width="500"/></p> |
-| 2    | Select "Plugins" from the dropdown    | <p align="center"><img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Plugin%20installation/step2.png" width="300"/></p> |
-| 3    | In case you do not have the Wolfram Mathematica plugin installed, click on the "No plugins installed" dropdown and click on "Plugin store"    | <p align="center"><img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Plugin%20installation/step3.png" width="300"/></p> |
-| 4    | Search for Wolfram on the search tab and click on Install    | <p align="center"><img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Plugin%20installation/step4.png" width="300"/></p> |
-| 5    | Finally, select it in the plugins dropdown    | <p align="center"><img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/Plugin%20installation/step5.png" width="300"/></p> |
-
-
-## Interacting with Wolfram Mathematica
+## How to use ChatGPT with Wolfram Mathematica
 Combining ChatGPT and Wolfram Mathematica can be a powerful way to leverage the strengths of both platforms. ChatGPT is proficient in natural language processing and can handle a wide range of queries and tasks, while Wolfram Mathematica excels in computational mathematics, data analysis, and visualization. Here are a few ways to integrate them:
 1. **Automating Mathematica Scripts**: ChatGPT can be used to create a user-friendly interface to create Mathematica scripts. Users can **describe in natural language** what they want to compute or analyze, and then ChatGPT will **translate** into a Mathematica script and execute it.
 2. **Data Anaylsis and Visualization**: It can also be used to interpret and structure data analysis queries. After passing these structured queries, Mathematica can then perform complex data analysis and generate visualizations.
 3. **Algorithm Design**: Combining them for algorithm development can be achieved by using ChatGPT for initial brainstorming and pseudocode generation, and then translating these ideas into Mathematica's powerful computational language for detailed analysis and visualization.
+
+The Wolfram Mathematica plugin is only one of the many plugins available for ChatGPT plus. The following lists the instructions necessary to install this plugin:
+1. Select your name in the bottom left, then choose settings.
+2. Inside the settings menu, there should be a **Beta features** section which you can select and then enable plugins or browsing.
+3. Click on your current version of ChatGPT.
+4. Select **Plugins** from the dropdown.
+5. In case you do not have the Wolfram Mathematica plugin installed, click on the **No plugins installed** dropdown and look for **Plugin store**.
+6. Search for Wolfram on the search tab and click on **Install**.
+7. Finally, select it from the plugins dropdown.
 
 ### Example: Networking graphs
 We would like to provide a preliminary glimpse of what these platforms, when used together, can achieve through an example from one of our previous projects that demonstrates the potential of _packet latency_ and _reinforcement learning_. Our goal is to check if, given a specific network, we can **find the shortest path** from one router to another using Wolfram Mathematica. Later on, we might want ChatGPT to transform the generated code into a certain programming language, such as R.
