@@ -2445,6 +2445,59 @@ In this last part of the project, we have seen that ChatGPT has performed quite 
 |    Methodology+Solution    |    Methodology+Solution    |    Methodology+Solution    |    Methodology+Solution    |    Methodology+Solution    |    Methodology+Solution    |    Methodology+Solution    |    Methodology+Solution    |    Methodology+Solution    |    Methodology+Solution    |    Methodology+Solution    |    Methodology+Solution    |    Methodology+Solution    |    Methodology+Solution    |    Methodology+Solution    |    Methodology+Solution    |    Methodology-only    |    Methodology+Solution    |    Partial/Incorrect Solution    |    Methodology+Solution    |
 
 
+## Experiments with Bard and LLaMA
+To ensure our comparison extends beyond just ChatGPT, we conducted our experiments on Bard and LLaMA as well. This approach allows us to provide a more comprehensive evaluation by including multiple AI models in our analysis, thereby avoiding any bias that may arise from focusing solely on ChatGPT. By examining the performance and capabilities of Bard and LLaMA alongside ChatGPT, we aim to achieve a balanced and wide-ranging understanding of the current landscape of conversational AI technologies.
+
+The results can be observed in the table from below:
+| Level | Bard Zero-shot | Bard ZS-CoT | LLaMA Zero-shot | LLaMA ZS-CoT |
+|-------|----------------|-------------|-----------------|--------------|
+| 1     | S              | M+S         | Partial/Incorrect solution | Partial/Incorrect solution |
+| 2     | S              | M+S         | S               | M            |
+| 3     | M              | M           | S | M                          |
+| 4     | Partial/Incorrect solution | Partial/Incorrect solution | Partial/Incorrect solution | Partial/Incorrect solution |
+| 5     | Partial/Incorrect solution | M+S | Partial/Incorrect solution | Partial/Incorrect solution |
+| 6     | Partial/Incorrect solution | Partial/Incorrect solution | Partial/Incorrect solution | Partial/Incorrect solution |
+| 7     | Partial/Incorrect solution | M+S | Nothing | Partial/Incorrect solution |
+| 8     | Partial/Incorrect solution | M+S | M+S | Partial/Incorrect solution |
+| 9     | Partial/Incorrect solution | M+S | Partial/Incorrect solution | Partial/Incorrect solution |
+| 10    | M              | M+S         | Partial/Incorrect solution | Partial/Incorrect solution |
+| 11    | M+S            | Partial/Incorrect solution         | Partial/Incorrect solution | Partial/Incorrect solution |
+| 12    | Partial/Incorrect solution | Partial/Incorrect solution | Partial/Incorrect solution | Partial/Incorrect solution |
+| 13    | M+S            | M+S | Partial/Incorrect solution | Partial/Incorrect solution |
+| 14    | M+S            | Nothing         | Partial/Incorrect solution | Partial/Incorrect solution |
+| 15    | M+S            | M+S     | Partial/Incorrect solution | Partial/Incorrect solution |
+| 16    | Partial/Incorrect solution | Partial/Incorrect solution    | Partial/Incorrect solution | Partial/Incorrect solution |
+| 17    | Nothing        | M+S | M+S | Partial/Incorrect solution |
+| 18    | Nothing        | M+S         | Partial/Incorrect solution | Partial/Incorrect solution |
+| 19    | Partial/Incorrect solution | Partial/Incorrect Solution | Partial/Incorrect solution | Partial/Incorrect solution |
+| 20    | Partial/Incorrect solution | M+S | Partial/Incorrect solution | Partial/Incorrect solution |
+
+Here are some explanations for the results from above:
+1. Bard:
+* Zero-shot Prompting:
+   * Levels 4, 5, 6, 7, 12, 16, 19, 20: Correct methodology, errors in calculations.
+   * Level 10: Methodology was correctly stated, but it said that `I cannot perform calculations without the specific data values`.
+   * Level 17, 18: Bard stated that there was missing information.
+* Zero-shot-CoT Prompting:
+   * Levels 3, 7, 11, 12, 16, 19: Correct methodology, errors in calculations.
+   * Level 14: Bard stated that there was missing information.
+   * Level 18: Forgot to consider the spring constant.
+
+2. LLaMA:
+* Zero-shot Prompting:
+   * Levels 1, 5, 6, 11, 12, 13, 15, 16, 18, 20: Correct methodology, errors in calculations.
+   * Level 3: States how would the function look like.
+   * Level 4: There wasn't a clear methodology, and the results were incorrect.
+   * Level 7: Gave initial step and asks user to do it by itself.
+   * Level 9, 19: Incorrect methodology, incorrect solution.
+   * Level 10: Carried out the problem using R, but consider logarithmic data.
+   * Level 14: Incorrectly guessed the sequence.
+* Zero-shot-CoT Prompting:
+   * Levels 1, 4, 10: Correct methodology, errors in calculations.
+   * Level 5, 6, 7, 9: Incorrect methodolgoy, incorrect solution.
+   * Level 8: Incorrect identification of the series (it is a telescopic series, not a harmonic series).
+
+
 ## Overall conclusion
 The conclusions from your project, focusing on the performance of ChatGPT-3.5 and ChatGPT-4 (with and without the Wolfram Mathematica plugin), can be articulated in the following paragraphs.
 
@@ -2463,7 +2516,7 @@ To determine which configuration performed better, we need to compare the result
    * Specific Instructions: 10/10 tasks solved.
    * General Instructions: 8/10 tasks solved.
 
-1. Without Wolfram Mathematica Plugin:
+2. Without Wolfram Mathematica Plugin:
 * Zero-shot Prompting:
    * Specific Instructions: 10/10 tasks solved.
    * General Instructions: 10/10 tasks solved.
