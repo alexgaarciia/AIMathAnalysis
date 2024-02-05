@@ -2490,12 +2490,36 @@ Here are some explanations for the results from above:
    * Level 4: There wasn't a clear methodology, and the results were incorrect.
    * Level 7: Gave initial step and asks user to do it by itself.
    * Level 9, 19: Incorrect methodology, incorrect solution.
-   * Level 10: Carried out the problem using R, but consider logarithmic data.
+   * Level 10: Carried out the problem using R, but considered logarithmic data.
    * Level 14: Incorrectly guessed the sequence.
 * Zero-shot-CoT Prompting:
-   * Levels 1, 4, 10: Correct methodology, errors in calculations.
-   * Level 5, 6, 7, 9: Incorrect methodolgoy, incorrect solution.
+   * Levels 1, 4, 10, 15, 16: Correct methodology, errors in calculations.
+   * Level 5, 6, 7, 9, 11, 12: Incorrect methodolgoy, incorrect solution.
    * Level 8: Incorrect identification of the series (it is a telescopic series, not a harmonic series).
+   * Level 13: Did not use Dijkstra's algorithm.
+   * Level 14: Incorrectly guessed the sequence.
+   * Level 17: Did not understand that we were dealing with Newton's Law of Cooling.
+   * Level 18: Forgot to consider the spring constant.
+   * Level 19, 20: Incorrect methodology, incorrect solution.
+ 
+### Overall Observations
+Bard tends to perform better with ZS-CoT prompting, indicating that providing a structured way to approach the problem helps improve the accuracy of the solutions. This is evident in the consistent improvement from solution-only (S) to methodology+solution (M+S) across various levels when using ZS-CoT.
+
+LLaMA, similarly, shows varied performance across different levels and prompting methods. However, it seems to struggle more consistently than Bard, especially with zero-shot prompting, where it often provides partial or incorrect solutions.
+
+### Specific insights
+1. Error Types:
+- Both models exhibit a tendency to provide correct methodologies but falter in the execution, leading to errors in calculations. This suggests that while they can understand the problems conceptually, numerical precision or algorithmic execution is a common stumbling block.
+- Bard's zero-shot prompts frequently led to correct methodologies but included calculation errors, whereas its ZS-CoT prompts showed similar patterns but with occasional complete misses (e.g., forgetting a critical factor like the spring constant).
+- LLaMA displayed a broader range of errors, including incorrect methodologies, especially under ZS-CoT prompting. This might indicate challenges in applying chain-of-thought reasoning effectively across all types of problems.
+
+2. Performance by Level:
+- Both models showed a decline in performance as the complexity of the problems increased, with levels 4, 5, 6, 12, 16, 19, and 20 frequently resulting in partial or incorrect solutions for both Bard and LLaMA. This suggests a limit to their current capabilities in handling high-complexity or nuanced problem-solving without explicit guidance.
+- Certain levels where Bard improved from S to M+S under ZS-CoT prompting (e.g., levels 1, 2, 7, 8, 9, 10, 13, 17, 20) demonstrate the potential effectiveness of CoT in enhancing problem-solving abilities, particularly in providing complete solutions.
+
+3. Notable Differences:
+- Bard's performance suggests a slightly better grasp on methodologies across a range of problem types, potentially due to differences in training data, model architecture, or both.
+- LLaMA's challenges with CoT prompting across various problem types highlight the importance of model-specific tuning or adjustments to improve reasoning capabilities.
 
 
 ## Overall conclusion
