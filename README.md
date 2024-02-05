@@ -2494,13 +2494,13 @@ Here are some explanations for the results from above:
    * Level 14: Incorrectly guessed the sequence.
 * Zero-shot-CoT Prompting:
    * Levels 1, 4, 10, 15, 16: Correct methodology, errors in calculations.
-   * Level 5, 6, 7, 9, 11, 12: Incorrect methodolgoy, incorrect solution.
+   * Levels 5, 6, 7, 9, 11, 12: Incorrect methodology, incorrect solution.
    * Level 8: Incorrect identification of the series (it is a telescopic series, not a harmonic series).
    * Level 13: Did not use Dijkstra's algorithm.
    * Level 14: Incorrectly guessed the sequence.
    * Level 17: Did not understand that we were dealing with Newton's Law of Cooling.
    * Level 18: Forgot to consider the spring constant.
-   * Level 19, 20: Incorrect methodology, incorrect solution.
+   * Levels 19, 20: Incorrect methodology, incorrect solution.
  
 ### Overall Observations
 Bard tends to perform better with ZS-CoT prompting, indicating that providing a structured way to approach the problem helps improve the accuracy of the solutions. This is evident in the consistent improvement from solution-only (S) to methodology+solution (M+S) across various levels when using ZS-CoT.
