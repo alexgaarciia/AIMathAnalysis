@@ -2445,11 +2445,11 @@ In this last part of the project, we have seen that ChatGPT has performed quite 
 |    Methodology+Solution    |    Methodology+Solution    |    Methodology+Solution    |    Methodology+Solution    |    Methodology+Solution    |    Methodology+Solution    |    Methodology+Solution    |    Methodology+Solution    |    Methodology+Solution    |    Methodology+Solution    |    Methodology+Solution    |    Methodology+Solution    |    Methodology+Solution    |    Methodology+Solution    |    Methodology+Solution    |    Methodology+Solution    |    Methodology-only    |    Methodology+Solution    |    Partial/Incorrect Solution    |    Methodology+Solution    |
 
 
-## Experiments with Bard and LLaMA
-To ensure our comparison extends beyond just ChatGPT, we conducted our experiments on Bard and LLaMA as well. This approach allows us to provide a more comprehensive evaluation by including multiple AI models in our analysis, thereby avoiding any bias that may arise from focusing solely on ChatGPT. By examining the performance and capabilities of Bard and LLaMA alongside ChatGPT, we aim to achieve a balanced and wide-ranging understanding of the current landscape of conversational AI technologies.
+## Experiments with Gemini and LLaMA
+To ensure our comparison extends beyond just ChatGPT, we conducted our experiments on Gemini and LLaMA as well. This approach allows us to provide a more comprehensive evaluation by including multiple AI models in our analysis, thereby avoiding any bias that may arise from focusing solely on ChatGPT. By examining the performance and capabilities of Gemini and LLaMA alongside ChatGPT, we aim to achieve a balanced and wide-ranging understanding of the current landscape of conversational AI technologies.
 
 The results can be observed in the table from below:
-| Level | Bard Zero-shot | Bard ZS-CoT | LLaMA Zero-shot | LLaMA ZS-CoT |
+| Level | Gemini Zero-shot | Gemini ZS-CoT | LLaMA Zero-shot | LLaMA ZS-CoT |
 |-------|----------------|-------------|-----------------|--------------|
 | 1     | S              | M+S         | Partial/Incorrect solution | Partial/Incorrect solution |
 | 2     | S              | M+S         | S               | M            |
@@ -2473,14 +2473,14 @@ The results can be observed in the table from below:
 | 20    | Partial/Incorrect solution | M+S | Partial/Incorrect solution | Partial/Incorrect solution |
 
 Here are some explanations for the results from above:
-1. Bard:
+1. Gemini:
 * Zero-shot Prompting:
    * Levels 4, 5, 6, 7, 12, 16, 19, 20: Correct methodology, errors in calculations.
    * Level 10: Methodology was correctly stated, but it said that `I cannot perform calculations without the specific data values`.
-   * Level 17, 18: Bard stated that there was missing information.
+   * Level 17, 18: Gemini stated that there was missing information.
 * Zero-shot-CoT Prompting:
    * Levels 3, 7, 11, 12, 16, 19: Correct methodology, errors in calculations.
-   * Level 14: Bard stated that there was missing information.
+   * Level 14: Gemini stated that there was missing information.
    * Level 18: Forgot to consider the spring constant.
 
 2. LLaMA:
@@ -2501,22 +2501,22 @@ Here are some explanations for the results from above:
    * Level 18: Forgot to consider the spring constant.
  
 ### Overall Observations
-Bard tends to perform better with ZS-CoT prompting, indicating that providing a structured way to approach the problem helps improve the accuracy of the solutions. This is evident in the consistent improvement from solution-only (S) to methodology+solution (M+S) across various levels when using ZS-CoT.
+Gemini tends to perform better with ZS-CoT prompting, indicating that providing a structured way to approach the problem helps improve the accuracy of the solutions. This is evident in the consistent improvement from solution-only (S) to methodology+solution (M+S) across various levels when using ZS-CoT.
 
-LLaMA, similarly, shows varied performance across different levels and prompting methods. However, it seems to struggle more consistently than Bard, especially with zero-shot prompting, where it often provides partial or incorrect solutions.
+LLaMA, similarly, shows varied performance across different levels and prompting methods. However, it seems to struggle more consistently than Gemini, especially with zero-shot prompting, where it often provides partial or incorrect solutions.
 
 ### Specific insights
 1. Error Types:
 - Both models exhibit a tendency to provide correct methodologies but falter in the execution, leading to errors in calculations. This suggests that while they can understand the problems conceptually, numerical precision or algorithmic execution is a common stumbling block.
-- Bard's zero-shot prompts frequently led to correct methodologies but included calculation errors, whereas its ZS-CoT prompts showed similar patterns but with occasional complete misses (e.g., forgetting a critical factor like the spring constant).
+- Gemini's zero-shot prompts frequently led to correct methodologies but included calculation errors, whereas its ZS-CoT prompts showed similar patterns but with occasional complete misses (e.g., forgetting a critical factor like the spring constant).
 - LLaMA displayed a broader range of errors, including incorrect methodologies, especially under ZS-CoT prompting. This might indicate challenges in applying chain-of-thought reasoning effectively across all types of problems.
 
 2. Performance by Level:
-- Both models showed a decline in performance as the complexity of the problems increased, with levels 4, 5, 6, 12, 16, 19, and 20 frequently resulting in partial or incorrect solutions for both Bard and LLaMA. This suggests a limit to their current capabilities in handling high-complexity or nuanced problem-solving without explicit guidance.
-- Certain levels where Bard improved from S to M+S under ZS-CoT prompting (e.g., levels 1, 2, 7, 8, 9, 10, 13, 17, 20) demonstrate the potential effectiveness of CoT in enhancing problem-solving abilities, particularly in providing complete solutions.
+- Both models showed a decline in performance as the complexity of the problems increased, with levels 4, 5, 6, 12, 16, 19, and 20 frequently resulting in partial or incorrect solutions for both Gemini and LLaMA. This suggests a limit to their current capabilities in handling high-complexity or nuanced problem-solving without explicit guidance.
+- Certain levels where Gemini improved from S to M+S under ZS-CoT prompting (e.g., levels 1, 2, 7, 8, 9, 10, 13, 17, 20) demonstrate the potential effectiveness of CoT in enhancing problem-solving abilities, particularly in providing complete solutions.
 
 3. Notable Differences:
-- Bard's performance suggests a slightly better grasp on methodologies across a range of problem types, potentially due to differences in training data, model architecture, or both.
+- Gemini's performance suggests a slightly better grasp on methodologies across a range of problem types, potentially due to differences in training data, model architecture, or both.
 - LLaMA's challenges with CoT prompting across various problem types highlight the importance of model-specific tuning or adjustments to improve reasoning capabilities.
 
 
@@ -2529,7 +2529,13 @@ On the other hand, the integration of the **Wolfram Mathematica plugin with Chat
 
 Remarkably, **ChatGPT-4's performance without the external plugin** also demonstrated outstanding capabilities in handling a diverse array of mathematical problems. This was evident in both specific and general instructions under zero-shot prompting, where the model successfully tackled all tasks. This performance underscores the inherent strength of the model in understanding and addressing complex problems. With zero-shot-CoT prompting, although the model showed high proficiency in most tasks, it encountered difficulties in specific complex scenarios, particularly where advanced problem-solving strategies were required. This illustrates that while ChatGPT-4 is highly capable, there is room for improvement in its approach to certain complex and nuanced tasks.
 
-To determine which configuration performed better, we need to compare the results of ChatGPT-4 with and without the Wolfram Mathematica plugin across different settings:
+Drawing conclusions from the performance evaluations of Gemini and LLaMA-2-70b in comparison to ChatGPT versions, the findings reveal distinct capabilities and limitations across these AI models in handling complex problem-solving tasks under different prompting strategies.
+
+Gemini exhibited strengths in certain areas but demonstrated consistent challenges with computational accuracy and a tendency to perceive missing information in prompts, which hindered its performance. This pattern was evident in both zero-shot and zero-shot-CoT (Chain of Thought) scenarios, indicating a need for improvement in Gemini's computational abilities and its understanding of provided instructions. Despite understanding the process correctly in several cases, Gemini's computational errors and occasional omission of key steps suggest that while its conceptual grasp is on the right track, its execution requires refinement.
+
+LLaMA-2-70b showed a broader range of difficulties, particularly with zero-shot prompting, where it frequently provided partial or incorrect solutions. The issues ranged from calculation errors to incorrect methodologies and misunderstanding of problem statements, being these challenges more pronounced under zero-shot-CoT prompting.
+
+Since the model that performed the best was ChatGPT-4, the next conclusions will focus solely on those results. To determine which configuration performed better, we need to compare the results of ChatGPT-4 with and without the Wolfram Mathematica plugin across different settings:
 1. With Wolfram Mathematica Plugin:
 * Zero-shot Prompting:
    * Specific Instructions: 10/10 tasks solved.
