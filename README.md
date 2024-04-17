@@ -2520,40 +2520,85 @@ LLaMA, similarly, shows varied performance across different levels and prompting
 - LLaMA's challenges with CoT prompting across various problem types highlight the importance of model-specific tuning or adjustments to improve reasoning capabilities.
 
 
-## Overall conclusion
-The conclusions from your project, focusing on the performance of ChatGPT-3.5 and ChatGPT-4 (with and without the Wolfram Mathematica plugin), can be articulated in the following paragraphs.
+## Results
+### Performance Comparison of ChatGPT Versions with Zero-shot-CoT (ZS-CoT) and Zero-shot Prompting
+| Level | Problem                            | ChatGPT-3.5 Zero-shot | ChatGPT-3.5 ZS-CoT | ChatGPT-4 Zero-shot | ChatGPT-4 ZS-CoT | ChatGPT-4 + Wolfram Zero-shot | ChatGPT-4 + Wolfram ZS-CoT |
+|-------|------------------------------------|-----------------------|-------------------|---------------------|-----------------|-------------------------------|---------------------------|
+| 1     | Matrix inversion                   | M                     | M                 | S                   | M+S             | S                             | M+S                       |
+| 2     | Normal Distribution Generation     | M+S                   | M+S               | S                   | M+S             | S                             | M+S                       |
+| 3     | Function Plotting                  | M+S                   | M+S               | S                   | M+S             | S                             | M+S                       |
+| 4     | Finding Minimum                    | M                     | M                 | M+S                 | M+S             | S                             | M+S                       |
+| 5     | Function Intersection              | M                     | M                 | M+S                 | M+S             | S                             | M+S                       |
+| 6     | Function Differentiation           | M                     | NA                | M+S                 | M+S             | S                             | M+S                       |
+| 7     | Function Integration               | M                     | M+S               | M+S                 | M+S             | S                             | M+S                       |
+| 8     | Series Convergence                 | M+S                   | M+S               | M+S                 | M+S             | S                             | M+S                       |
+| 9     | Fourier Transform                  | NA                    | M+S               | M+S                 | M+S             | S                             | M+S                       |
+| 10    | Data Regression                    | M                     | M                 | M+S                 | M+S             | S                             | M+S                       |
+| 11    | Area Calculation                    | M+S                   | M                 | M+S                 | M+S             | S                             | M+S                       |
+| 12    | Projectile Range Prediction        | M+S                   | M                 | M+S                 | M+S             | S                             | M+S                       |
+| 13    | Shortest Path Finding              | M                     | M                 | M+S                 | M+S             | S                             | PI                        |
+| 14    | Sequence Prediction                | M+S                   | M+S               | M+S                 | M+S             | S                             | M+S                       |
+| 15    | Compound Interest Calculation      | M+S                   | M+S               | M+S                 | M+S             | S                             | M+S                       |
+| 16    | Caesar's Cipher Decoding           | M                     | M                 | M+S                 | M+S             | S                             | M+S                       |
+| 17    | Cooling Time Calculation           | NA                    | M                 | M+S                 | M               | S                             | M+S                       |
+| 18    | Spring Compression Work            | M                     | M                 | M+S                 | M+S             | S                             | M+S                       |
+| 19    | Inventory Optimization Analysis    | M                     | M+S               | M+S                 | PI              | PI                            | PI                        |
+| 20    | Orbital Period Computation         | M+S                   | M+S               | M+S                 | M+S             | S                             | M+S                       |
 
-On the one hand, **ChatGPT-3.5** displayed a variable level of proficiency, particularly under the zero-shot prompting framework. It demonstrated a partial success in specific instructions, handling some tasks with accuracy while struggling with others, particularly in complex mathematical problems. This performance indicated the model's capability in understanding basic instructions and methodologies but also highlighted its limitations in executing detailed computational steps. In the zero-shot-CoT (Chain of Thought) prompting, there was a slight improvement, suggesting that the model benefits from a structured approach in problem-solving, particularly in breaking down complex tasks. However, even with this approach, the model faced challenges in fully executing procedures and providing accurate solutions in more complex scenarios.
+ ### Performance Comparison of Gemini and LLaMA with Zero-shot-CoT (ZS-CoT) and Zero-shot Prompting
+| Level | Problem                            | Gemini Zero-shot | Gemini ZS-CoT | LLaMA Zero-shot | LLaMA ZS-CoT |
+|-------|------------------------------------|------------------|---------------|-----------------|--------------|
+| 1     | Matrix inversion                   | S                | M+S           | PI              | PI           |
+| 2     | Normal Distribution Generation     | S                | M+S           | S               | M            |
+| 3     | Function Plotting                  | M                | M             | S               | M            |
+| 4     | Finding Minimum                    | PI               | PI            | PI              | PI           |
+| 5     | Function Intersection              | PI               | M+S           | PI              | PI           |
+| 6     | Function Differentiation           | PI               | PI            | PI              | PI           |
+| 7     | Function Integration               | PI               | M+S           | NA              | PI           |
+| 8     | Series Convergence                 | PI               | M+S           | M+S             | PI           |
+| 9     | Fourier Transform                  | PI               | M+S           | PI              | PI           |
+| 10    | Data Regression                    | M                | M+S           | PI              | PI           |
+| 11    | Area Calculation                   | M+S              | PI            | PI              | PI           |
+| 12    | Projectile Range Prediction        | PI               | PI            | PI              | PI           |
+| 13    | Shortest Path Finding              | M+S              | M+S           | PI              | PI           |
+| 14    | Sequence Prediction                | M+S              | NA            | PI              | PI           |
+| 15    | Compound Interest Calculation      | M+S              | M+S           | PI              | PI           |
+| 16    | Caesar's Cipher Decoding           | PI               | PI            | PI              | PI           |
+| 17    | Cooling Time Calculation           | NA               | M+S           | M+S             | PI           |
+| 18    | Spring Compression Work            | NA               | M+S           | PI              | PI           |
+| 19    | Inventory Optimization Analysis    | PI               | PI            | PI              | PI           |
+| 20    | Orbital Period Computation         | PI               | M+S           | PI              | PI           |
 
-On the other hand, the integration of the **Wolfram Mathematica plugin with ChatGPT-4** marked a significant advancement in the model's problem-solving abilities. Under zero-shot prompting, ChatGPT-4 showcased exceptional performance, successfully solving a wide range of mathematical tasks with specific instructions. This indicated a robust capability in handling computational and analytical problems, likely benefiting from the computational power of the plugin. Under the zero-shot-CoT framework, ChatGPT-4 continued to display strong capabilities, though it encountered some challenges in interpreting complex scenarios, particularly under general instructions. These instances highlighted that while external computational tools significantly enhance AI capabilities, **understanding the nuances of complex problem statements remains an area for further development**.
+These tables outline the results of all five LLMs used in the experiments: ChatGPT-v3.5, ChatGPT-v4, ChatGPT-v4 + Mathematica, Google Gemini and Meta LLaMA-2-70b. In each case, the LLMs are evaluated as:
+\begin{itemize}
+    \item (NA) stands for Nothing.
+    \item (PI) stands for Partial or Incorrect solution provided.
+    \item (M) stands for (correct) Methodology only, where the LLM explains the theoretical background to solve the problem, but no solution is provided.
+    \item (S) stands for (correct) Solution only, without any explanation about how it was obtained.
+    \item (M+S) stands for both (correct) Methodology and Solution provided by the LLM.
+\end{itemize}
+
+
+The conclusions from our project, focusing on the performance of ChatGPT-3.5, ChatGPT-4 (with and without the Wolfram Mathematica plugin), Gemini, and LLaMA-2-70b can be articulated in the following paragraphs.
+
+On the one hand, **ChatGPT-3.5** displayed a variable level of proficiency, particularly under the zero-shot prompting framework. It demonstrated partial success in specific instructions, handling some tasks with accuracy while struggling with others, particularly in complex mathematical problems. This performance indicated the model's capability to understand basic instructions and methodologies but also highlighted its limitations in executing detailed computational steps. In the zero-shot-CoT (Chain of Thought) prompting, there was a slight improvement, suggesting that the model benefits from a structured approach to problem-solving, particularly in breaking down complex tasks. However, even with this approach, the model faced challenges in fully executing procedures and providing accurate solutions in more complex scenarios.
+
+On the other hand, the integration of the **Wolfram Mathematica plugin with ChatGPT-4** marked a significant advancement in the model's problem-solving abilities. Under zero-shot prompting, ChatGPT-4 showcased exceptional performance, successfully solving a wide range of mathematical tasks with specific instructions. This indicated a robust capability in handling computational and analytical problems, likely benefiting from the computational power of the plugin. Under the zero-shot-CoT framework, ChatGPT-4 continued to display strong capabilities, though it encountered some challenges in interpreting complex scenarios, particularly under general instructions. These instances highlighted that while external computational tools significantly enhance AI capabilities, \textit{understanding the nuances of complex problem statements remains an area for further development.}
 
 Remarkably, **ChatGPT-4's performance without the external plugin** also demonstrated outstanding capabilities in handling a diverse array of mathematical problems. This was evident in both specific and general instructions under zero-shot prompting, where the model successfully tackled all tasks. This performance underscores the inherent strength of the model in understanding and addressing complex problems. With zero-shot-CoT prompting, although the model showed high proficiency in most tasks, it encountered difficulties in specific complex scenarios, particularly where advanced problem-solving strategies were required. This illustrates that while ChatGPT-4 is highly capable, there is room for improvement in its approach to certain complex and nuanced tasks.
 
-Drawing conclusions from the performance evaluations of Gemini and LLaMA-2-70b in comparison to ChatGPT versions, the findings reveal distinct capabilities and limitations across these AI models in handling complex problem-solving tasks under different prompting strategies.
+Drawing conclusions from the performance evaluations of Gemini and LLaMA-2-70b in comparison to ChatGPT versions, the findings reveal distinct capabilities and limitations across these LLMs in handling complex problem-solving tasks under different prompting strategies.
 
 Gemini exhibited strengths in certain areas but demonstrated consistent challenges with computational accuracy and a tendency to perceive missing information in prompts, which hindered its performance. This pattern was evident in both zero-shot and zero-shot-CoT (Chain of Thought) scenarios, indicating a need for improvement in Gemini's computational abilities and its understanding of provided instructions. Despite understanding the process correctly in several cases, Gemini's computational errors and occasional omission of key steps suggest that while its conceptual grasp is on the right track, its execution requires refinement.
 
-LLaMA-2-70b showed a broader range of difficulties, particularly with zero-shot prompting, where it frequently provided partial or incorrect solutions. The issues ranged from calculation errors to incorrect methodologies and misunderstanding of problem statements, being these challenges more pronounced under zero-shot-CoT prompting.
+LLaMA-2-70b showed a broader range of difficulties, particularly with zero-shot prompting, where it frequently provided partial or incorrect solutions. The issues ranged from calculation errors to incorrect methodologies and misunderstanding of problem statements, being these challenges were more pronounced under zero-shot-CoT prompting.
 
-Since the model that performed the best was ChatGPT-4, the next conclusions will focus solely on those results. To determine which configuration performed better, we need to compare the results of ChatGPT-4 with and without the Wolfram Mathematica plugin across different settings:
-1. With Wolfram Mathematica Plugin:
-* Zero-shot Prompting:
-   * Specific Instructions: 10/10 tasks solved.
-   * General Instructions: 9/10 tasks solved.
-* Zero-shot-CoT Prompting:
-   * Specific Instructions: 10/10 tasks solved.
-   * General Instructions: 8/10 tasks solved.
 
-2. Without Wolfram Mathematica Plugin:
-* Zero-shot Prompting:
-   * Specific Instructions: 10/10 tasks solved.
-   * General Instructions: 10/10 tasks solved.
-* Zero-shot-CoT Prompting:
-   * Specific Instructions: 10/10 tasks solved.
-   * General Instructions: 9/10 tasks solved.
+## Summary and Conclusions
+This article has analysed the capabilities of different Large Language Models (GPT, Gemini and Bard) at solving different mathematical tasks. We observe that GPT-4 outperforms all others at these tasks. 
 
-Based on this data:
-- In Zero-shot Prompting, ChatGPT-4 performed equally well in the "Specific Instructions" category both with and without the Wolfram Mathematica plugin, achieving perfect scores. However, without the plugin, it performed better in the "General Instructions" category, solving all tasks correctly compared to 9/10 with the plugin.
-- In Zero-shot-CoT Prompting, both configurations again performed perfectly in the "Specific Instructions" category. In the "General Instructions" category, ChatGPT-4 without the plugin again performed slightly better, solving 9/10 tasks correctly compared to 8/10 with the plugin.
+In particular, GPT-4 using zero-shot prompting performed equally well in the "Specific Instructions" category both with and without the Wolfram Mathematica plugin, achieving perfect scores. However, without the plugin, it performed better in the "General Instructions" category
 
-Overall, **ChatGPT-4 without the Wolfram Mathematica plugin** demonstrated **slightly better performance**, particularly in the "General Instructions" category across both Zero-shot and Zero-shot-CoT prompting scenarios.
+When using GPT-4 with Chain-of-Thoughts prompting, both configurations performed perfectly in the "Specific Instructions" category. In the "General Instructions" category, ChatGPT-4 without the plugin again performed slightly better, solving 9/10 tasks correctly compared to 8/10 with the Mathematica plugin enabled.
+
+Overall, ChatGPT-4 with and without the Wolfram Mathematica plugin demonstrated almost perfect performance at all the tasks used in the analysis. Gemini could solve a large number of tasks, especially when CoT prompting was used. Finally, LLaMA had difficulties at solving most of the Mathematical tasks.
