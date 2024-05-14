@@ -2344,14 +2344,11 @@ LLaMA, similarly, shows varied performance across different levels and prompting
 | 20    | Orbital Period Computation         | PI               | M+S           | PI              | PI           |
 
 These tables outline the results of all five LLMs used in the experiments: ChatGPT-v3.5, ChatGPT-v4, ChatGPT-v4 + Mathematica, Google Gemini and Meta LLaMA-2-70b. In each case, the LLMs are evaluated as:
-\begin{itemize}
-    \item (NA) stands for Nothing.
-    \item (PI) stands for Partial or Incorrect solution provided.
-    \item (M) stands for (correct) Methodology only, where the LLM explains the theoretical background to solve the problem, but no solution is provided.
-    \item (S) stands for (correct) Solution only, without any explanation about how it was obtained.
-    \item (M+S) stands for both (correct) Methodology and Solution provided by the LLM.
-\end{itemize}
-
+- (NA) stands for Nothing.
+- (PI) stands for Partial or Incorrect solution provided.
+- (M) stands for (correct) Methodology only, where the LLM explains the theoretical background to solve the problem, but no solution is provided.
+- (S) stands for (correct) Solution only, without any explanation about how it was obtained.
+- (M+S) stands for both (correct) Methodology and Solution provided by the LLM.
 
 The conclusions from our project, focusing on the performance of ChatGPT-3.5, ChatGPT-4 (with and without the Wolfram Mathematica plugin), Gemini, and LLaMA-2-70b can be articulated in the following paragraphs.
 
