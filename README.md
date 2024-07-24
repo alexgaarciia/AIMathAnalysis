@@ -798,7 +798,7 @@ As in the conclusions for the section of specific instructions, we have seen tha
 Given the matrix A = [[1, -2, 1], [-2, 3, 1], [5, -7, -3]], find the inverse (A^-1).
 ```
 
-- ChatGPT Output:
+- Wolfram Output:
 <p align = "center">
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot/Specific%20instructions/level1.png" width = 600>
 </p>
@@ -811,7 +811,7 @@ The answer is correct.
 Generate several normally distributed variables with mean=45.6 and variance=13.84.
 ```
 
-- ChatGPT Output:
+- Wolfram Output:
 <p align = "center">
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot/Specific%20instructions/level2.png" width = 600>
 </p>
@@ -837,7 +837,7 @@ The function is correctly plotted.
 Find the minimum of the function f(x)=(x^2-x-2)/(x^2-6x+9).
 ```
 
-- ChatGPT Output:
+- Wolfram Output:
 <p align = "center">
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot/Specific%20instructions/level4.png" width = 600>
 </p>
@@ -854,7 +854,7 @@ Wolfram Alpha              |  Wolfram Mathematica
 Find the intersection points of the functions f(x)=|x-5| and g(x)=logx.
 ```
 
-- ChatGPT Output:
+- Wolfram Output:
 <p align = "center">
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot/Specific%20instructions/level5.png" width = 600>
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot/Specific%20instructions/level5.2.png" width = 600>
@@ -875,7 +875,7 @@ We can see that the former returns two intersection points. Both are expressed u
 What is the derivative of f(x)=5/(sqrt(3x-1))?
 ```
 
-- ChatGPT Output:
+- Wolfram Output:
 <p align = "center">
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot/Specific%20instructions/level6.png" width = 600>
 </p>
@@ -891,7 +891,7 @@ As a way of checking that the answers were correct, we simply asked Wolfram Alph
 What is the integral of sin2xcos2x?
 ```
 
-- ChatGPT Output:
+- Wolfram Output:
 <p align = "center">
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot/Specific%20instructions/level7.png" width = 600>
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot/Specific%20instructions/level7.2.png" width = 600>
@@ -908,7 +908,7 @@ The solution for the integral, computed using [Integral Calculator](https://www.
 Study the convergence of the infinite series starting from n equals 1 to infinity of the sum of the reciprocal of the product of n and n plus 1.
 ```
 
-- ChatGPT Output:
+- Wolfram Output:
 <p align = "center">
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot/Specific%20instructions/level8.png" width = 600>
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot/Specific%20instructions/level8.2.png" width = 600>
@@ -927,7 +927,7 @@ Symbolab                   |  Wolfram Mathematica
 Compute the Fourier transform of f(t)=cosω0t.
 ```
 
-- ChatGPT Output:
+- Wolfram Output:
 <p align = "center">
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot/Specific%20instructions/level9.png" width = 600>
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot/Specific%20instructions/level9.2.png" width = 600>
@@ -949,7 +949,7 @@ Use least squares to estimate a simple regression model that explains the number
 sold as a function of GDP per capita
 ```
 
-- ChatGPT Output:
+- Wolfram Output:
 <p align = "center">
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot/Specific%20instructions/level10.png" width = 600>
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot/Specific%20instructions/level10.2.png" width = 600>
@@ -968,13 +968,13 @@ The example from below comes from this pdf: [Finding areas by integration](https
 Find the area bounded by the curve y = x^2 + x + 4, the x-axis and the ordinates x = 1 and x = 3.
 ```
 
-- ChatGPT Output:
+- Wolfram Output:
 <p align = "center">
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot/General%20instructions/level11.png" width = 600>
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot/General%20instructions/level11.2.png" width = 600>
 </p>
 
-In this case, ChatGPT has correctly guessed that integrals are required to solve this problem. As indicated in the PDF, the solution is doing the integral of x^2+x+4 between 1 and 3. To check if the answers were correct, the platform [Integral Calculator](https://www.integral-calculator.com/) was used. As observed, the results coincide:
+In this case, Wolfram has correctly guessed that integrals are required to solve this problem. As indicated in the PDF, the solution is doing the integral of x^2+x+4 between 1 and 3. To check if the answers were correct, the platform [Integral Calculator](https://www.integral-calculator.com/) was used. As observed, the results coincide:
 <p align = "center">
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot/General%20instructions/Proofs/proof_level11.png" width = 500>
 </p>
@@ -985,7 +985,7 @@ In this case, ChatGPT has correctly guessed that integrals are required to solve
 A soccer player kicks a ball at an angle of 30 degrees to the horizontal. The initial speed of the ball is 20 meters per second. Assuming no air resistance and that the ball is kicked from ground level, predict how far the ball will travel horizontally before hitting the ground. Use the acceleration due to gravity as 9.8 m/s^2.
 ```
 
-- ChatGPT Output:
+- Wolfram Output:
 <p align = "center">
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot/General%20instructions/level12.png" width = 600>
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot/General%20instructions/level12.2.png" width = 600>
@@ -1006,7 +1006,7 @@ The example from below comes from this pdf: [Fundamental Algorithms 12 - Solutio
 Imagine I have a graph (with nodes s, s1, s2, s3, s4, s5, t), whose connections (with weights) are represented with the following adjacency matrix: ((0,1,3,0,0,0,0), (1,0,0,8,4,0,0), (3,0,0,0,3,0,0), (0,8,0,0,0,1,7), (0,4,3,0,0,1,0), (0,0,0,1,1,0,10),(0,0,0,7,0,10,0)). Obtain the shortest path from s to t.
 ```
 
-- ChatGPT Output:
+- Wolfram Output:
 <p align = "center">
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot/General%20instructions/level13.png" width = 600>
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot/General%20instructions/level13.2.png" width = 600>
@@ -1021,7 +1021,7 @@ If we were to check the solutions, we could see that the shortest path will be s
 Consider the following sequence of numbers: 3, 8, 15, 24, 35, 48, ...Your task is to predict the next number in this sequence.
 ```
 
-- ChatGPT Output:
+- Wolfram Output:
 <p align = "center">
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot/General%20instructions/level14.png" width = 600>
 </p>
@@ -1036,14 +1036,14 @@ The example from below comes from this webpage: [Calculating the Future Value](h
 If you invested $5,000 for 10 years at 9% compounded quarterly, how much money would you have? What is the interest earned during the term?
 ```
 
-- ChatGPT Output:
+- Wolfram Output:
 <p align = "center">
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot/General%20instructions/level15.png" width = 600>
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot/General%20instructions/level15.2.png" width = 600>
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot/General%20instructions/level15.3.png" width = 600>
 </p>
 
-By checking the results, we can see that these coincide with the solutions. Hence, ChatGPT was able to understand that it was a compound interest problem.
+By checking the results, we can see that these coincide with the solutions. Hence, Wolfram was able to understand that it was a compound interest problem.
 
 ##### Level 16: Deciphering a phrase knowing each letter was shifted by a certain number (requires knowing that we are talking about Caesar's cipher decoding).
 The example from below comes from the following PDF: [Caesar Cipher Decoding: Answer Key](https://s3.amazonaws.com/prod-hmhco-vmg-craftcms-public/CipherAnswers.pdf).
@@ -1053,7 +1053,7 @@ The example from below comes from the following PDF: [Caesar Cipher Decoding: An
 Decode this phrase "SERR CVMMN VA GUR PNSRGREVN" knowing that each letter was shifted by 13.
 ```
 
-- ChatGPT Output:
+- Wolfram Output:
 <p align = "center">
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot/General%20instructions/level16.png" width = 600>
       <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot/General%20instructions/level16.2.png" width = 600>
@@ -1067,7 +1067,7 @@ This constitutes another problem that it solved correctly. After checking the so
 A freshly baked pie is taken out of the oven and left to cool in a room. The temperature of the oven was 200ºC, and the room temperature is a constant 25ºC. When the pie is first taken out, its temperature is 180ºC. After 20 minutes, the temperature of the pie drops to 100ºC. Calculate the time it takes for the pie to cool down to 50ºC.
 ```
 
-- ChatGPT Output:
+- Wolfram Output:
 <p align = "center">
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot/General%20instructions/level17.png" width = 600>
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot/General%20instructions/level17.2.png" width = 600>
@@ -1089,13 +1089,13 @@ The example from below comes from the following YouTube video: [Work done by Spr
 A person compresses a spring a distance of 5cm, which requires a force of 100N. How much work does the person do?
 ```
 
-- ChatGPT Output:
+- Wolfram Output:
 <p align = "center">
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot/General%20instructions/level18.png" width = 600>
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot/General%20instructions/level18.2.png" width = 600>
 </p>
 
-In this case, the problem is tricky, since we cannot forget about the fact that in order to find the work, we must know the spring constant k. This was successfully taken into account by ChatGPT.
+In this case, the problem is tricky, since we cannot forget about the fact that in order to find the work, we must know the spring constant k. This was successfully taken into account by Wolfram.
 
 ##### Level 19: Computing the quantity a company should make for its inventory given production cost, demand rate, and other variables (requires understanding EOQ).
 The example from below comes from the following webpage: [Economic Order Quantity (EOQ): Practical Problems and Solutions](https://www.financestrategists.com/accounting/cost-accounting/material-costing/economic-order-quantity-eoq-problems-and-solutions/).
@@ -1105,14 +1105,14 @@ The example from below comes from the following webpage: [Economic Order Quantit
 The John Equipment Company estimates its carrying cost at 15% and its ordering cost at $9 per order. The estimated annual requirement is 48,000 units at a price of $4 per unit. What is the most economical number of units to order? How many orders should be placed in a year? How often should an order be placed?
 ```
 
-- ChatGPT Output:
+- Wolfram Output:
 <p align = "center">
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot/General%20instructions/level19.png" width = 600>
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot/General%20instructions/level19.2.png" width = 600>
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot/General%20instructions/level19.3.png" width = 600>
 </p>
 
-ChatGPT understood that it was an EOQ problem, so it proceeded correctly by using the EOQ formula from below. Plus, the results coincide with the solutions:
+Wolfram understood that it was an EOQ problem, so it proceeded correctly by using the EOQ formula from below. Plus, the results coincide with the solutions:
 <p align = "center">
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot/General%20instructions/Proofs/proof_level19.png" width = 300>
 </p>
@@ -1125,22 +1125,22 @@ The example from below comes from the following PDF: [Solutions to Physics I Gra
 Titan, the largest moon of Saturn, has a mean orbital radius of 1.22x109 m. The orbital period of Titan is 15.95 days. Hyperion, another moon of Saturn, orbits at a mean radius of 1.48x109 m. Predict the orbital period of Hyperion in days.
 ```
 
-- ChatGPT Output:
+- Wolfram Output:
 <p align = "center">
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot/General%20instructions/level20.png" width = 600>
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot/General%20instructions/level20.2.png" width = 600>
 </p>
 
-Finally, ChatGPT was impressively able to understand that we were dealing with **Kepler's third law**. By checking the correct solution from the PDF above, we see that the same result is obtained: the orbital period of Hyperion is 21.31 days.
+Finally, Wolfram was impressively able to understand that we were dealing with **Kepler's third law**. By checking the correct solution from the PDF above, we see that the same result is obtained: the orbital period of Hyperion is 21.31 days.
 
 ##### Conclusions
-To sum up this trials, the conclusions from below can be observed, having 10/10 answers correct:
+To sum up this trials, the conclusions from below can be observed, having 9/10 answers correct. It failed in **Level 5**, where only of the interesection points is correct.
 
 | Level 1 | Level 2 | Level 3 | Level 4 | Level 5 | Level 6 | Level 7 | Level 8 | Level 9 | Level 10 |
 |:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|
 |    Methodology+Solution    |    Methodology+Solution    |    Methodology+Solution    |    Methodology+Solution    |    Partial/Incorrect Solution    |    Methodology+Solution    |    Methodology+Solution    |    Methodology+Solution    |    Methodology+Solution    |    Methodology+Solution    |
 
-As for the section of **General instructions**, we have seen that the same happened except for **Level 19**, in which the last question was not correctly solved:
+As for the section of **General instructions**, again 9/10 answers were correct, except for **Level 13**, in which the shortest path could not be found.
 
 | Level 11 | Level 12 | Level 13 | Level 14 | Level 15 | Level 16 | Level 17 | Level 18 | Level 19 | Level 20 |
 |:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|
@@ -1156,7 +1156,7 @@ Given the matrix A = [[1, -2, 1], [-2, 3, 1], [5, -7, -3]], find the inverse (A^
 Let's think step by step.
 ```
 
-- ChatGPT Output:
+- Wolfram Output:
 <p align = "center">
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot-CoT/Specific%20instructions/level1.png" width = 600>
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot-CoT/Specific%20instructions/level1.2.png" width = 600>
@@ -1173,7 +1173,7 @@ Generate several normally distributed variables with mean=45.6 and variance=13.8
 Let's think step by step.
 ```
 
-- ChatGTP Output:
+- Wolfram Output:
 <p align = "center">
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot-CoT/Specific%20instructions/level2.png" width = 600>
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot-CoT/Specific%20instructions/level2.2.png" width = 600>
@@ -1186,7 +1186,7 @@ Plot the function -3*(x-2)^2-5.
 Let's think step by step.
 ```
 
-- ChatGPT Output:
+- Wolfram Output:
 <p align = "center">
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot-CoT/Specific%20instructions/level3.png" width = 600>
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot-CoT/Specific%20instructions/level3.2.png" width = 600>
@@ -1204,7 +1204,7 @@ Find the minimum of the function f(x)=(x^2-x-2)/(x^2-6x+9).
 Let's think step by step.
 ```
 
-- ChatGPT Output:
+- Wolfram Output:
 <p align = "center">
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot-CoT/Specific%20instructions/level4.png" width = 600>
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot-CoT/Specific%20instructions/level4.2.png" width = 600>
@@ -1224,7 +1224,7 @@ Find the intersection points of the functions f(x)=|x-5| and g(x)=logx.
 Let's think step by step.
 ```
 
-- ChatGPT Output:
+- Wolfram Output:
 <p align = "center">
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot-CoT/Specific%20instructions/level5.png" width = 600>
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot-CoT/Specific%20instructions/level5.2.png" width = 600>
@@ -1245,7 +1245,7 @@ What is the derivative of f(x)=5/(sqrt(3x-1))?
 Let's think step by step.
 ```
 
-- ChatGPT Output:
+- Wolfram Output:
 <p align = "center">
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot-CoT/Specific%20instructions/level6.png" width = 600>
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot-CoT/Specific%20instructions/level6.2.png" width = 600>
@@ -1263,7 +1263,7 @@ What is the integral of sin2xcos2x?
 Let's think step by step.
 ```
 
-- ChatGPT Output:
+- Wolfram Output:
 <p align = "center">
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot-CoT/Specific%20instructions/level7.png" width = 600>
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot-CoT/Specific%20instructions/level7.2.png" width = 600>
@@ -1283,7 +1283,7 @@ Study the convergence of the infinite series starting from n equals 1 to infinit
 Let's think step by step.
 ```
 
-- ChatGPT Output:
+- Wolfram Output:
 <p align = "center">
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot-CoT/Specific%20instructions/level8.png" width = 600>
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot-CoT/Specific%20instructions/level8.2.png" width = 600>
@@ -1301,7 +1301,7 @@ Compute the Fourier transform of f(t)=cosω0t.
 Let's think step by step.
 ```
 
-- ChatGPT Output:
+- Wolfram Output:
 <p align = "center">
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot-CoT/Specific%20instructions/level9.png" width = 600>
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot-CoT/Specific%20instructions/level9.2.png" width = 600>
@@ -1325,7 +1325,7 @@ Use least squares to estimate a simple regression model that explains the number
 Let's think step by step.
 ```
 
-- ChatGPT Output:
+- Wolfram Output:
 <p align = "center">
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot-CoT/Specific%20instructions/level10.png" width = 600>
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot-CoT/Specific%20instructions/level10.2.png" width = 600>
@@ -1343,7 +1343,7 @@ Find the area bounded by the curve y = x^2 + x + 4, the x-axis and the ordinates
 Let's think step by step.
 ```
 
-- ChatGPT Output:
+- Wolfram Output:
 <p align = "center">
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot-CoT/General%20instructions/level11.png" width = 600>
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot-CoT/General%20instructions/level11.2.png" width = 600>
@@ -1361,7 +1361,7 @@ A soccer player kicks a ball at an angle of 30 degrees to the horizontal. The in
 Let's think step by step.
 ```
 
-- ChatGPT Output:
+- Wolfram Output:
 <p align = "center">
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot-CoT/General%20instructions/level12.png" width = 600>
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot-CoT/General%20instructions/level12.2.png" width = 600>
@@ -1383,7 +1383,7 @@ The example from below comes from this pdf: [Fundamental Algorithms 12 - Solutio
 Imagine I have a graph (with nodes s, s1, s2, s3, s4, s5, t), whose connections (with weights) are represented with the following adjacency matrix: ((0,1,3,0,0,0,0), (1,0,0,8,4,0,0), (3,0,0,0,3,0,0), (0,8,0,0,0,1,7), (0,4,3,0,0,1,0), (0,0,0,1,1,0,10),(0,0,0,7,0,10,0)). Obtain the shortest path from s to t.
 Let's think step by step.
 ```
-- ChatGPT Output:
+- Wolfram Output:
 <p align = "center">
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot-CoT/General%20instructions/level13.png" width = 600>
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot-CoT/General%20instructions/level13.2.png" width = 600>
@@ -1400,7 +1400,7 @@ Consider the following sequence of numbers: 3, 8, 15, 24, 35, 48, ...Your task i
 Let's think step by step.
 ```
 
-- ChatGPT Output:
+- Wolfram Output:
 <p align = "center">
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot-CoT/General%20instructions/level14.png" width = 600>
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot-CoT/General%20instructions/level14.2.png" width = 600>
@@ -1419,13 +1419,13 @@ If you invested $5,000 for 10 years at 9% compounded quarterly, how much money w
 Let's think step by step.
 ```
 
-- ChatGPT Output:
+- Wolfram Output:
 <p align = "center">
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot-CoT/General%20instructions/level15.png" width = 600>
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot-CoT/General%20instructions/level15.2.png" width = 600>
 </p>
 
-By checking the results, we can see that these coincide with the solutions. Hence, ChatGPT was able to understand that it was a compound interest problem.
+By checking the results, we can see that these coincide with the solutions. Hence, Wolfram was able to understand that it was a compound interest problem.
 
 ##### Level 16: Deciphering a phrase knowing each letter was shifted by a certain number.
 The example from below comes from the following PDF: [Caesar Cipher Decoding: Answer Key](https://s3.amazonaws.com/prod-hmhco-vmg-craftcms-public/CipherAnswers.pdf).
@@ -1436,7 +1436,7 @@ Decode this phrase "SERR CVMMN VA GUR PNSRGREVN" knowing that each letter was sh
 Let's think step by step.
 ```
 
-- ChatGPT Output:
+- Wolfram Output:
 <p align = "center">
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot-CoT/General%20instructions/level16.png" width = 600>
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot-CoT/General%20instructions/level16.2.png" width = 500>
@@ -1453,7 +1453,7 @@ A freshly baked pie is taken out of the oven and left to cool in a room. The tem
 Let's think step by step.
 ```
 
-- ChatGPT Output:
+- Wolfram Output:
 <p align = "center">
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot-CoT/General%20instructions/level17.png" width = 600>
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot-CoT/General%20instructions/level17.2.png" width = 600>
@@ -1473,7 +1473,7 @@ A person compresses a spring a distance of 5cm, which requires a force of 100N. 
 Let's think step by step.
 ```
 
-- ChatGPT Output:
+- Wolfram Output:
 <p align = "center">
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot-CoT/General%20instructions/level18.png" width = 600>
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot-CoT/General%20instructions/level18.2.png" width = 600>
@@ -1490,7 +1490,7 @@ The John Equipment Company estimates its carrying cost at 15% and its ordering c
 Let's think step by step.
 ```
 
-- ChatGPT Output:
+- Wolfram Output:
 <p align = "center">
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot-CoT/General%20instructions/level19.png" width = 600>
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot-CoT/General%20instructions/level19.2.png" width = 600>
@@ -1507,7 +1507,7 @@ Titan, the largest moon of Saturn, has a mean orbital radius of 1.22x109 m. The 
 Let's think step by step.
 ```
 
-- ChatGPT Output:
+- Wolfram Output:
 <p align = "center">
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot-CoT/General%20instructions/level20.png" width = 600>
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot-CoT/General%20instructions/level20.2.png" width = 600>
