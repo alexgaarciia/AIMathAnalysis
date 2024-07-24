@@ -1,49 +1,13 @@
 # AIMathAnalysis
 ## Introduction to the repository
-The main goal of this repository is to analyze how [ChatGPT](https://chat.openai.com/) and [Wolfram Mathematica](https://www.wolfram.com/mathematica/) can work together. In case any of these names seem unfamiliar, let us provide some basic definitions. **ChatGPT** is an AI language model designed to understand and generate human-like text based on the input it receives. **Wolfram Mathematica**, on the other hand, is a computing environment used for mathematical computation, algorithm development, data visualization, and symbolic manipulation, widely used in scientific, engineering, mathematical, and computing fields.
-
-
-## How to use ChatGPT with Wolfram Mathematica
-Combining ChatGPT and Wolfram Mathematica can be a powerful way to leverage the strengths of both platforms. ChatGPT is proficient in natural language processing and can handle a wide range of queries and tasks, while Wolfram Mathematica excels in computational mathematics, data analysis, and visualization. Here are a few ways to integrate them:
-1. **Automating Mathematica Scripts**: ChatGPT can be used to create a user-friendly interface to create Mathematica scripts. Users can **describe in natural language** what they want to compute or analyze, and then ChatGPT will **translate** into a Mathematica script and execute it.
-2. **Data Analysis and Visualization**: It can also be used to interpret and structure data analysis queries. After passing these structured queries, Mathematica can then perform complex data analysis and generate visualizations.
-3. **Algorithm Design**: Combining them for algorithm development can be achieved by using ChatGPT for initial brainstorming and pseudocode generation, and then translating these ideas into Mathematica's powerful computational language for detailed analysis and visualization.
-
-The Wolfram Mathematica plugin is only one of the many plugins available for ChatGPT plus. The following lists the instructions necessary to install this plugin:
-1. Select your name in the bottom left, then choose settings.
-2. Inside the settings menu, there should be a **Beta features** section which you can select and then enable plugins or browsing.
-3. Click on your current version of ChatGPT.
-4. Select **Plugins** from the dropdown.
-5. In case you do not have the Wolfram Mathematica plugin installed, click on the **No plugins installed** dropdown and look for **Plugin store**.
-6. Search for Wolfram on the search tab and click on **Install**.
-7. Finally, select it from the plugins dropdown.
-
-
-## Prompting Wolfram Mathematica with ChatGPT
-In the rapidly evolving field of artificial intelligence, particularly in the domain of language models, "prompting" emerges as a pivotal concept. This term refers to the method of interacting with an AI language model by providing it with specific inputs (prompts), which guide the model in generating a desired output.
-
-The goal of this project is to evaluate ChatGPT's ability to interpret and respond to prompts with varying levels of specificity, determining whether it requires detailed background context for effective problem-solving or if it can efficiently derive solutions from minimal information.
-
-### What is a prompt?
-A prompt is essentially an input statement or question given to an AI model. It acts as a catalyst that initiates the model's generation process, leading to a variety of potential outputs. Prompts can vary significantly in complexity, ranging from simple questions to detailed instructions or scenarios.
-
-#### Prompting techniques
-In the course of this repository, we focuse particularly on two advanced prompting techniques: **zero-shot learning** and **zero-shot chain of thought** (zero-shot-CoT). 
-- Zero-shot learning: Zero-shot learning is a technique where the AI model responds to prompts without any prior specific training or examples related to that task. It relies on the model's pre-trained knowledge and its ability to generalize from that knowledge to new scenarios.
-- Zero-shot-CoT: It constitutes a nuanced extension of the zero-shot technique. In this approach, the model is prompted to articulate its reasoning process step by step, leading to the final answer. This method not only sheds light on the model's decision-making process but also enhances the clarity and interpretability of its responses. To do this, the sentence "Let's think step by step" is added at the end of the prompt.
-
-### Available resources
-First off, we would like to know if there are already some investigations/guides in this regard. We found out that there are no specific texts on the most efficient way of prompting Wolfram Mathematica with ChatGPT. However, there is an interesting introduction to using the plugin in the offical Wolfram webpage: [Wolfram ChatGPT](https://www.wolfram.com/wolfram-plugin-chatgpt/index.php.en?source=footer). It provides an installation guide and some applications of it and, at the end of the page, there is a link about [using the Wolfram Plugin for ChatGPT](https://www.youtube.com/watch?v=EOQV9VakBgE&ab_channel=Wolfram), where several prompts are tested.
-
-**Note that the only resources that are close to talking about prompting the plugin are YouTube videos.**
-
+The main goal of this repository is to evaluate the ability of several LLMs to interpret and respond to prompts with varying levels of specificity, determining whether it requires detailed background context for effective problem-solving or if they can efficiently derive solutions from minimal information.
 
 ## Experiments
-In order to test how much we can do by simply giving text as input, we provided some mathematical problems with varying difficulty. There will be three different sections of experiments, each corresponding to a different version of ChatGPT (ChatGPT-3.5, ChatGPT-4 (Wolfram Mathematica plugin on, ChatGPT-4 (Wolfram Mathematica plugin off). Note that ChatGPT-4 without the Wolfram Mathematica plugin, solves math problems using Python. It uses libraries like sympy, numpy, or even math.
+In order to carry out our goal, we provided some mathematical problems with varying difficulty. To ensure our comparison extends beyond just ChatGPT, we conducted our experiments on Gemini and LLaMA as well. This approach allows us to provide a more comprehensive evaluation by including multiple AI models in our analysis, thereby avoiding any bias that may arise from focusing solely on ChatGPT. By examining the performance and capabilities of Gemini and LLaMA alongside ChatGPT, we aim to achieve a balanced and wide-ranging understanding of the current landscape of conversational AI technologies.
 
-Inside each, there will be two subsections for two different types of prompting: **Zero-shot learning** and **Zero-shot-CoT**. For each one, we will test their performance by being very specific about what we want to do and by not being specific about what we want to do.
+There will be five different sections of evaluations, each corresponding to a different model: ChatGPT-3.5, Wolfram GPT, ChatGPT-4, Gemini, and LLaMA. Inside each evaluation section, we applied two different types of prompting: **Zero-shot** and **Zero-shot-CoT**. For each one, we tested their performance by being very specific about what we wanted to do and by not being specific about what we wanted to do.
 
-That is, for example, instead of asking ChatGPT to solve an integral in a range (specific instructions), we could ask to obtain the area and check if it knows that an integral must be computed (general instructions). With this, we are trying to solve two main questions: Does ChatGPT require background thinking? How much we can do without being very specific?
+That is, for example, instead of asking to solve an integral in a range (specific instructions), we could ask to obtain the area and check if it knows that an integral must be computed (general instructions). With this, we are trying to solve two main questions: Do LLMs require background thinking? How much can we do without being very specific?
 
 
 ## ChatGPT-3.5
@@ -789,7 +753,7 @@ As in the conclusions for the section of specific instructions, we have seen tha
 |    Methodology-only    |    Methodology-only    |    Methodology-only    |    Methodology+Solution    |    Methodology+Solution    |    Methodology-only    |    Methodology-only    |    Methodology-only    |    Methodology+Solution    |    Methodology+Solution    |
 
 
-## ChatGPT-4 (Wolfram Mathematica plugin on)
+## Wolfram GPT
 ### Zero-shot prompting
 #### Specific instructions
 ##### Level 1: Inverting a matrix.
@@ -915,7 +879,7 @@ Study the convergence of the infinite series starting from n equals 1 to infinit
 
 </p>
 
-The tool [Symbolab](https://www.symbolab.com/) was used to study the convergence of the proposed function. The series has a value of 1, which corresponds to the one obtained by the Wolfram Mathematica plugin:
+The tool [Symbolab](https://www.symbolab.com/) was used to study the convergence of the proposed function. The series has a value of 1, which corresponds to the one obtained by the Wolfram GPT:
 
 Symbolab                   |  Wolfram Mathematica     
 :-------------------------:|:------------------------:
@@ -1529,7 +1493,7 @@ For the section of `General instructions`, it struggled with **Level 13** (Getti
 |    Methodology+Solution    |    Methodology+Solution    |    Partial/Incorrect Solution    |    Methodology+Solution    |    Methodology+Solution    |    Methodology+Solution    |    Methodology+Solution    |    Methodology+Solution    |    Methodology+Solution    |    Methodology+Solution    |
 
 
-## ChatGPT-4 (Wolfram Mathematica plugin off)
+## ChatGPT-4 
 ### Zero-shot prompting
 #### Specific instructions
 ##### Level 1: Inverting a matrix.
@@ -2325,29 +2289,29 @@ LLaMA, similarly, shows varied performance across different levels and prompting
 
 
 ## Results
-### Performance Comparison of ChatGPT Versions with Zero-shot-CoT (ZS-CoT) and Zero-shot Prompting
-| Level | Problem                            | ChatGPT-3.5 Zero-shot | ChatGPT-3.5 ZS-CoT | ChatGPT-4 Zero-shot | ChatGPT-4 ZS-CoT | ChatGPT-4 + Wolfram Zero-shot | ChatGPT-4 + Wolfram ZS-CoT |
+### Performance Comparison of ChatGPT Versions and Wolfram GPT with Zero-shot-CoT (ZS-CoT) and Zero-shot Prompting
+| Level | Problem                            | ChatGPT-3.5 Zero-shot | ChatGPT-3.5 ZS-CoT | ChatGPT-4 Zero-shot | ChatGPT-4 ZS-CoT | Wolfram GPT Zero-shot | Wolfram GPT ZS-CoT |
 |-------|------------------------------------|-----------------------|-------------------|---------------------|-----------------|-------------------------------|---------------------------|
-| 1     | Matrix inversion                   | M                     | M                 | S                   | M+S             | S                             | M+S                       |
-| 2     | Normal Distribution Generation     | M+S                   | M+S               | S                   | M+S             | S                             | M+S                       |
-| 3     | Function Plotting                  | M+S                   | M+S               | S                   | M+S             | S                             | M+S                       |
-| 4     | Finding Minimum                    | M                     | M                 | M+S                 | M+S             | S                             | M+S                       |
-| 5     | Function Intersection              | M                     | M                 | M+S                 | M+S             | S                             | M+S                       |
-| 6     | Function Differentiation           | M                     | NA                | M+S                 | M+S             | S                             | M+S                       |
-| 7     | Function Integration               | M                     | M+S               | M+S                 | M+S             | S                             | M+S                       |
-| 8     | Series Convergence                 | M+S                   | M+S               | M+S                 | M+S             | S                             | M+S                       |
-| 9     | Fourier Transform                  | NA                    | M+S               | M+S                 | M+S             | S                             | M+S                       |
-| 10    | Data Regression                    | M                     | M                 | M+S                 | M+S             | S                             | M+S                       |
-| 11    | Area Calculation                    | M+S                   | M                 | M+S                 | M+S             | S                             | M+S                       |
-| 12    | Projectile Range Prediction        | M+S                   | M                 | M+S                 | M+S             | S                             | M+S                       |
-| 13    | Shortest Path Finding              | M                     | M                 | M+S                 | M+S             | S                             | PI                        |
-| 14    | Sequence Prediction                | M+S                   | M+S               | M+S                 | M+S             | S                             | M+S                       |
-| 15    | Compound Interest Calculation      | M+S                   | M+S               | M+S                 | M+S             | S                             | M+S                       |
-| 16    | Caesar's Cipher Decoding           | M                     | M                 | M+S                 | M+S             | S                             | M+S                       |
-| 17    | Cooling Time Calculation           | NA                    | M                 | M+S                 | M               | S                             | M+S                       |
-| 18    | Spring Compression Work            | M                     | M                 | M+S                 | M+S             | S                             | M+S                       |
-| 19    | Inventory Optimization Analysis    | M                     | M+S               | M+S                 | PI              | PI                            | PI                        |
-| 20    | Orbital Period Computation         | M+S                   | M+S               | M+S                 | M+S             | S                             | M+S                       |
+| 1     | Matrix inversion                   | M                     | M                 | S                   | M+S             | M+S                             | M+S                       |
+| 2     | Normal Distribution Generation     | M+S                   | M+S               | S                   | M+S             | M+S                             | M+S                       |
+| 3     | Function Plotting                  | M+S                   | M+S               | S                   | M+S             | M+S                             | M+S                       |
+| 4     | Finding Minimum                    | M                     | M                 | M+S                 | M+S             | M+S                             | M+S                       |
+| 5     | Function Intersection              | M                     | M                 | M+S                 | M+S             | PI                             | M+S                       |
+| 6     | Function Differentiation           | M                     | NA                | M+S                 | M+S             | M+S                             | M+S                       |
+| 7     | Function Integration               | M                     | M+S               | M+S                 | M+S             | M+S                             | M+S                       |
+| 8     | Series Convergence                 | M+S                   | M+S               | M+S                 | M+S             | M+S                             | M+S                       |
+| 9     | Fourier Transform                  | NA                    | M+S               | M+S                 | M+S             | M+S                             | M+S                       |
+| 10    | Data Regression                    | M                     | M                 | M+S                 | M+S             | M+S                             | M+S                       |
+| 11    | Area Calculation                    | M+S                   | M                 | M+S                 | M+S             | M+S                             | M+S                       |
+| 12    | Projectile Range Prediction        | M+S                   | M                 | M+S                 | M+S             | M+S                            | M+S                       |
+| 13    | Shortest Path Finding              | M                     | M                 | M+S                 | M+S             | PI                             | PI                        |
+| 14    | Sequence Prediction                | M+S                   | M+S               | M+S                 | M+S             | M+S                             | M+S                       |
+| 15    | Compound Interest Calculation      | M+S                   | M+S               | M+S                 | M+S             | M+S                             | M+S                       |
+| 16    | Caesar's Cipher Decoding           | M                     | M                 | M+S                 | M+S             | M+S                             | M+S                       |
+| 17    | Cooling Time Calculation           | NA                    | M                 | M+S                 | M               | M+S                             | M+S                       |
+| 18    | Spring Compression Work            | M                     | M                 | M+S                 | M+S             | M+S                             | M+S                       |
+| 19    | Inventory Optimization Analysis    | M                     | M+S               | M+S                 | PI              | M+S                            | M+S                        |
+| 20    | Orbital Period Computation         | M+S                   | M+S               | M+S                 | M+S             | M+S                             | M+S                       |
 
  ### Performance Comparison of Gemini and LLaMA with Zero-shot-CoT (ZS-CoT) and Zero-shot Prompting
 | Level | Problem                            | Gemini Zero-shot | Gemini ZS-CoT | LLaMA Zero-shot | LLaMA ZS-CoT |
@@ -2373,7 +2337,7 @@ LLaMA, similarly, shows varied performance across different levels and prompting
 | 19    | Inventory Optimization Analysis    | PI               | PI            | PI              | PI           |
 | 20    | Orbital Period Computation         | PI               | M+S           | PI              | PI           |
 
-These tables outline the results of all five LLMs used in the experiments: ChatGPT-v3.5, ChatGPT-v4, ChatGPT-v4 + Mathematica, Google Gemini and Meta LLaMA-2-70b. In each case, the LLMs are evaluated as:
+These tables outline the results of all five LLMs used in the experiments: ChatGPT-v3.5, ChatGPT-v4, Wolfram GPT, Google Gemini and Meta LLaMA-2-70b. In each case, the LLMs are evaluated as:
 - (NA) stands for Nothing.
 - (PI) stands for Partial or Incorrect solution provided.
 - (M) stands for (correct) Methodology only, where the LLM explains the theoretical background to solve the problem, but no solution is provided.
