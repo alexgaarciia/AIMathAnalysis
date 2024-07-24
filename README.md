@@ -1236,7 +1236,7 @@ In order to check if the answers are correct, we will check the graph:
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot/Specific%20instructions/Proofs/proof_level5.2.png" width = 600>
 </p>
 
-We can see that there are two intersection points, both expressed using the Lambert W function; the first intersection point is equal to 3'693 and the second one is 6'936. If we return above, we can see that ChatGPT got the same intersection points.
+We can see that there are two intersection points, the same ones as Wolfram.
 
 ##### Level 6: Deriving a function.
 - Prompt:
@@ -1251,7 +1251,7 @@ Let's think step by step.
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot-CoT/Specific%20instructions/level6.2.png" width = 600>
 </p>
 
-As a way of checking that the answer is correct, we simply asked Wolfram Alpha to derive the function, and check if it coincides with the derivative obtained by ChatGPT. The solution of Wolfram Alpha is:
+As a way of checking that the answer is correct, we simply asked Wolfram Alpha to derive the function, and check if it coincides with the derivative obtained by Wolfram. The solution of Wolfram Alpha is:
 <p align = "center">
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot/Specific%20instructions/Proofs/proof_level6.png" width = 200>
 </p>
@@ -1274,7 +1274,7 @@ For this level, to check if the answer is correct, we solved the integral using 
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot/Specific%20instructions/Proofs/proof_level7.png" width = 500>
 </p>
 
-It coincides with the result given by ChatGPT.
+It coincides with the result given by Wolfram.
 
 ##### Level 8: Mathematical Series.
 - Prompt:
@@ -1289,7 +1289,7 @@ Let's think step by step.
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot-CoT/Specific%20instructions/level8.2.png" width = 600>
 </p>
 
-The tool [Symbolab](https://www.symbolab.com/) was used to study the convergence of the proposed function. The series has a value of 1, which corresponds to the value obtained by ChatGPT:
+The tool [Symbolab](https://www.symbolab.com/) was used to study the convergence of the proposed function. The series has a value of 1, which corresponds to the value obtained by Wolfram:
 <p align = "center">
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot/Specific%20instructions/Proofs/proof_level8.png" width = 600>
 </p>
@@ -1308,7 +1308,7 @@ Let's think step by step.
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot-CoT/Specific%20instructions/level9.3.png" width = 600>
 </p>
 
-For this problem, we used again [Symbolab](https://www.symbolab.com/) to compute the Fourier transform. After comparing it with the result obtained from ChatGPT,the solutions coincide:
+For this problem, we used again [Symbolab](https://www.symbolab.com/) to compute the Fourier transform. After comparing it with the result obtained from Wolfram, the solutions coincide:
 <p align = "center">
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot/Specific%20instructions/Proofs/proof_level9.png" width = 600>
 </p>
@@ -1349,7 +1349,7 @@ Let's think step by step.
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot-CoT/General%20instructions/level11.2.png" width = 600>
 </p>
 
-In this case, ChatGPT has correctly guessed that integrals are required to solve this problem. As indicated in the PDF, the solution is doing the integral of x^2+x+4 between 1 and 3. To check if the answers were correct, the platform [Integral Calculator](https://www.integral-calculator.com/) was used. As observed, the results coincide:
+In this case, Wolfram has correctly guessed that integrals are required to solve this problem. As indicated in the PDF, the solution is doing the integral of x^2+x+4 between 1 and 3. To check if the answers were correct, the platform [Integral Calculator](https://www.integral-calculator.com/) was used. As observed, the results coincide:
 <p align = "center">
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot/General%20instructions/Proofs/proof_level11.png" width = 500>
 </p>
@@ -1391,7 +1391,7 @@ Let's think step by step.
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot-CoT/General%20instructions/level13.4.png" width = 600>
 </p>
 
-If we were to check the solutions, we could see that the shortest path is `s, s1, s4, s5, s3, t`; contrary to the one proposed by ChatGPT.
+If we were to check the solutions, we could see that the shortest path is `s, s1, s4, s5, s3, t`; contrary to the one proposed by Wolfram (s, s1, s4, s5, t).
 
 ##### Level 14: Predicting the next number in a complex sequence.
 - Prompt:
@@ -1462,7 +1462,7 @@ Let's think step by step.
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot-CoT/General%20instructions/level17.5.png" width = 600>
 </p>
 
-In this case, ChatGPT was able to solve this problem. It understood that it was a problem related to Newton's Law of Cooling, and successfully determined the cooling constant `k`.
+In this case, Wolfram was able to solve this problem. It understood that it was a problem related to Newton's Law of Cooling, and successfully determined the cooling constant `k`.
 
 ##### Level 18: Calculating the work done in compressing a spring.
 The example from below comes from the following YouTube video: [Work done by Spring Example](https://www.youtube.com/watch?v=uUgMK8wQAcU).
@@ -1479,7 +1479,7 @@ Let's think step by step.
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot-CoT/General%20instructions/level18.2.png" width = 600>
 </p>
 
-In this case, ChatGPT **did not** fail to know that in order to find the work we must know the spring constant K. The result coincides with the solution, giving W=2'5J. 
+In this case, Wolfram **did not** fail to know that in order to find the work we must know the spring constant K. The result coincides with the solution, giving W=2'5J. 
 
 ##### Level 19: Computing the quantity a company should make for its inventory given production cost, demand rate, and other variables.
 The example from below comes from the following webpage: [Economic Order Quantity (EOQ): Practical Problems and Solutions](https://www.financestrategists.com/accounting/cost-accounting/material-costing/economic-order-quantity-eoq-problems-and-solutions/).
@@ -1496,7 +1496,7 @@ Let's think step by step.
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot-CoT/General%20instructions/level19.2.png" width = 600>
 </p>
 
-ChatGPT understood that it was an EOQ problem, so it proceeded correctly by using the EOQ formula from below. However, the answer to the last question (How often should an order be placed?) does not coincide with the solutions.
+Wolfram understood that it was an EOQ problem, so it proceeded correctly by using the EOQ formula, obtaining all the answers correct.
 
 ##### Level 20: Computing the orbital period.
 The example from below comes from the following PDF: [Solutions to Physics I Gravity and Kepler’s Laws Practice Problems](https://www.lehman.edu/faculty/anchordoqui/101-P4_s.pdf).
@@ -1513,7 +1513,7 @@ Let's think step by step.
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot-CoT/General%20instructions/level20.2.png" width = 600>
 </p>
 
-Finally, ChatGPT was again able to understand that we were dealing with Kepler's third law. By checking the solution from the PDF above, we see that the same result is obtained: the orbital period of Hyperion is 21.31 days.
+Finally, Wolfram was again able to understand that we were dealing with Kepler's third law. By checking the solution from the PDF above, we see that the same result is obtained: the orbital period of Hyperion is 21.31 days.
 
 ##### Conclusions
 In this case, it got all the answers correct for the problems of the `Specific instructions`.
@@ -1522,11 +1522,11 @@ In this case, it got all the answers correct for the problems of the `Specific i
 |:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:--------:|
 |    Methodology+Solution    |    Methodology+Solution    |    Methodology+Solution    |    Methodology+Solution    |    Methodology+Solution    |    Methodology+Solution    |    Methodology+Solution    |    Methodology+Solution    |    Methodology+Solution    |    Methodology+Solution    |
 
-For the section of `General instructions`, it struggled with **Level 13** (Getting the best path from one node to another) and **Level 19** (Computing the quantity a company should make for its inventory given production cost, demand rate, and other variables). Regarding the former, it may have not understood well the adjacency matrix, since it says that `s` is directly connected to `t` (which is not the case); in the other level, however, made the mistake of considering the working days and not all the days of the year.
+For the section of `General instructions`, it struggled with **Level 13** (Getting the best path from one node to another). The mistake was in updating distances and selecting nodes. After selecting s4 with distance 5, updating the distance for s5 should give 6 (correct), but the path to t was updated correctly through s5 instead of s3.
 
 | Level 11 | Level 12 | Level 13 | Level 14 | Level 15 | Level 16 | Level 17 | Level 18 | Level 19 | Level 20 |
 |:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|
-|    Methodology+Solution    |    Methodology+Solution    |    Partial/Incorrect Solution    |    Methodology+Solution    |    Methodology+Solution    |    Methodology+Solution    |    Methodology+Solution    |    Methodology+Solution    |    Partial/Incorrect Solution    |    Methodology+Solution    |
+|    Methodology+Solution    |    Methodology+Solution    |    Partial/Incorrect Solution    |    Methodology+Solution    |    Methodology+Solution    |    Methodology+Solution    |    Methodology+Solution    |    Methodology+Solution    |    Methodology+Solution    |    Methodology+Solution    |
 
 
 ## ChatGPT-4 (Wolfram Mathematica plugin off)
