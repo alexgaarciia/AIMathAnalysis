@@ -1,4 +1,4 @@
-# ChatGPTWolfram
+# AIMathAnalysis
 ## Introduction to the repository
 The main goal of this repository is to analyze how [ChatGPT](https://chat.openai.com/) and [Wolfram Mathematica](https://www.wolfram.com/mathematica/) can work together. In case any of these names seem unfamiliar, let us provide some basic definitions. **ChatGPT** is an AI language model designed to understand and generate human-like text based on the input it receives. **Wolfram Mathematica**, on the other hand, is a computing environment used for mathematical computation, algorithm development, data visualization, and symbolic manipulation, widely used in scientific, engineering, mathematical, and computing fields.
 
@@ -857,6 +857,8 @@ Find the intersection points of the functions f(x)=|x-5| and g(x)=logx.
 - ChatGPT Output:
 <p align = "center">
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot/Specific%20instructions/level5.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot/Specific%20instructions/level5.2.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot/Specific%20instructions/level5.3.png" width = 600>
 </p>
 
 As we have seen in the solutions given by Wolfram Mathematica, we may think the answers are wrong because instead of giving a number, it gives the Lambert W function. However, let's check two things: the solution given by Wolfram Alpha and the graph:
@@ -892,6 +894,7 @@ What is the integral of sin2xcos2x?
 - ChatGPT Output:
 <p align = "center">
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot/Specific%20instructions/level7.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot/Specific%20instructions/level7.2.png" width = 600>
 </p>
 
 The solution for the integral, computed using [Integral Calculator](https://www.integral-calculator.com/), coincides:
@@ -908,13 +911,15 @@ Study the convergence of the infinite series starting from n equals 1 to infinit
 - ChatGPT Output:
 <p align = "center">
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot/Specific%20instructions/level8.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot/Specific%20instructions/level8.2.png" width = 600>
+
 </p>
 
 The tool [Symbolab](https://www.symbolab.com/) was used to study the convergence of the proposed function. The series has a value of 1, which corresponds to the one obtained by the Wolfram Mathematica plugin:
 
 Symbolab                   |  Wolfram Mathematica     
 :-------------------------:|:------------------------:
-![](https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot/Specific%20instructions/Proofs/proof_level8.png)  |  ![](https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot/Specific%20instructions/level8.png) 
+![](https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot/Specific%20instructions/Proofs/proof_level8.png)  |  ![](https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot/Specific%20instructions/level8.2.png) 
 
 ##### Level 9: Fourier transform.
 - Prompt:
@@ -925,6 +930,7 @@ Compute the Fourier transform of f(t)=cosω0t.
 - ChatGPT Output:
 <p align = "center">
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot/Specific%20instructions/level9.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot/Specific%20instructions/level9.2.png" width = 600>
 </p>
 
 For this problem, we used again [Symbolab](https://www.symbolab.com/) to compute the Fourier transform. In this case too, the solutions coincide.
@@ -946,6 +952,9 @@ sold as a function of GDP per capita
 - ChatGPT Output:
 <p align = "center">
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot/Specific%20instructions/level10.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot/Specific%20instructions/level10.2.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot/Specific%20instructions/level10.3.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot/Specific%20instructions/level10.4.png" width = 600>
 </p>
 
 No need of proof, the problem was correctly solved.
