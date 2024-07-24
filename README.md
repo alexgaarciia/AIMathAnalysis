@@ -988,12 +988,14 @@ A soccer player kicks a ball at an angle of 30 degrees to the horizontal. The in
 - ChatGPT Output:
 <p align = "center">
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot/General%20instructions/level12.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot/General%20instructions/level12.2.png" width = 600>
 </p>
 
 The problem of this level was proposed by ChatGPT, and the solution coincides with the results obtained above:
 <p align = "center">
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot/General%20instructions/Proofs/proof_level12.png" width = 600>
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot/General%20instructions/Proofs/proof_level12.2.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot/General%20instructions/Proofs/proof_level12.3.png" width = 600>
 </p>
 
 ##### Level 13: Getting the best path from one node to another (requires knowing that Dijkstra's algorithm must be used).
