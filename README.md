@@ -867,7 +867,7 @@ Wolfram Alpha        |  Graph
 :-------------------:|:-------------------:
 ![](https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot/Specific%20instructions/Proofs/proof_level5.png)  |  ![](https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot/Specific%20instructions/Proofs/proof_level5.2.png)
 
-We can see that the former returns two intersection points. Both are expressed using the Lambert W function; the first intersection point is equal to 3'693 and the second one is 6'936. 
+We can see that the former returns two intersection points. Both are expressed using the Lambert W function; the first intersection point is equal to 3'693 and the second one is 6'936. But in this case, only of the interesection points is correct.
 
 ##### Level 6: Deriving a function.
 - Prompt:
@@ -1013,7 +1013,7 @@ Imagine I have a graph (with nodes s, s1, s2, s3, s4, s5, t), whose connections 
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot/General%20instructions/level13.3.png" width = 600>
 </p>
 
-If we were to check the solutions, we could see that the shortest path will be s, s1, s4, s5, t; as the one proposed by ChatGPT.
+If we were to check the solutions, we could see that the shortest path will be s, s1, s4, s5, t; contrary to the one obtained by Wolfram (s, s1, s4, s5, s6, t).
 
 ##### Level 14: Predicting the next number in a complex sequence (requires recognizing and applying the underlying pattern or mathematical rule governing the sequence).
 - Prompt:
@@ -1112,7 +1112,7 @@ The John Equipment Company estimates its carrying cost at 15% and its ordering c
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot/General%20instructions/level19.3.png" width = 600>
 </p>
 
-ChatGPT understood that it was an EOQ problem, so it proceeded correctly by using the EOQ formula from below. Plus, the results (except for the last question), coincide with the solutions:
+ChatGPT understood that it was an EOQ problem, so it proceeded correctly by using the EOQ formula from below. Plus, the results coincide with the solutions:
 <p align = "center">
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot/General%20instructions/Proofs/proof_level19.png" width = 300>
 </p>
@@ -1136,15 +1136,15 @@ Finally, ChatGPT was impressively able to understand that we were dealing with *
 ##### Conclusions
 To sum up this trials, the conclusions from below can be observed, having 10/10 answers correct:
 
- Level 1 | Level 2 | Level 3 | Level 4 | Level 5 | Level 6 | Level 7 | Level 8 | Level 9 | Level 10 |
+| Level 1 | Level 2 | Level 3 | Level 4 | Level 5 | Level 6 | Level 7 | Level 8 | Level 9 | Level 10 |
 |:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|
-|    Solution-only    |    Solution-only    |    Solution-only    |    Solution-only    |    Solution-only    |    Solution-only    |    Solution-only    |    Solution-only    |    Solution-only    |    Solution-only    |
+|    Methodology+Solution    |    Methodology+Solution    |    Methodology+Solution    |    Methodology+Solution    |    Partial/Incorrect Solution    |    Methodology+Solution    |    Methodology+Solution    |    Methodology+Solution    |    Methodology+Solution    |    Methodology+Solution    |
 
 As for the section of **General instructions**, we have seen that the same happened except for **Level 19**, in which the last question was not correctly solved:
 
 | Level 11 | Level 12 | Level 13 | Level 14 | Level 15 | Level 16 | Level 17 | Level 18 | Level 19 | Level 20 |
 |:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|
-|    Solution-only    |    Solution-only    |    Solution-only    |    Solution-only    |    Solution-only    |    Solution-only    |    Solution-only    |    Solution-only    |    Partial/Incorrect Solution    |    Solution-only    |
+|    Methodology+Solution    |    Methodology+Solution    |    Partial/Incorrect Solution    |    Methodology+Solution    |    Methodology+Solution    |    Methodology+Solution    |    Methodology+Solution    |    Methodology+Solution    |    Methodology+Solution    |    Methodology+Solution    |
 
 ### Zero-Shot-CoT prompting
 #### Specific instructions
