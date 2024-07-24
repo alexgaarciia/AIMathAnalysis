@@ -6,7 +6,7 @@ The main goal of this repository is to analyze how [ChatGPT](https://chat.openai
 ## How to use ChatGPT with Wolfram Mathematica
 Combining ChatGPT and Wolfram Mathematica can be a powerful way to leverage the strengths of both platforms. ChatGPT is proficient in natural language processing and can handle a wide range of queries and tasks, while Wolfram Mathematica excels in computational mathematics, data analysis, and visualization. Here are a few ways to integrate them:
 1. **Automating Mathematica Scripts**: ChatGPT can be used to create a user-friendly interface to create Mathematica scripts. Users can **describe in natural language** what they want to compute or analyze, and then ChatGPT will **translate** into a Mathematica script and execute it.
-2. **Data Anaylsis and Visualization**: It can also be used to interpret and structure data analysis queries. After passing these structured queries, Mathematica can then perform complex data analysis and generate visualizations.
+2. **Data Analysis and Visualization**: It can also be used to interpret and structure data analysis queries. After passing these structured queries, Mathematica can then perform complex data analysis and generate visualizations.
 3. **Algorithm Design**: Combining them for algorithm development can be achieved by using ChatGPT for initial brainstorming and pseudocode generation, and then translating these ideas into Mathematica's powerful computational language for detailed analysis and visualization.
 
 The Wolfram Mathematica plugin is only one of the many plugins available for ChatGPT plus. The following lists the instructions necessary to install this plugin:
