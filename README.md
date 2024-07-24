@@ -1346,6 +1346,7 @@ Let's think step by step.
 - ChatGPT Output:
 <p align = "center">
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot-CoT/General%20instructions/level11.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot-CoT/General%20instructions/level11.2.png" width = 600>
 </p>
 
 In this case, ChatGPT has correctly guessed that integrals are required to solve this problem. As indicated in the PDF, the solution is doing the integral of x^2+x+4 between 1 and 3. To check if the answers were correct, the platform [Integral Calculator](https://www.integral-calculator.com/) was used. As observed, the results coincide:
@@ -1364,6 +1365,7 @@ Let's think step by step.
 <p align = "center">
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot-CoT/General%20instructions/level12.png" width = 600>
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot-CoT/General%20instructions/level12.2.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot-CoT/General%20instructions/level12.3.png" width = 600>
 </p>
 
 The problem of this level was proposed by ChatGPT, and the solution coincides with the results obtained above:
@@ -1385,6 +1387,8 @@ Let's think step by step.
 <p align = "center">
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot-CoT/General%20instructions/level13.png" width = 600>
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot-CoT/General%20instructions/level13.2.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot-CoT/General%20instructions/level13.3.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot-CoT/General%20instructions/level13.4.png" width = 600>
 </p>
 
 If we were to check the solutions, we could see that the shortest path is `s, s1, s4, s5, s3, t`; contrary to the one proposed by ChatGPT.
@@ -1399,6 +1403,9 @@ Let's think step by step.
 - ChatGPT Output:
 <p align = "center">
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot-CoT/General%20instructions/level14.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot-CoT/General%20instructions/level14.2.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot-CoT/General%20instructions/level14.3.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot-CoT/General%20instructions/level14.4.png" width = 600>
 </p>
 
 The underlying sequence was perfectly discovered.
@@ -1433,6 +1440,8 @@ Let's think step by step.
 <p align = "center">
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot-CoT/General%20instructions/level16.png" width = 600>
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot-CoT/General%20instructions/level16.2.png" width = 500>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot-CoT/General%20instructions/level16.3.png" width = 500>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot-CoT/General%20instructions/level16.4.png" width = 500>
 </p>
 
 This constitutes another problem that it solved correctly. After checking the solutions, we see that the deciphered message is "FREE PIZZA IN THE CAFETERIA". 
@@ -1449,6 +1458,8 @@ Let's think step by step.
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot-CoT/General%20instructions/level17.png" width = 600>
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot-CoT/General%20instructions/level17.2.png" width = 600>
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot-CoT/General%20instructions/level17.3.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot-CoT/General%20instructions/level17.4.png" width = 600>
+   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot-CoT/General%20instructions/level17.5.png" width = 600>
 </p>
 
 In this case, ChatGPT was able to solve this problem. It understood that it was a problem related to Newton's Law of Cooling, and successfully determined the cooling constant `k`.
@@ -1466,7 +1477,6 @@ Let's think step by step.
 <p align = "center">
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot-CoT/General%20instructions/level18.png" width = 600>
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot-CoT/General%20instructions/level18.2.png" width = 600>
-   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot-CoT/General%20instructions/level18.3.png" width = 600>
 </p>
 
 In this case, ChatGPT **did not** fail to know that in order to find the work we must know the spring constant K. The result coincides with the solution, giving W=2'5J. 
@@ -1484,7 +1494,6 @@ Let's think step by step.
 <p align = "center">
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot-CoT/General%20instructions/level19.png" width = 600>
    <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot-CoT/General%20instructions/level19.2.png" width = 600>
-   <img src="https://github.com/alexgaarciia/ChatGPTWolfram/blob/main/images/ChatGPT-4/wolfram-on/Zero-shot-CoT/General%20instructions/level19.3.png" width = 600>
 </p>
 
 ChatGPT understood that it was an EOQ problem, so it proceeded correctly by using the EOQ formula from below. However, the answer to the last question (How often should an order be placed?) does not coincide with the solutions.
